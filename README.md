@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 概要
+これはフロントエンドカンファレンス北海道2024のラインディングページ用リポジトリです
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/-Next.js-000000.svg?logo=next.js&style=plastic)
+![Type Script](https://img.shields.io/badge/-Type_Script-000000.svg?logo=typescript&style=plastic)
+![shadcn/ui](https://img.shields.io/badge/-shadcn/ui-000000.svg?logo=shadcnui&style=plastic)
+![Tailwind CSS](https://img.shields.io/badge/-Tailwind_CSS-000000.svg?logo=tailwindcss&style=plastic)
+![pnpm](https://img.shields.io/badge/-pnpm-000000.svg?logo=pnpm&style=plastic)
 
-First, run the development server:
+## 開発環境構築
+1. リポジトリをクローンする
+`git clone https://github.com/frontend-conference-hokkaido-2024/landing-page-2024.git`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. Node.jsのバージョンを20台にする
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. 依存関係をインストールする
+`pnpm install`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. 環境変数を設定する
+`.env.local.sample`をコピーして`.env.local`を作成し、環境変数を設定する
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+5. 開発サーバーを起動する
+`pnpm dev`

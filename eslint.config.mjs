@@ -16,7 +16,7 @@ const compat = new FlatCompat({baseDirectory: __dirname});
 export default TsEslintConfig(
   js.configs.recommended,
   ...compat.extends("next/core-web-vitals"),
-  ...TsEslintConfigs.recommended,
+  ...TsEslintConfigs.recommendedTypeChecked,
   ...compat.extends("plugin:import/recommended"),
   {
     languageOptions: {
@@ -39,7 +39,7 @@ export default TsEslintConfig(
     },
   },
   {
-    files: ['**/*.js'],
+    files: ['**/*.js', '**/*.jsx', '**/*.mjs'],
     ...TsEslintConfigs.disableTypeChecked,
   },
   {

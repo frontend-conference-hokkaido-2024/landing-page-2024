@@ -5,37 +5,36 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <main className="w-full h-64">
+    <main>
       <Image
         src={"/Image/jingisukan.jpg"}
         alt={"ジンギスカンの画像です"}
-        width={1000}
-        height={500}
-        className="z-[-1] w-full absolute bg-gradient-to-b opacity-50 from-opacity-50 to-white" //透明グラデーションができてない
+        layout="fill"
+        className="z-[-1] hidden lg:block absolute opacity-50"
       />
-      <div className="text-black z-1 px-5 pt-10 lg:pt-72">
-        <h1 className="font-bold lg:text-center lg:text-5xl">
+      <div className="text-black z-1 px-5 pt-20 lg:pt-72">
+        <h1 className="text-4xl font-bold lg:text-center lg:text-5xl">
           Frontend <br className="lg:hidden" />
           Conference <br className="lg:hidden" />
           Hokkaido <br className="lg:hidden" />
           2024（仮）
         </h1>
-        <p className="my-2 lg:my-8">
+        <p className="my-2 lg:my-8 text-xl text-slate-500">
           フロントエンドカンファレンス
           <br className="lg:hidden" />
           北海道2024
         </p>
         <ul className="lg:flex lg:mb-8">
           <li className="flex mr-6">
-            <p className="mr-10">Date</p>
+            <p className="mr-10 text-slate-500">Date</p>
             <p className="font-bold">2024.08.24</p>
           </li>
           <li className="flex mr-6">
-            <p className="mr-10">Time</p>
+            <p className="mr-10 text-slate-500">Time</p>
             <p className="font-bold">10:00-18:30</p>
           </li>
           <li className="flex">
-            <p className="mr-6">Location</p>
+            <p className="mr-4 text-slate-500">Location</p>
             <p className="font-bold">Deep Tech CORE</p>
           </li>
         </ul>

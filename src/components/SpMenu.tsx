@@ -25,7 +25,7 @@ export default function SpMenu({menu}: SpMenuProps) {
             : <Bars3Icon className="w-12 h-12" onClick={handleMenuOpen} />
         }
         </div>
-        <div className={ isOpen ? "w-full h-full flex justify-center items-center bg-white" : "invisible" }>
+        <div className={ isOpen ? "w-full h-full flex justify-center items-center bg-white" : "hidden" }>
             {menu}
         </div>
         </>

@@ -19,8 +19,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className="relative">
-        <div></div>
-        {/*背景に何か要素をつけたいのであれば...*/}
+        <div></div>{/*背景に何か要素をつけたいのであれば...*/}
         {children}
       </body>
     </html>

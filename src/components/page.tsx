@@ -1,19 +1,20 @@
 import React from "react";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 const page = () => {
   return (
     <main>
       <div className="text-black z-1 px-5 pt-20">
         <h1 className="text-4xl font-bold">
-          Frontend <br/>
-          Conference <br/>
-          Hokkaido <br/>
+          Frontend <br />
+          Conference <br />
+          Hokkaido <br />
           2024（仮）
         </h1>
         <p className="my-2 text-xl text-slate-600">
           フロントエンドカンファレンス
-          <br/>
+          <br />
           北海道2024
         </p>
         <ul>
@@ -31,9 +32,7 @@ const page = () => {
           </li>
         </ul>
         <Link href="#">
-          <button className=" bg-slate-900 py-2 mt-2 w-full rounded-lg text-white">
-            参加申し込み
-          </button>
+          <Button>参加申し込み</Button>
         </Link>
       </div>
     </main>

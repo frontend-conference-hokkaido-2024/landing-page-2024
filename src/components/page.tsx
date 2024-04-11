@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
-const page = () => {
+const Page = () => {
   return (
     <main>
       <div className="text-black z-1 px-5 pt-20">
@@ -31,12 +31,12 @@ const page = () => {
             <p className="font-bold text-xl">Deep Tech CORE</p>
           </li>
         </ul>
-        <Link href="#">
-          <Button>参加申し込み</Button>
-        </Link>
+        <Button asChild>
+          <Link href="#">参加申し込み</Link>
+        </Button>
       </div>
     </main>
   );
 };
 
-export default page;
+export default Page;

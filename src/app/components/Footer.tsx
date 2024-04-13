@@ -1,9 +1,7 @@
-import React from "react";
-
-const Page = () => {
+const Footer = () => {
   return (
     <main className="w-full h-52 bg-slate-800 py-8">
-      <div className="text-slate-300  text-center [&_p]:py-4">
+      <div className="text-slate-300 text-center [&_p]:py-4">
         <p>フロントエンドカンファレンス北海道2024</p>
         <p>
           @2024 フロントエンドカンファレンス
@@ -15,4 +13,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default Footer;

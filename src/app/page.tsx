@@ -1,4 +1,4 @@
-import FooterSection from "./components/Page"
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -7,10 +7,9 @@ export default function Home() {
         {/* 左側エリア */}
       </div>
       <main className="w-full max-w-[500px] md:w-[360px] h-dvh mx-auto place-items-center">
-        <FooterSection/>
+        <Footer />
       </main>
-      <div className="fixed top-0 right-0 hidden md:block md:w-[calc((100%_-_360px)/4*1)] lg:w-[calc((100%_-_360px)/2)] h-dvh bg-fuchsia-700">
-      </div>
+      <div className="fixed top-0 right-0 hidden md:block md:w-[calc((100%_-_360px)/4*1)] lg:w-[calc((100%_-_360px)/2)] h-dvh bg-fuchsia-700"></div>
     </>
   );
 }

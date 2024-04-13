@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
-const Page = () => {
+const Eventoverview = () => {
   return (
     <main>
       <div className="text-black z-1 px-5 pt-20">
@@ -39,4 +39,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default Eventoverview;

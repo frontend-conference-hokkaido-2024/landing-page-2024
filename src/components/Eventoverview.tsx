@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
-const Eventoverview = () => {
+const EventOverView = () => {
   return (
     <main>
       <div className="text-black z-1 px-5 pt-20">
@@ -39,4 +39,4 @@ const Eventoverview = () => {
   );
 };
 
-export default Eventoverview;
+export default EventOverView;

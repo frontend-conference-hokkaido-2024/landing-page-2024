@@ -1,17 +1,18 @@
 import React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 const EventOverView = () => {
   return (
     <main>
-      <div className="text-black z-1 px-5 pt-20">
-        <h1 className="text-4xl font-bold">
-          Frontend <br />
-          Conference <br />
-          Hokkaido <br />
-          2024（仮）
-        </h1>
+      <Image
+        src={"/images/Fortee.png"}
+        width={500}
+        height={500}
+        alt="アイコンです"
+      />
+      <div className="text-black px-5">
         <p className="my-2 text-xl text-slate-600">
           フロントエンドカンファレンス
           <br />

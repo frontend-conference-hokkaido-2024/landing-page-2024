@@ -1,13 +1,12 @@
-import React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 const EventOverView = () => {
   return (
-    <main>
+    <main className="mt-32">
       <Image
-        src={"/images/Fortee.png"}
+        src={"/images/note-image-in-contents.png"}
         width={500}
         height={500}
         alt="アイコンです"

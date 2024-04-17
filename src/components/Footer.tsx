@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <footer className="w-full h-52 bg-slate-800 py-8">
-      <div className="text-slate-300 text-center [&_p]:py-4">
+    <footer className="w-full bg-slate-800 py-8">
+      <div className="text-white text-center [&_p]:py-4 text-sm">
         <p>フロントエンドカンファレンス北海道2024</p>
         <p>
           @2024 フロントエンドカンファレンス

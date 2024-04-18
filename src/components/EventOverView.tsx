@@ -7,32 +7,23 @@ const EventOverView = () => {
     <main className="mt-32">
       <Image
         src={"/images/note-image-in-contents.png"}
-        width={500}
+        width={600}
         height={500}
         alt="アイコンです"
       />
       <div className="text-black px-5">
-        <p className="my-2 text-xl text-slate-600">
-          フロントエンドカンファレンス
-          <br />
-          北海道2024
-        </p>
-        <ul>
-          <li className="flex mr-6">
-            <p className="mr-10 text-slate-600">Date</p>
-            <p className="font-bold text-xl">2024.08.24</p>
-          </li>
-          <li className="flex mr-6">
-            <p className="mr-10 text-slate-600">Time</p>
-            <p className="font-bold text-xl">10:00-18:30</p>
-          </li>
-          <li className="flex">
-            <p className="mr-4 text-slate-600">Location</p>
-            <p className="font-bold text-xl">Deep Tech CORE</p>
-          </li>
-        </ul>
+        <div className="grid grid-cols-4">
+          <p className="text-sm text-slate-500">Date</p>
+          <p className="font-bold text-sm col-span-3">2024.08.24</p>
+
+          <p className="text-sm text-slate-500">Time</p>
+          <p className="font-bold text-sm col-span-3">10:00-18:30</p>
+
+          <p className="text-sm text-slate-500">Location</p>
+          <p className="font-bold text-sm col-span-3">Deep Tech CORE SAPPORO</p>
+        </div>
         <Button asChild>
-          <Link href="#">参加申し込み</Link>
+          <Link href="#">準備中</Link>
         </Button>
       </div>
     </main>

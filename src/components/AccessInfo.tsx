@@ -21,13 +21,12 @@ export default function AccessInfo() {
                         </div>
                         <div className="flex items-center gap-x-5">
                             <p className="font-semibold w-16">所在地</p>
-                            <p>札幌市中央区北5条西5丁目1-5<br />JR55SAPPORO 8階</p>
+                            <p>札幌市中央区北5条西5丁目1-5<br />JR 55SAPPORO 8階</p>
                         </div>
                         <div className="flex items-center gap-x-5">
                             <p className="font-semibold w-16">最寄駅</p>
                             <p>JR 札幌駅 札幌市営地下鉄<br />さっぽろ駅</p>
                         </div>
-
                     </div>
                 </div>
             </div>

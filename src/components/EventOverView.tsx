@@ -23,7 +23,7 @@ const EventOverView = () => {
           <p className="text-sm text-slate-500">Location</p>
           <p className="font-bold text-sm col-span-3">Deep Tech CORE SAPPORO</p>
         </div>
-        <Button asChild>
+        <Button asChild className="mt-2 w-full text-white text-1xl">
           <Link href="#">準備中</Link>
         </Button>
       </div>

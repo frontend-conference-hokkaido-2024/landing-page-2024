@@ -24,7 +24,7 @@ const LinkButton = ({children, href}: LinkButtonProps) => {
 export default function LinkMenu() {
 
     return ( 
-        <div className="bg-transparent flex flex-col gap-2 w-32">
+        <div className="bg-transparent flex flex-col gap-3 w-32">
             <LinkButton href={{
                 host: "fortee.jp",
                 pathname: "/frontend-conf-hokkaido-2024/proposal/all",
@@ -45,7 +45,7 @@ export default function LinkMenu() {
                 host: "note.com",
                 pathname: "/fec_hokkaido",
             }}>STAFF BLOG</LinkButton>
-            <LinkButton href="mailto:frontendconfhokkaido2024@gmail.com">MAIL</LinkButton>
+            <LinkButton href="mailto:frontendconfhokkaido2024@gmail.com">SEND E-MAIL</LinkButton>
         </div>
     );
 }

@@ -5,7 +5,7 @@
 import type { ReactNode} from 'react';
 import { useState } from 'react';
 
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { Menu, X } from 'lucide-react';
 
 type SpMenuProps = {
     menu: ReactNode;
@@ -19,13 +19,16 @@ export default function SpMenu({menu}: SpMenuProps) {
 
     return(
         <>
-        <div className="absolute top-1 right-1 ">
+        <div className="absolute top-1 right-1 z-10">
         { isOpen
-            ? <XMarkIcon className="w-12 h-12" onClick={handleMenuOpen} />
-            : <Bars3Icon className="w-12 h-12" onClick={handleMenuOpen} />
+            ? <X className="w-12 h-12 md:hidden lg:hidden" onClick={handleMenuOpen} />
+            : <Menu className="w-12 h-12 md:hidden lg:hidden" onClick={handleMenuOpen} />
         }
         </div>
-        <div className={ isOpen ? "w-full h-full flex justify-center items-center bg-white" : "hidden" }>
+        <div className={ isOpen
+            ? "w-full h-full flex justify-center items-center bg-gradient-to-b from-white via-white to-gray-200 animate-fadeIn"
+            : "hidden"
+            }>
             {menu}
         </div>
         </>

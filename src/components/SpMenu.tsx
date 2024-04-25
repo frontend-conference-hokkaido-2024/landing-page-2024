@@ -21,8 +21,8 @@ export default function SpMenu({menu}: SpMenuProps) {
         <>
         <div className="absolute top-1 right-1 z-10">
         { isOpen
-            ? <X className="w-12 h-12 md:hidden lg:hidden" onClick={handleMenuOpen} />
-            : <Menu className="w-12 h-12 md:hidden lg:hidden" onClick={handleMenuOpen} />
+            ? <X strokeWidth={1.3} stroke="#4b5563" className="w-12 h-12 md:hidden lg:hidden" onClick={handleMenuOpen} />
+            : <Menu strokeWidth={1.3} stroke="#4b5563" className="w-12 h-12 md:hidden lg:hidden" onClick={handleMenuOpen} />
         }
         </div>
         <div className={ isOpen

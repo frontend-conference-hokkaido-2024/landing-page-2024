@@ -4,22 +4,10 @@ import type { ReactNode } from "react";
 
 import Link from "next/link";
 
+import { LinkButton } from "./LinkButon"
 import { Button } from "./ui/button";
 
 import type { UrlObject } from "url";
-
-type LinkButtonProps = {
-    children: ReactNode;
-    href: string | UrlObject;
-}
-
-const LinkButton = ({children, href}: LinkButtonProps) => {
-    return(
-        <Button className="font-black text-lg justify-normal" variant="link" asChild>
-            <Link className="italic h-6" href={href}>{children}</Link>
-        </Button>
-    );
-};
 
 export default function LinkMenu() {
 

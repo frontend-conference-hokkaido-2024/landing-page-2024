@@ -5,10 +5,6 @@ import { Button } from './ui/button';
 import frontend_conference_hokkaido_2024_logo from '@/asset/frontend_conference_hokkaido_2024_logo.png';
 
 export default function EventSummary() {
-    // URLとリンクテキストを受け取り、リンク要素を返す関数
-    const textToLink = (url: string, linkText: string) => {
-        return <a href={url} className="text-blue-400">{linkText}</a>;
-    };
 
     return (
         <div style={{ marginLeft: '20px', marginRight: '20px', marginBottom: '50px', textAlign: 'center' }}>
@@ -26,7 +22,7 @@ export default function EventSummary() {
                 HTML、CSS、JavaScript、UI、UX、デザイン、アクセシビリティ、SPA、PWAなど、Webに携わるすべてのフロントエンド領域に関心のある方を対象としています。
                 <br /><br />
                 札幌市内での現地開催のほか、オンライン配信（アーカイブあり）も予定しております。
-                参加チケットは販売開始次第、公式Xアカウント {textToLink('https://twitter.com/fec_hokkaido', '(@fec_hokkaido)')} でお知らせします。
+                参加チケットは販売開始次第、公式Xアカウント(@fec_hokkaido)でお知らせします。
                 ぜひフォローして、通知をオンにしてお待ちください。
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', marginTop: '20px' }}>

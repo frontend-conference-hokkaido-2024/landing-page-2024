@@ -45,7 +45,10 @@ export default function LinkMenu() {
                 host: "note.com",
                 pathname: "/fec_hokkaido",
             }}>STAFF BLOG</LinkButton>
-            <LinkButton href="mailto:frontendconfhokkaido2024@gmail.com">SEND E-MAIL</LinkButton>
+            <LinkButton href={{
+                host: "twitter.com",
+                pathname: "/fec_hokkaido",
+            }}>OFFICIAL 𝕏</LinkButton>
         </div>
     );
 }

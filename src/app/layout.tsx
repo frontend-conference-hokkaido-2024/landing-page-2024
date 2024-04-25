@@ -7,10 +7,20 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const title: string = "フロントエンドカンファレンス北海道2024";
+const description: string = "フロントエンド領域のエンジニア・デザイナー向けの技術カンファレンス「フロントエンドカンファレンス北海道2024」を2024年8月24日(土)に札幌で開催";
+
 export const metadata: Metadata = {
-  title: "フロントエンドカンファレンス北海道2024",
+  title,
+  description,
   openGraph: {
-    title: "フロントエンドカンファレンス北海道2024",
+    title,
+    description,
+  },
+  twitter: {
+    title,
+    description,
+    site: "@fec_hokkaido",
   }
 };
 

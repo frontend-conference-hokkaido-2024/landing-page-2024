@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 
@@ -13,19 +12,22 @@ const EventOverView = () => {
         alt="アイコンです"
       />
       <div className="text-black px-5">
-        <div className="grid grid-cols-4">
-          <p className="text-sm text-slate-500">Date</p>
-          <p className="font-bold text-sm col-span-3">2024.08.24</p>
+        <div className="grid grid-cols-4 text-sm">
+          <p className="text-slate-500">Date</p>
+          <p className="font-semibold col-span-3">2024.08.24</p>
 
-          <p className="text-sm text-slate-500">Time</p>
-          <p className="font-bold text-sm col-span-3">10:00-18:30</p>
+          <p className="text-slate-500">Time</p>
+          <p className="font-semibold col-span-3">10:00-18:30</p>
 
-          <p className="text-sm text-slate-500">Location</p>
-          <p className="font-bold text-sm col-span-3">Deep Tech CORE SAPPORO</p>
+          <p className="text-slate-500">Location</p>
+          <p className="font-semibold col-span-3">Deep Tech CORE SAPPORO</p>
         </div>
-        <Button asChild className="mt-2 w-full text-white text-1xl">
-          <Link href="#">準備中</Link>
+        <Button disabled className="mt-2 w-full text-1xl">
+          準備中
         </Button>
+        {/* <Button asChild className="mt-2 w-full text-1xl">
+          <Link href="#">参加申し込み</Link>
+        </Button> */}
       </div>
     </main>
   );

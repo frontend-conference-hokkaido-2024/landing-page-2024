@@ -7,9 +7,9 @@ import frontend_conference_hokkaido_2024_logo from '@/asset/frontend_conference_
 export default function EventSummary() {
 
     return (
-        <div style={{ marginLeft: '20px', marginRight: '20px', marginBottom: '50px', textAlign: 'center' }}>
+        <div className="mx-5 mb-12 text-center">
             <h1 className="text-3xl font-extrabold m-8">イベント概要</h1>
-            <h3 className="font-semibold text-2xl break-words mb-4">フロントエンドカンファレンス北海道2024を開催します！</h3>
+            <h3 className="font-semibold text-2xl break-words mb-4 text-left">フロントエンドカンファレンス北海道2024を開催します！</h3>
             <div style={{ marginBottom: '20px' }}>
                 <Image src={frontend_conference_hokkaido_2024_logo} alt='' />
             </div>

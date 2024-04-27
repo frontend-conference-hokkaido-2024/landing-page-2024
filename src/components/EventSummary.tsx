@@ -27,12 +27,12 @@ export default function EventSummary() {
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', marginTop: '20px' }}>
                 <Button className="font-bold text-sm" style={{ marginBottom: '20px' }}>
-                    <Link href="https://twitter.com/fec_hokkaido">
+                    <Link href="https://twitter.com/fec_hokkaido" target="_blank" rel="noopener noreferrer">
                         @fec_hokkaido をフォロー
                     </Link>
                 </Button>
                 <Button className="font-bold text-sm">
-                    <Link href="https://twitter.com/intent/tweet?hashtags=frontendo">
+                    <Link href="https://twitter.com/intent/tweet?hashtags=frontendo" target="_blank" rel="noopener noreferrer">
                         #frontendo でシェアする
                     </Link>
                 </Button>

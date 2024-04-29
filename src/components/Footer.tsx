@@ -12,11 +12,12 @@ const Footer = () => {
           <br />
           北海道実行委員会
         </p>
-        <Button asChild>
-          <Link
-            href="https://aback-jasmine-06b.notion.site/cf184497a6414a97aea49c1f1b2f5b5f"
-            className="py-4"
-          >
+        <Button
+          variant="link"
+          className="py-4 text-white font-normal underline"
+          asChild
+        >
+          <Link href="https://aback-jasmine-06b.notion.site/cf184497a6414a97aea49c1f1b2f5b5f">
             プライバシーポリシー
           </Link>
         </Button>

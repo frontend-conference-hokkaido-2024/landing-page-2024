@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="text-white text-center text-sm">
         <p className="py-4">フロントエンドカンファレンス北海道2024</p>
         <p className="py-4">
-          @2024 フロントエンドカンファレンス
+          ©2024 フロントエンドカンファレンス
           <br />
           北海道実行委員会
         </p>

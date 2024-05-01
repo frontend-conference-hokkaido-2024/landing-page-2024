@@ -12,7 +12,7 @@ export default function Home() {
       <main className="w-full max-w-[500px] md:w-[360px] h-dvh mx-auto place-items-center">
         {/* ここにSP用のタグとかを書いていく */}
         <SpMenu menu={<LinkMenu />} />
-        <Avatar avatarImage="/images/Icon-black.svg" alt="avatar" avatarName="@nextjs"/>
+        <Avatar avatarImage="/images/Icon-black.svg" avatarName="@nextjs" />
       </main>
       <div className="fixed top-0 right-0 hidden md:block md:w-[calc((100%_-_360px)/4*1)] lg:w-[calc((100%_-_360px)/2)] h-dvh bg-fuchsia-700"></div>
     </>

@@ -1,24 +1,21 @@
-import React from "react";
-
 import Image from "next/image";
 
 type AvatarProps = {
   avatarImage: string;
-  alt: string;
   avatarName: string;
 };
 
-const Avatar = ({ avatarImage, alt, avatarName }: AvatarProps) => {
+const Avatar = ({ avatarImage, avatarName }: AvatarProps) => {
   return (
     <div>
       <Image
         src={avatarImage}
-        alt={alt}
-        width={150}
-        height={150}
-        className="mx-auto py-4 rounded-full"
+        alt={"icon"}
+        width={145}
+        height={145}
+        className="mx-auto mb-2 rounded-full border-4 border-white"
       />
-      <p className="text-center text-sm font-semibold pb-4 text-black">
+      <p className="text-center text-sm font-semibold text-black">
         {avatarName}
       </p>
     </div>

@@ -32,7 +32,10 @@ export default function LinkMenu({ className, textClassName }: LinkMenuProps) {
                 host: "note.com",
                 pathname: "/fec_hokkaido",
             }}><span className={textClassName}>STAFF BLOG</span></LinkButton>
-            <LinkButton href="mailto:frontendconfhokkaido2024@gmail.com"><span className={textClassName}>MAIL</span></LinkButton>
+            <LinkButton href={{
+                host: "twitter.com",
+                pathname: "/fec_hokkaido",
+            }}><span className={textClassName}>OFFICIAL 𝕏</span></LinkButton>
         </div>
     );
 }

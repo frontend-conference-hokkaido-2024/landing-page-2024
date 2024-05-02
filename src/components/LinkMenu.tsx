@@ -1,54 +1,41 @@
 // PC画面用メニュー
+import clsx from "clsx";
 
-import type { ReactNode } from "react";
+import { LinkButton } from "./LinkButon";
 
-import Link from "next/link";
-
-import { Button } from "./ui/button";
-
-import type { UrlObject } from "url";
-
-type LinkButtonProps = {
-    children: ReactNode;
-    href: string | UrlObject;
+type LinkMenuProps = {
+    textClassName?: string;
+    className?: string;
 }
 
-const LinkButton = ({children, href}: LinkButtonProps) => {
-    return(
-        <Button className="font-black text-lg justify-normal" variant="link" asChild>
-            <Link className="italic h-6" href={href}>{children}</Link>
-        </Button>
-    );
-};
-
-export default function LinkMenu() {
+export default function LinkMenu({ className, textClassName }: LinkMenuProps) {
 
     return ( 
-        <div className="bg-transparent flex flex-col gap-3 w-32">
+        <div className={clsx("bg-transparent flex flex-col gap-2 w-32", className)}>
             <LinkButton href={{
                 host: "fortee.jp",
                 pathname: "/frontend-conf-hokkaido-2024/proposal/all",
-            }}>TALKS</LinkButton>
+            }}><span className={textClassName}>TALKS</span></LinkButton>
             <LinkButton href={{
                 host: "fortee.jp",
                 pathname: "/frontend-conf-hokkaido-2024/timetable",
-            }}>TIMETABLE</LinkButton>
+            }}><span className={textClassName}>TIMETABLE</span></LinkButton>
             <LinkButton href={{
                 pathname: "/jobboard"
-            }}>JOB BOARD</LinkButton>
+            }}><span className={textClassName}>JOB BOARD</span></LinkButton>
             <LinkButton href={{
                 host: "www.notion.so",
                 pathname: "/cf184497a6414a97aea49c1f1b2f5b5f",
                 query: { pvs: 4 },
-            }}>POLICY</LinkButton>
+            }}><span className={textClassName}>POLICY</span></LinkButton>
             <LinkButton href={{
                 host: "note.com",
                 pathname: "/fec_hokkaido",
-            }}>STAFF BLOG</LinkButton>
+            }}><span className={textClassName}>STAFF BLOG</span></LinkButton>
             <LinkButton href={{
                 host: "twitter.com",
                 pathname: "/fec_hokkaido",
-            }}>OFFICIAL 𝕏</LinkButton>
+            }}><span className={textClassName}>OFFICIAL 𝕏</span></LinkButton>
         </div>
     );
 }

@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import EventOverView from "@/components/EventOverView";
 import LinkMenu from "@/components/LinkMenu";
 import SpMenu from "@/components/SpMenu";
@@ -10,8 +11,9 @@ export default function Home() {
         <LinkMenu />
       </div>
       <main className="w-full max-w-[500px] md:w-[360px] h-dvh mx-auto place-items-center">
+        <SpMenu menu={<LinkMenu />} />
         <EventOverView />
-        <SpMenu menu={<LinkMenu />}/>
+        <Footer />
       </main>
       <div className="fixed top-0 right-0 hidden md:block md:w-[calc((100%_-_360px)/4*1)] lg:w-[calc((100%_-_360px)/2)] h-dvh bg-fuchsia-700"></div>
     </>

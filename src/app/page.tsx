@@ -1,13 +1,18 @@
-import Base from "@/components/Base";
-import Avatar from "@/components/Avatar";
-import EventSummary from "@/components/EventSummary";
 import AccessInfo from "@/components/AccessInfo";
-import Footer from "@/components/Footer";
+import Base from "@/components/Base";
 import EventOverView from "@/components/EventOverView";
+import EventSummary from "@/components/EventSummary";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <Base>
+      <div className="flex flex-col gap-24">
+        <EventOverView />
+        <EventSummary />
+        <AccessInfo />
+        <Footer />
+      </div>
     </Base>
   );
 }

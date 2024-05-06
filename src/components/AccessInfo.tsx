@@ -13,7 +13,7 @@ export default function AccessInfo() {
                 </div>
                 <div className="mt-4 mx-auto">
                     {/* Google Map埋め込み */}
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11659.075183547682!2d141.34755!3d43.06733!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b297554bfffff%3A0x1d7fa677cc47a00b!2zSlI1NSBTQVBQT1JP44OT44Or!5e0!3m2!1sja!2sus!4v1712545562167!5m2!1sja!2sus" height="250" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11659.075183547682!2d141.34755!3d43.06733!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b297554bfffff%3A0x1d7fa677cc47a00b!2zSlI1NSBTQVBQT1JP44OT44Or!5e0!3m2!1sja!2sus!4v1712545562167!5m2!1sja!2sus" height="250" loading="lazy" className="rounded-md" ></iframe>
                     <div className="flex flex-col gap-y-2 mt-4 text-sm text-left">
                         <div className="flex items-center gap-x-5">
                             <p className="font-semibold w-16">会場</p>

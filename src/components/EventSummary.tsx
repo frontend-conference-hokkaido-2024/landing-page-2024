@@ -12,7 +12,7 @@ export default function EventSummary() {
             <h3 className="font-semibold text-xl break-words mb-4 text-left">フロントエンドカンファレンス北海道2024を開催します！</h3>
             
             <div className="mb-4">
-                <Image src={frontend_conference_hokkaido_2024_logo} alt="" />
+                <Image src={frontend_conference_hokkaido_2024_logo} alt="" className=" rounded-md" />
             </div>
 
             <p className="break-words text-left mt-8 mb-8">

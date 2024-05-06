@@ -28,14 +28,6 @@ export default function Base({ children }: BaseProps) {
         <Card className="flex items-center justify-center w-56 h-16 rounded-md mx-auto mt-20 bg-slate-50">
           <LinkButton href={{
             host: "fortee.jp/",
-            pathname: "/frontend-conf-hokkaido-2024/speaker/proposal/cfp"
-          }}>
-            <span className="text-[#2a0252]">CfP募集中!!</span>
-          </LinkButton>
-        </Card>
-        <Card className="flex items-center justify-center w-56 h-16 rounded-md mx-auto mt-20 bg-slate-50">
-          <LinkButton href={{
-            host: "fortee.jp/",
             pathname: "/frontend-conf-hokkaido-2024/sponsor/form"
           }}>
             <span className="text-[#2a0252]">スポンサー募集中!!</span>

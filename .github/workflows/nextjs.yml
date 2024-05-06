@@ -15,7 +15,6 @@ on:
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
-  actions: read
   pages: write
   id-token: write
 
@@ -47,10 +46,9 @@ jobs:
       - name: Build
         run: pnpm build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: 'github-pages'
-          path: 'out'
+          path: ./out
 
 
   # Deployment job

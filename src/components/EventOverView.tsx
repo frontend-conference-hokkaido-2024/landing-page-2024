@@ -7,11 +7,12 @@ import TopVisual from "./TopVisual";
 
 const EventOverView = () => {
   return (
-    <div className="">
+    <div className="mx-5">
       <div className="w-full p-4">
         <TopVisual />
       </div>
-      <div className="text-black px-5 mx-auto flex flex-col mt-4">
+      <h1 className="lg:text-3xl text-xl font-semibold text-slate-600 break-keep">フロントエンドカンファレンス<wbr />北海道2024</h1>
+      <div className="text-black mx-auto flex flex-col mt-4">
         <table className="text-left">
             <tbody>
               <tr>

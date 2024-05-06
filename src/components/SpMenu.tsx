@@ -21,8 +21,8 @@ export default function SpMenu({menu}: SpMenuProps) {
         <>
         <div className="flex justify-end">
             { isOpen
-                ? <X strokeWidth={1.3} stroke="#4b5563" className="w-12 h-12 md:hidden lg:hidden mr-1 mt-1" onClick={handleMenuOpen} />
-                : <Menu strokeWidth={1.3} stroke="#4b5563" className="w-12 h-12 md:hidden lg:hidden mr-1 mt-1" onClick={handleMenuOpen} />
+                ? <X strokeWidth={1.3} stroke="#4b5563" className="w-8 h-8 md:hidden lg:hidden mr-3 mt-3" onClick={handleMenuOpen} />
+                : <Menu strokeWidth={1.3} stroke="#4b5563" className="w-8 h-8 md:hidden lg:hidden mr-3 mt-3" onClick={handleMenuOpen} />
             }
         </div>
         <div className={ isOpen

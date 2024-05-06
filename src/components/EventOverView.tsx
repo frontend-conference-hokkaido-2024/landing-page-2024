@@ -15,10 +15,10 @@ const EventOverView = () => {
         <table>
             <tbody>
               <tr>
-                <td className="w-1/4">
+                <td className="w-1/5">
                   <p className="text-slate-500 lg:text-xl">開催日時</p>
                 </td>
-                <td className="w-2/4">
+                <td className="w-4/5">
                   <p className="font-semibold col-span-3 lg:text-xl">2024.08.24(土) 10:00-18:30</p>
                 </td>
               </tr>

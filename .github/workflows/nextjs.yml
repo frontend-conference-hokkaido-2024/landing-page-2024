@@ -55,7 +55,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-
       - name: Insall pnpm
-        run: npm install -g pnpm
+        run: npm install -g pnpm@8.15.4
       - name: Install dependencies
         run: pnpm install
       - name: Build with Next.js

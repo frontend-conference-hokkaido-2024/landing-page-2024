@@ -1,6 +1,6 @@
 import AccessInfo from "@/components/AccessInfo";
+import AvatarList from "@/components/AvatarList";
 import Base from "@/components/Base";
-import AvatarList from "@/components/CoreStaffListView";
 import EventOverView from "@/components/EventOverView";
 import EventSummary from "@/components/EventSummary";
 import Footer from "@/components/Footer";
@@ -16,8 +16,17 @@ export default function Home() {
           <AccessInfo />
         </main>
         <Footer />
-        <AvatarList />
+        <AvatarList avatarListTitle="Core Staff" endPointURL= {process.env.FORTEE_API_STAFF} />
       </div>
     </Base>
   );
 }
+
+
+interface Environment {
+  FORTEE_API_STAFF: string; 
+}
+
+declare const process: {
+  env: Environment;
+};

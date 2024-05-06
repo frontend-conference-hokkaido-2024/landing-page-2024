@@ -7,10 +7,12 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <Base>
-      <div className="flex flex-col gap-24">
-        <EventOverView />
-        <EventSummary />
-        <AccessInfo />
+      <div className="w-full flex flex-col gap-24">
+        <main className="flex flex-col gap-24 lg:px-12">
+          <EventOverView />
+          <EventSummary />
+          <AccessInfo />
+        </main>
         <Footer />
       </div>
     </Base>

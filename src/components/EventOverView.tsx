@@ -11,14 +11,14 @@ const EventOverView = () => {
       <div className="w-full p-4">
         <TopVisual />
       </div>
-      <div className="text-black px-5 mx-auto flex flex-col items-center mt-4">
-        <table>
+      <div className="text-black px-5 mx-auto flex flex-col mt-4">
+        <table className="text-left">
             <tbody>
               <tr>
-                <td className="w-1/5">
+                <td className="w-1/4">
                   <p className="text-slate-500 lg:text-xl">開催日時</p>
                 </td>
-                <td className="w-4/5">
+                <td className="w-3/4">
                   <p className="font-semibold col-span-3 lg:text-xl">2024.08.24(土) 10:00-18:30</p>
                 </td>
               </tr>

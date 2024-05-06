@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+    // output: "export",
     images: {
         remotePatterns: [
           {
@@ -10,7 +11,7 @@ const nextConfig = {
             pathname: "/files/frontend-conf-hokkaido-2024/**/*.{jpg,png}",
           },
         ],
-      },
+      }
 };
 
 export default nextConfig;

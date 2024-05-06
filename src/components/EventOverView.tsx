@@ -1,4 +1,3 @@
-import Image from "next/image";
 import TopVisual from "./TopVisual";
 
 

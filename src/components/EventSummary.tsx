@@ -37,7 +37,7 @@ export default function EventSummary() {
                     </Link>
                 </Button>
                 <Button asChild className="font-bold text-sm">
-                    <Link href="https://twitter.com/intent/tweet?hashtags=frontendo" target="_blank" rel="noopener noreferrer">
+                    <Link href={`https://twitter.com/intent/tweet?hashtags=frontendo&url=${process.env.PRODUCTION_URL}`} target="_blank" rel="noopener noreferrer">
                         #frontendo でシェアする
                     </Link>
                 </Button>

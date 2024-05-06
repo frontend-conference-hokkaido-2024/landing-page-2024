@@ -16,7 +16,7 @@ export default function Home() {
           <AccessInfo />
         </main>
         <Footer />
-        <AvatarList avatarListTitle="Core Staff" endPointURL= {process.env.FORTEE_API_STAFF} />
+        <AvatarList avatarListTitle="コアスタッフ" endPointURL= {process.env.FORTEE_API_STAFF} />
       </div>
     </Base>
   );

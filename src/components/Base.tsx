@@ -25,12 +25,12 @@ export default function Base({ children }: BaseProps) {
         {children}
       </div>
       <div className="fixed top-0 right-0 hidden md:block md:w-[calc((100%_-_360px)/4*1)] lg:w-[calc((100%_-_768px)/2)] h-dvh bg-gradient-to-b from-[rgba(66,102,245,0.5)] to-[rgba(245,66,182,0.5)]">
-        <Card className="flex items-center justify-center w-56 h-16 rounded-md mx-auto mt-20 bg-slate-50">
+        <Card className="flex items-center justify-center w-64 h-16 rounded-md mx-auto mt-20 bg-slate-50">
           <LinkButton href={{
             host: "fortee.jp/",
             pathname: "/frontend-conf-hokkaido-2024/sponsor/form"
           }}>
-            <span className="text-[#2a0252]">スポンサー募集中!!</span>
+            <span className="text-[#2a0252]">スポンサー募集中!!(~5/30)</span>
           </LinkButton>
         </Card>
       </div>

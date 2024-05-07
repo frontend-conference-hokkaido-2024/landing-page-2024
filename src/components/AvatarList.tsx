@@ -5,36 +5,33 @@ type AvatarListProps = {
     endPointURL: string;
 };
 
-const Avatars = async ({ endPointURL }: { endPointURL: string } ) => {
+const AvatarList = async ({ avatarListTitle, endPointURL }: AvatarListProps) => {
     try {
-        const responseData: StaffData =  await getData(endPointURL);
-        const people: Person[] = responseData.staff.core_staff; 
-        
-        return (
-        <div className="grid grid-cols-2 lg:grid-cols-3">
-            {
-            people?.map(person => (
-            <Avatar 
-            key={person.id}  
-            avatarName={person.name} 
-            avatarImage={person.avatar_url ||"/images/Icon-black.png " } 
-            />
-                ))}
-                </div>
-                );
-    }  catch (error) {
-        console.error(error);
-        return <div>{String(error)}</div>; 
-    }
-};  
+        const responseData: StaffData = await getData(endPointURL);
+        const people: Person[] = responseData.staff.core_staff;
+        // peopleがnullまたは空の配列の場合は何も表示しない
+        if (!people || people.length === 0) {
+            return null; 
+        }
 
-const AvatarList = ({ avatarListTitle, endPointURL }: AvatarListProps) => {
-    return (
-        <div className="mx-5 mb-12 text-center">
-            <h1 className="text-3xl font-extrabold mb-8"> {avatarListTitle} </h1>
-            <Avatars endPointURL={endPointURL} />
+        return (
+            <div className="mx-5 mb-12 text-center">
+                <h1 className="text-3xl font-extrabold mb-8">{avatarListTitle}</h1>
+                <div className="grid grid-cols-2 lg:grid-cols-3">
+                    {people?.map(person => (
+                        <Avatar 
+                            key={person.id}
+                            avatarName={person.name}
+                            avatarImage={person.avatar_url || "/images/Icon-black.png"}
+                        />
+                    ))}
+                </div>
             </div>
-    );
+        );
+    } catch (error) {
+        console.error(error);
+        return null;
+    }
 };
 
 export default AvatarList;

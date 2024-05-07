@@ -1,6 +1,5 @@
 import Avatar from "@/components/Avatar";
 
-
 type AvatarListProps = {
     avatarListTitle: string;
     endPointURL: string;
@@ -15,7 +14,11 @@ const Avatars = async ({ endPointURL }: { endPointURL: string } ) => {
         <div className="grid grid-cols-2 lg:grid-cols-3">
             {
             people?.map(person => (
-            <Avatar key={person.id}  avatarName={person.name} avatarImage={person.avatar_url} />
+            <Avatar 
+            key={person.id}  
+            avatarName={person.name} 
+            avatarImage={person.avatar_url ||"/images/Icon-black.png " } 
+            />
                 ))}
                 </div>
                 );

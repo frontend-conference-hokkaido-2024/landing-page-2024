@@ -14,9 +14,9 @@ export default function Home() {
           <EventOverView />
           <EventSummary />
           <AccessInfo />
+          <AvatarList avatarListTitle="コアスタッフ" endPointURL={`${process.env.FORTEE_API_HOST}/staff`} />
         </main>
         <Footer />
-        <AvatarList avatarListTitle="コアスタッフ" endPointURL= {process.env.FORTEE_API_STAFF} />
       </div>
     </Base>
   );
@@ -24,7 +24,7 @@ export default function Home() {
 
 
 interface Environment {
-  FORTEE_API_STAFF: string; 
+  FORTEE_API_HOST: string; 
 }
 
 declare const process: {

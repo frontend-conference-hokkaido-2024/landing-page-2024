@@ -1,11 +1,11 @@
 import Avatar from "@/components/Avatar";
 
 type AvatarListProps = {
-    avatarListTitle: string;
+    title: string;
     endPointURL: string;
 };
 
-const AvatarList = async ({ avatarListTitle, endPointURL }: AvatarListProps) => {
+const AvatarList = async ({ title, endPointURL }: AvatarListProps) => {
     try {
         const responseData: StaffData = await getData(endPointURL);
         const people: Person[] = responseData.staff.core_staff;
@@ -16,7 +16,7 @@ const AvatarList = async ({ avatarListTitle, endPointURL }: AvatarListProps) => 
 
         return (
             <div className="mx-5 mb-12 text-center">
-                <h1 className="text-3xl font-extrabold mb-8">{avatarListTitle}</h1>
+                <h1 className="text-3xl font-extrabold mb-8">{title}</h1>
                 <div className="grid grid-cols-2 lg:grid-cols-3">
                     {people?.map(person => (
                         <Avatar 

@@ -14,7 +14,7 @@ export default function Home() {
           <EventOverView />
           <EventSummary />
           <AccessInfo />
-          <AvatarList avatarListTitle="コアスタッフ" endPointURL={`${process.env.FORTEE_API_HOST}/staff`} />
+          <AvatarList title="コアスタッフ" endPointURL={`${process.env.FORTEE_API_HOST}/staff`} />
         </main>
         <Footer />
       </div>

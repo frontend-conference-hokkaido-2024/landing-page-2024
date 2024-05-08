@@ -22,7 +22,7 @@ const AvatarList = async ({ avatarListTitle, endPointURL }: AvatarListProps) => 
                         <Avatar 
                             key={person.id}
                             avatarName={person.name}
-                            avatarImage={person.avatar_url || "/images/Icon-black.png"}
+                            avatarImage={person.avatar_url ?? "/images/Icon-black.png"}
                         />
                     ))}
                 </div>
@@ -38,7 +38,7 @@ export default AvatarList;
 
 async function getData(url: string):Promise<StaffData> {
     try {
-        const response = await fetch(new Request(url));
+        const response = await fetch(url);
         if (!response.ok) {
             throw new Error(`Failed to fetch data, status: ${response.status}`);
         }

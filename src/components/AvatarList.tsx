@@ -43,11 +43,13 @@ async function getData(url: string):Promise<StaffData> {
             throw new Error(`Failed to fetch data, status: ${response.status}`);
         }
         const data: StaffData = await response.json() as StaffData;
-                // 不要な空白を取り除く処理
+               // @ts-expect-error: ' core_staff'に含まれる不要な空白を取り除く
         if (data.staff && data.staff[' core_staff']) {
-                    // 余白を含むプロパティ名から正しいプロパティ名への再割り当て
-                    data.staff.core_staff = data.staff[' core_staff'];
-                    delete data.staff[' core_staff']; // 古いプロパティを削除
+                    // @ts-expect-error: 余白を含むプロパティ名' core_staff'から正しいプロパティ名への再割り当て
+                    data.staff.core_staff = data.staff[' core_staff'] as Person[];
+
+                    // @ts-expect-error: 古いプロパティを削除
+                    delete data.staff[' core_staff']; 
                 }
         return data;
     } catch (error) {

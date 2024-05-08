@@ -84,6 +84,7 @@ export default TsEslintConfig(
   },
   {
     rules: {
+      "@typescript-eslint/ban-ts-comment": "error",
       "@typescript-eslint/no-unused-vars": "off",
       "unused-imports/no-unused-imports": "error",
       "unused-imports/no-unused-vars": [

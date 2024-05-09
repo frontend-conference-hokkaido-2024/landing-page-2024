@@ -22,7 +22,8 @@ export default function LinkMenu({ className, textClassName }: LinkMenuProps) {
             }}><span className={textClassName}>TIMETABLE</span></LinkButton>
             <LinkButton href={{
                 pathname: "/jobboard"
-            }}><span className={textClassName}>JOB BOARD</span></LinkButton>
+            }}
+            disabled><span className={clsx("font-black text-lg justify-normal tex-center inline-flex items-center whitespace-nowrap rounded-md ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 underline-offset-4 h-10 px-4 py-2 italic text-[#2a025286]")}>JOB BOARD</span></LinkButton>
             <LinkButton href={{
                 host: "www.notion.so",
                 pathname: "/cf184497a6414a97aea49c1f1b2f5b5f",

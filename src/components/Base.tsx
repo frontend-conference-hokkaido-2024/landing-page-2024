@@ -13,10 +13,10 @@ type BaseProps = {
 export default function Base({ children }: BaseProps) {
   return (
     <>
-      <div className="fixed top-0 left-0 hidden md:block md:w-[calc((100%_-_360px)/4*3)] lg:w-[calc((100%_-_768px)/2)] h-dvh bg-gradient-to-b from-[rgba(66,102,245,0.5)] to-[rgba(245,66,182,0.5)] py-72 px-28">
+      <div className="lg:flex items-center fixed top-0 left-0 hidden md:block md:w-[calc((100%_-_360px)/4*3)] lg:w-[calc((100%_-_768px)/2)] h-dvh bg-gradient-to-b from-[rgba(66,102,245,0.5)] to-[rgba(245,66,182,0.5)]">
         {/* 左側エリア */}
-        <Card className="flex items-center justify-center w-full h-full rounded-md bg-slate-50">
-          <LinkMenu textClassName="text-[#2a0252]"/>
+        <Card className="flex items-center justify-center mx-auto max-w-48 min-w-44 rounded-md bg-slate-50">
+          <LinkMenu className="py-8" textClassName="text-[#2a0252]"/>
         </Card>
       </div>
       <div className="w-full max-w-[500px] md:w-[360px] md:max-w-full lg:w-[768px] h-dvh mx-auto place-items-center">
@@ -24,8 +24,8 @@ export default function Base({ children }: BaseProps) {
         <SpMenu menu={<LinkMenu />}/>
         {children}
       </div>
-      <div className="fixed top-0 right-0 hidden md:block md:w-[calc((100%_-_360px)/4*1)] lg:w-[calc((100%_-_768px)/2)] h-dvh bg-gradient-to-b from-[rgba(66,102,245,0.5)] to-[rgba(245,66,182,0.5)] py-96 px-28">
-        <Card className="flex items-center justify-center w-full h-full rounded-md mx-auto bg-slate-50">
+      <div className="lg:flex items-center fixed top-0 right-0 hidden md:block md:w-[calc((100%_-_360px)/4*1)] lg:w-[calc((100%_-_768px)/2)] h-dvh bg-gradient-to-b from-[rgba(66,102,245,0.5)] to-[rgba(245,66,182,0.5)]">
+        <Card className="flex items-center justify-center mx-auto max-w-80 min-w-60 py-4 rounded-md bg-slate-50">
           <LinkButton href={{
             host: "fortee.jp/",
             pathname: "/frontend-conf-hokkaido-2024/sponsor/form"

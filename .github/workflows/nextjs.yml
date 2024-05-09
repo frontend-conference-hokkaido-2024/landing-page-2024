@@ -59,6 +59,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Build with Next.js
+        env: FORTEE_API_HOST: ${{ secrets.FORTEE_API_HOST }}
+        env: PRODUCTION_URL: ${{ secrets.PRODUCTION_URL }}
         run: pnpm build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

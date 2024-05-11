@@ -17,7 +17,7 @@ export const LinkButton = ({ children, href, disabled }: LinkButtonProps) => {
     <>
     {
       disabled 
-      ? (<p>{children}</p>)
+      ? children
       : <Button className = "font-black text-lg justify-normal" variant = "link" asChild>
       <Link className = "italic h-6" href = { href } target = "_blank" rel = "noopener noreferrer" >
     { children }

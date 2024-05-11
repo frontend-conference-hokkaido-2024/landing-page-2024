@@ -14,19 +14,10 @@ export default function Home() {
           <EventOverView />
           <EventSummary />
           <AccessInfo />
-          <AvatarList title="コアスタッフ" endPointURL={`${process.env.FORTEE_API_HOST}/staff`} />
+          <AvatarList title="コアスタッフ" category="coreStaff" />
         </main>
         <Footer />
       </div>
     </Base>
   );
 }
-
-
-interface Environment {
-  FORTEE_API_HOST: string; 
-}
-
-declare const process: {
-  env: Environment;
-};

@@ -2,11 +2,12 @@ import Avatar from "@/components/Avatar";
 
 type AvatarListProps = {
     title: string;
-    endPointURL: string;
+    category: AvatarListAPIEndpointCategory;
 };
 
-const AvatarList = async ({ title, endPointURL }: AvatarListProps) => {
+const AvatarList = async ({ title, category}: AvatarListProps) => {
     try {
+        const endPointURL = getAPIEndpoint(category);
         const responseData: StaffData = await getData(endPointURL);
         const people: Person[] = responseData.staff.core_staff;
         // peopleがnullまたは空の配列の場合は何も表示しない
@@ -72,3 +73,14 @@ interface StaffData {
 
 
 
+type AvatarListAPIEndpointCategory = "coreStaff" 
+
+function getAPIEndpoint(category: AvatarListAPIEndpointCategory) {
+    switch (category) {
+    case "coreStaff":
+        return `${process.env.FORTEE_API_HOST}/staff`;
+        default:
+            throw new Error("Invalid API category");
+        }
+    }
+    

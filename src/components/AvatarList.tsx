@@ -1,21 +1,35 @@
 import Avatar from "@/components/Avatar";
+// import ErrorBoundary from "@/components/admin/ErrorBoundary";
+
 
 type AvatarListProps = {
     title: string;
     category: AvatarListAPIEndpointCategory;
 };
 
-const AvatarList = async ({ title, category}: AvatarListProps) => {
-    try {
-        const endPointURL = getAPIEndpoint(category);
-        const responseData: StaffData = await getData(endPointURL);
-        const people: Person[] = responseData.staff.core_staff;
-        // peopleがnullまたは空の配列の場合は何も表示しない
-        if (!people || people.length === 0) {
-            return null; 
-        }
+const AvatarList  = async ({ title, category}: AvatarListProps) => {
+    const endPointURL = getAPIEndpoint(category);
+    const response = await fetch(endPointURL);
+    if (!response.ok) {
+        throw new Error(`Failed to fetch data, status: ${response.status}`);
+    }
+    const data: StaffData = await response.json() as StaffData;
+               // @ts-expect-error: ' core_staff'に含まれる不要な空白を取り除く
+        if (data.staff && data.staff[' core_staff']) {
+                    // @ts-expect-error: 余白を含むプロパティ名' core_staff'から正しいプロパティ名への再割り当て
+                    data.staff.core_staff = data.staff[' core_staff'] as Person[];
+
+                    // @ts-expect-error: 古いプロパティを削除
+                    delete data.staff[' core_staff']; 
+                }
+    const people: Person[] = data.staff.core_staff;
+    // peopleがnullまたは空の配列の場合は何も表示しない
+    if (!people || people.length === 0) {
+        return null;
+    }
 
         return (
+            // <ErrorBoundary>
             <div className="mx-5 mb-12 text-center">
                 <h1 className="text-3xl font-extrabold mb-8">{title}</h1>
                 <div className="grid grid-cols-2 lg:grid-cols-3">
@@ -28,35 +42,11 @@ const AvatarList = async ({ title, category}: AvatarListProps) => {
                     ))}
                 </div>
             </div>
+            // </ErrorBoundary>
         );
-    } catch (error) {
-        console.error(error);
-        return null;
-    }
 };
 
 export default AvatarList;
-
-async function getData(url: string):Promise<StaffData> {
-    try {
-        const response = await fetch(url);
-        if (!response.ok) {
-            throw new Error(`Failed to fetch data, status: ${response.status}`);
-        }
-        const data: StaffData = await response.json() as StaffData;
-               // @ts-expect-error: ' core_staff'に含まれる不要な空白を取り除く
-        if (data.staff && data.staff[' core_staff']) {
-                    // @ts-expect-error: 余白を含むプロパティ名' core_staff'から正しいプロパティ名への再割り当て
-                    data.staff.core_staff = data.staff[' core_staff'] as Person[];
-
-                    // @ts-expect-error: 古いプロパティを削除
-                    delete data.staff[' core_staff']; 
-                }
-        return data;
-    } catch (error) {
-        throw new Error('Failed to parse data');
-    }
-}
 
 interface Person {
     "id": string;
@@ -83,4 +73,3 @@ function getAPIEndpoint(category: AvatarListAPIEndpointCategory) {
             throw new Error("Invalid API category");
         }
     }
-    

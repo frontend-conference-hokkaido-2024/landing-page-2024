@@ -15,16 +15,16 @@ export default function EventSummary() {
                 <Image src={frontend_conference_hokkaido_2024_logo} alt="" className=" rounded-md" />
             </div>
 
-            <p className="break-words text-left mt-8 mb-8">
+            <p className="break-words text-left mt-8 mb-8 indent-5">
                 2024年8月24日（土）に北海道札幌市で開催する、フロントエンド領域に関心のある参加者を対象とした技術イベントです。
             </p>
-            <p className="break-words text-left mb-8">
+            <p className="break-words text-left mb-8 indent-5">
                 2023年11月に沖縄で開催された、フロントエンドカンファレンス沖縄をリスペクトしたカンファレンスでもあります。
             </p>
-            <p className="break-words text-left mb-8">
+            <p className="break-words text-left mb-8 indent-5">
                 札幌を中心に、全国のプロダクト開発に関わるエンジニアとデザイナーが交わる場を作ることを目指し、HTML、CSS、JavaScript、UI、UX、デザイン、アクセシビリティ、SPA、PWAなど、Webに携わるすべてのフロントエンド領域に関心のある方を対象としています。
             </p>
-            <p className="break-words text-left mb-8">
+            <p className="break-words text-left mb-8 indent-5">
                 札幌市内での現地開催のほか、オンライン配信（アーカイブあり）も予定しております。
                 参加チケットは販売開始次第、公式Xアカウント(@fec_hokkaido)でお知らせします。
                 ぜひフォローして、通知をオンにしてお待ちください。

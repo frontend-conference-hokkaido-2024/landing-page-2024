@@ -1,5 +1,5 @@
 import Avatar from "@/components/Avatar";
-// import ErrorBoundary from "@/components/admin/ErrorBoundary";
+import ErrorBoundary from "@/components/ErrorBoundary";
 
 
 type AvatarListProps = {
@@ -8,6 +8,7 @@ type AvatarListProps = {
 };
 
 const AvatarList  = async ({ title, category}: AvatarListProps) => {
+    try {
     const endPointURL = getAPIEndpoint(category);
     const response = await fetch(endPointURL);
     if (!response.ok) {
@@ -25,25 +26,27 @@ const AvatarList  = async ({ title, category}: AvatarListProps) => {
     const people: Person[] = data.staff.core_staff;
     // peopleがnullまたは空の配列の場合は何も表示しない
     if (!people || people.length === 0) {
-        return null;
+        throw new Error(`Failed to fetch data`);
     }
-
-        return (
-            // <ErrorBoundary>
-            <div className="mx-5 mb-12 text-center">
-                <h1 className="text-3xl font-extrabold mb-8">{title}</h1>
-                <div className="grid grid-cols-2 lg:grid-cols-3">
-                    {people?.map(person => (
-                        <Avatar 
-                            key={person.id}
-                            avatarName={person.name}
-                            avatarImage={person.avatar_url ?? "/images/Icon-black.png"}
-                        />
-                    ))}
-                </div>
+    return (
+        <ErrorBoundary>
+        <div className="mx-5 mb-12 text-center">
+            <h1 className="text-3xl font-extrabold mb-8">{title}</h1>
+            <div className="grid grid-cols-2 lg:grid-cols-3">
+                {people?.map(person => (
+                    <Avatar 
+                        key={person.id}
+                        avatarName={person.name}
+                        avatarImage={person.avatar_url ?? "/images/Icon-black.png"}
+                    />
+                ))}
             </div>
-            // </ErrorBoundary>
-        );
+        </div>
+        </ErrorBoundary>
+    );
+} catch (error) {
+    return <div>Error: {error.message}</div>; // 直接エラーメッセージを表示
+}
 };
 
 export default AvatarList;

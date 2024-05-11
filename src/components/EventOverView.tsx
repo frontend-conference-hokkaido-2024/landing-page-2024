@@ -7,7 +7,7 @@ import TopVisual from "./TopVisual";
 
 const EventOverView = () => {
   return (
-    <div className="mx-5 mt-8">
+    <div className="mx-5 mt-12">
       <div className="w-full p-4">
         <TopVisual />
       </div>

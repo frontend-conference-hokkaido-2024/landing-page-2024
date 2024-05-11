@@ -24,7 +24,7 @@ export default function LinkMenu({ className, textClassName }: LinkMenuProps) {
             <LinkButton href={{
                 pathname: "/jobboard"
             }}
-            disabled><span className={clsx("font-black text-lg text-center pl-4 italic text-[#2a025286]")}>JOB BOARD</span></LinkButton>
+            disabled><span className={clsx("font-black text-lg pl-4 italic text-[#2a025286]")}>JOB BOARD</span></LinkButton>
             <LinkButton href={{
                 host: "www.notion.so",
                 pathname: "/cf184497a6414a97aea49c1f1b2f5b5f",

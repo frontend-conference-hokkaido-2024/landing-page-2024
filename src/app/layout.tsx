@@ -12,6 +12,7 @@ const title: string = "フロントエンドカンファレンス北海道2024";
 const description: string = "フロントエンド領域のエンジニア・デザイナー向けの技術カンファレンス「フロントエンドカンファレンス北海道2024」を2024年8月24日(土)に札幌で開催";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://frontend-conference-hokkaido-2024.github.io/landing-page-2024/"), // 本番では直す
   title,
   description,
   openGraph: {

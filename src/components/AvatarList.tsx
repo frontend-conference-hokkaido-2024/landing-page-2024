@@ -1,7 +1,6 @@
 import Avatar from "@/components/Avatar";
 import ErrorBoundary from "@/components/ErrorBoundary";
 
-
 type AvatarListProps = {
     title: string;
     category: AvatarListAPIEndpointCategory;
@@ -30,7 +29,7 @@ const AvatarList  = async ({ title, category}: AvatarListProps) => {
     }
     return (
         <ErrorBoundary>
-        <div className="mx-5 mb-12 text-center">
+        <div className="mx-5 text-center">
             <h1 className="text-3xl font-extrabold mb-8">{title}</h1>
             <div className="grid grid-cols-2 lg:grid-cols-3">
                 {people?.map(person => (
@@ -45,7 +44,8 @@ const AvatarList  = async ({ title, category}: AvatarListProps) => {
         </ErrorBoundary>
     );
 } catch (error) {
-    return <div>Error: {error.message}</div>; // 直接エラーメッセージを表示
+    return null;
+    // return <div>Error: {error.message}</div>; // 直接エラーメッセージを表示
 }
 };
 

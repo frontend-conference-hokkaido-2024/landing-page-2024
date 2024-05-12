@@ -1,7 +1,8 @@
 'use client';
+
 import React from 'react';
 
-interface ErrorBoundaryState {
+type ErrorBoundaryState = {
   hasError: boolean;
 }
 

@@ -51,14 +51,14 @@ const AvatarList  = async ({ title, category}: AvatarListProps) => {
 
 export default AvatarList;
 
-interface Person {
+type Person = {
     "id": string;
     "name": string;
     "url": string;
     "avatar_url": string;
 }
 
-interface StaffData {
+type StaffData = {
     "staff": {
         "core_staff": Person[];
     }

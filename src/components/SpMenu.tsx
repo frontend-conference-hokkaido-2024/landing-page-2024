@@ -2,16 +2,18 @@
 
 "use client";
 
-import type { ReactNode} from 'react';
 import { useState } from 'react';
 
 import { Menu, X } from 'lucide-react';
 
-type SpMenuProps = {
-    menu: ReactNode;
-};
+import { LinkButton } from './LinkButon';
 
-export default function SpMenu({menu}: SpMenuProps) {
+import type { MenuButtonProps } from 'menu';
+
+
+import { MENU_CONTENTS } from '@/const/menuContents';
+
+export default function SpMenu() {
     const [isOpen, setOpen] = useState<boolean>(false);
     const handleMenuOpen = () => {
         setOpen(!isOpen);
@@ -29,7 +31,11 @@ export default function SpMenu({menu}: SpMenuProps) {
             ? "fixed w-full h-full flex justify-center items-center bg-gradient-to-b from-white via-white to-gray-200 animate-fadeIn"
             : "hidden"
             }>
-            {menu}
+            <div className="bg-transparent flex flex-col gap-2 w-32">
+                {
+                    MENU_CONTENTS.map((content: MenuButtonProps, index: number) => <LinkButton key={index} href={content.href}>{content.title}</LinkButton> )
+                }
+            </div>
         </div>
         </>
     );

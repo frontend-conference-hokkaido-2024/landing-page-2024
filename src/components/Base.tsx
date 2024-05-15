@@ -2,9 +2,9 @@ import type { ReactNode } from "react";
 
 import ExternalLinkIcon from "./ExternalLinkIcon";
 import { LinkButton } from "./LinkButon";
+import PcMenu from "./PcMenu";
 import { Card } from "./ui/card";
 
-import LinkMenu from "@/components/LinkMenu";
 import SpMenu from "@/components/SpMenu";
 
 type BaseProps = {
@@ -17,12 +17,12 @@ export default function Base({ children }: BaseProps) {
       <div className="lg:flex items-center fixed top-0 left-0 hidden md:block md:w-[calc((100%_-_360px)/4*3)] lg:w-[calc((100%_-_768px)/2)] h-dvh bg-gradient-to-b from-[rgba(66,102,245,0.5)] to-[rgba(245,66,182,0.5)]">
         {/* 左側エリア */}
         <Card className="flex items-center justify-center mx-auto max-w-48 min-w-44 rounded-md bg-slate-50">
-          <LinkMenu className="py-8" textClassName="text-[#2a0252]"/>
+          <PcMenu />
         </Card>
       </div>
       <div className="w-full max-w-[500px] md:w-[360px] md:max-w-full lg:w-[768px] h-dvh mx-auto place-items-center">
         {/* ここにSP用のタグとかを書いていく */}
-        <SpMenu menu={<LinkMenu />}/>
+        <SpMenu />
         <div className="bg-gradient-to-b from-white via-white to-[rgba(0,0,0,0.2)]">
           {children}
         </div>

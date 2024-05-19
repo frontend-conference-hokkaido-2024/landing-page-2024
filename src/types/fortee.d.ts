@@ -1,4 +1,5 @@
-// Forteeに依存してもいなくても、より汎用的な型定義の方が適している
+// APIなどに使う型情報だけであればfortee.d.tsなどに含める方が良い
+// Forteeに依存が前提になっているので、より汎用的な型定義の方が適している
 declare module "fortee" {
     type StaffCategory = "core";
 

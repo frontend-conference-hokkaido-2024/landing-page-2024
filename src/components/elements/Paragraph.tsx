@@ -10,7 +10,7 @@ type ParagraphProps = {
 
 export default function Paragraph({ children, className, ...props }: ParagraphProps) {
   return (
-    <p className={clsx("text-left indent-3 text-sm", className)} {...props}>
+    <p className={clsx("text-left indent-3 text-sm tracking-wider leading-extraRelaxed", className)} {...props}>
       {children}
     </p>
   );

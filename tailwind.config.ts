@@ -22,7 +22,7 @@ const config = {
         ivory: "#fffef5",
         cornsilk: "#fff8e7",
         black: "#0d172f",
-        darkRed: "#880000",
+        darkRed: "var(--darkRed)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -56,6 +56,9 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        caution: {
+          DEFAULT: "var(--darkRed)",
+        }
       },
       borderRadius: {
         lg: "var(--radius)",

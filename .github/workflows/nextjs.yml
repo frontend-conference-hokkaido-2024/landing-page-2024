@@ -74,7 +74,11 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        env:
+          FORTEE_API_HOST: ${{ secrets.FORTEE_API_HOST }}
+          PRODUCTION_URL: ${{ secrets.PRODUCTION_URL }}
+        run: pnpm build
+        
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

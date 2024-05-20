@@ -21,7 +21,7 @@ const config = {
       colors: {
         ivory: "#fffef5",
         cornsilk: "#fff8e7",
-        midnightBlue: "#0d172f",
+        black: "#0d172f",
         darkRed: "#880000",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

@@ -12,9 +12,9 @@ export default function Home() {
         <main className="flex flex-col gap-24 lg:px-12">
           <EventOverView />
           <CommonButton
-            leftColor="pink-500"
-            rightColor="blue-500"
-            icon={"images/ticket.png"}
+            background="bg-gradient-to-r from-pink-500 to-blue-500 "
+            lefticon={"images/ticket.png"}
+            righticon={"images/ticket.png"}
             text="チケット購入"
           />
           <EventSummary />

@@ -4,8 +4,8 @@ import Image from "next/image";
 
 type buttonProps = {
   background: string;
-  lefticon: string | ReactNode;
-  righticon: string | ReactNode;
+  lefticon?: string | ReactNode;
+  righticon?: string | ReactNode;
   text: string;
 };
 
@@ -28,9 +28,10 @@ const CommonButton: React.FC<buttonProps> = ({
         className="text-wite"
       />
     );
-  } else {
+  } else if (lefticon) {
     lefticonElement = lefticon;
   }
+
   if (typeof righticon === "string") {
     righticonElement = (
       <Image
@@ -41,8 +42,8 @@ const CommonButton: React.FC<buttonProps> = ({
         className="text-wite"
       />
     );
-  } else {
-    lefticonElement = lefticon;
+  } else if (righticon) {
+    righticonElement = righticon;
   }
 
   return (

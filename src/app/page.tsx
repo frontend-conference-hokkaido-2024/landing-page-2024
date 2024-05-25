@@ -10,8 +10,8 @@ export default function Home() {
         <EventOverView />
         <CommonButton
           background={"bg-gradient-to-r from-pink-500 to-blue-500 "}
-          lefticon={"/icon_crab.png"}
-          righticon={""}
+          lefticon={"Images/Icon/icon_crab.png"}
+          righticon={"Images/Icon/icon_crab.png"}
         >
           チケット購入
         </CommonButton>

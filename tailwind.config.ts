@@ -18,7 +18,14 @@ const config = {
       },
     },
     extend: {
+      lineHeight: {
+        extraRelaxed: "1.7"
+      },
       colors: {
+        ivory: "#fffef5",
+        cornsilk: "#fff8e7",
+        black: "#0d172f",
+        darkRed: "var(--darkRed)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -52,6 +59,9 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        caution: {
+          DEFAULT: "var(--darkRed)",
+        }
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -67,10 +77,15 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fadeIn": "fadeIn 0.3s ease-in-out",
       },
     },
   },

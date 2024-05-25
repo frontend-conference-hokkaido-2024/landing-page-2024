@@ -1,51 +1,27 @@
 // PC画面用メニュー
+import clsx from "clsx";
 
-import type { ReactNode } from "react";
+import ExternalLinkIcon from "./ExternalLinkIcon";
+import { LinkButton } from "./LinkButon";
 
-import Link from "next/link";
-
-import { Button } from "./ui/button";
-
-import type { UrlObject } from "url";
-
-type LinkButtonProps = {
-    children: ReactNode;
-    href: string | UrlObject;
+type LinkMenuProps = {
+    textClassName?: string;
+    className?: string;
 }
 
-const LinkButton = ({children, href}: LinkButtonProps) => {
-    return(
-        <Button className="font-black text-lg justify-normal" variant="link" asChild>
-            <Link className="italic h-6" href={href}>{children}</Link>
-        </Button>
-    );
-};
-
-export default function LinkMenu() {
+export default function LinkMenu({ className, textClassName }: LinkMenuProps) {
 
     return ( 
-        <div className="bg-transparent flex flex-col gap-2 w-32">
-            <LinkButton href={{
-                host: "fortee.jp",
-                pathname: "/frontend-conf-hokkaido-2024/proposal/all",
-            }}>TALKS</LinkButton>
-            <LinkButton href={{
-                host: "fortee.jp",
-                pathname: "/frontend-conf-hokkaido-2024/timetable",
-            }}>TIMETABLE</LinkButton>
+        <div className={clsx("bg-transparent flex flex-col gap-2 w-32", className)}>
+            <LinkButton href="https://fortee.jp/frontend-conf-hokkaido-2024/proposal/all"><span className={clsx("flex", textClassName)}>TALKS<ExternalLinkIcon /></span></LinkButton>
+            <LinkButton href="https://fortee.jp/frontend-conf-hokkaido-2024/timetable"><span className={clsx("flex", textClassName)}>TIMETABLE<ExternalLinkIcon /></span></LinkButton>
             <LinkButton href={{
                 pathname: "/jobboard"
-            }}>JOB BOARD</LinkButton>
-            <LinkButton href={{
-                host: "www.notion.so",
-                pathname: "/cf184497a6414a97aea49c1f1b2f5b5f",
-                query: { pvs: 4 },
-            }}>POLICY</LinkButton>
-            <LinkButton href={{
-                host: "note.com",
-                pathname: "/fec_hokkaido",
-            }}>STAFF BLOG</LinkButton>
-            <LinkButton href="mailto:frontendconfhokkaido2024@gmail.com">MAIL</LinkButton>
+            }}
+            disabled><span className={clsx("font-black text-lg pl-4 italic text-[#2a025286]")}>JOB BOARD</span></LinkButton>
+            <LinkButton href="https://aback-jasmine-06b.notion.site/cf184497a6414a97aea49c1f1b2f5b5f"><span className={clsx("flex", textClassName)}>POLICY<ExternalLinkIcon /></span></LinkButton>
+            <LinkButton href="https://note.com/fec_hokkaido"><span className={clsx("flex", textClassName)}>STAFF BLOG<ExternalLinkIcon /></span></LinkButton>
+            <LinkButton href="https://twitter.com/fec_hokkaido"><span className={clsx("flex", textClassName)}>OFFICIAL 𝕏<ExternalLinkIcon /></span></LinkButton>
         </div>
     );
 }

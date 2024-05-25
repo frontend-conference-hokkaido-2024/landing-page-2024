@@ -14,7 +14,7 @@ export default function Error({
   }, [error]);
   return (
     <div>
-      <h2 className="text-center">スタッフデータ取得に失敗しました.</h2>
+      <p className="text-center">スタッフデータ取得に失敗しました.</p>
     </div>
   );
 }

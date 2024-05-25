@@ -39,7 +39,7 @@ export default async function Page() {
   // peopleがnullまたは空の配列の場合は何も表示しない
 
   return (
-    <div className="mx-5 mb-12 text-center">
+    <section className="mx-5 mb-12 text-center">
       <h1 className="text-3xl font-extrabold mb-8">{"コアスタッフ"}</h1>
       <div className="grid grid-cols-2 lg:grid-cols-3">
         {people.length === 0 ? (
@@ -48,6 +48,6 @@ export default async function Page() {
           people.map((person) => <Avatar key={person.id} person={person} />)
         )}
       </div>
-    </div>
+    </section>
   );
 }

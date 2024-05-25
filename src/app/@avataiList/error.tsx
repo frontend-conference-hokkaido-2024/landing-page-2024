@@ -3,18 +3,18 @@
 import { useEffect } from "react";
 
 export default function Error({
-    error,
+  error,
 }: {
-    error: Error & { digest?: string }
-    reset: () => void
+  error: Error & { digest?: string };
+  reset: () => void;
 }) {
-    useEffect(() => {
+  useEffect(() => {
     // Log the error to an error reporting service
     console.error(error);
-}, [error]);
-return (
+  }, [error]);
+  return (
     <div>
-        <h2 className="text-center">スタッフデータ取得に失敗しました.</h2>
+      <h2 className="text-center">スタッフデータ取得に失敗しました.</h2>
     </div>
-);
+  );
 }

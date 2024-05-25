@@ -28,8 +28,6 @@ const CommonButton: React.FC<buttonProps> = ({
         className="text-wite"
       />
     );
-  } else if (lefticon) {
-    lefticonElement = lefticon;
   }
 
   if (typeof righticon === "string") {
@@ -42,8 +40,6 @@ const CommonButton: React.FC<buttonProps> = ({
         className="text-wite"
       />
     );
-  } else if (righticon) {
-    righticonElement = righticon;
   }
 
   return (

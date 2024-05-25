@@ -4,46 +4,36 @@ import Image from "next/image";
 
 type buttonProps = {
   background?: string;
-  lefticon?:  ReactNode;
+  lefticon?: ReactNode;
   righticon?: ReactNode;
   children?: string;
 };
 
 function CommonButton({
   background,
+  children,
   lefticon,
   righticon,
-  children,
 }: buttonProps) {
-  const lefticonElement = (
-    <Image
-      src={lefticon}
-      width={18}
-      height={18}
-      alt="button icon"
-      className="text-wite"
-    />
-  );
-  const righticonElement = (
-    <Image
-      src={righticon}
-      width={18}
-      height={18}
-      alt="button icon"
-      className="text-wite"
-    />
-  );
-  if (!background) {
-    background = "black";
-  }
-
   return (
     <button
       className={`w-full ${background} text-white rounded-full px-4 py-2.5 flex items-center justify-center`}
     >
-      {lefticonElement}
+      <Image
+        src={lefticon}
+        width={18}
+        height={18}
+        alt="button icon"
+        className="text-wite"
+      />
       <span className="text-sm px-2.5 font-bold">{children}</span>
-      {righticonElement}
+      <Image
+        src={righticon}
+        width={18}
+        height={18}
+        alt="button icon"
+        className="text-wite"
+      />
     </button>
   );
 }

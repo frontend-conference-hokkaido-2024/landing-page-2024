@@ -51,7 +51,7 @@ export default function MenuList({ color = "white" }: MenuListProps) {
       <hr className={clsx("border w-full my-2", borderColor)} />
 
       <MenuButton asChild>
-        <Link href="https://aback-jasmine-06b.notion.site/cf184497a6414a97aea49c1f1b2f5b5f" target="_blank" rel="noopener noreferrer">
+        <Link href="https://aback-jasmine-06b.notion.site/1f09ab38bf594ab689b244fec8f1ac46" target="_blank" rel="noopener noreferrer">
           行動規範</Link>
       </MenuButton>
       <MenuButton asChild>

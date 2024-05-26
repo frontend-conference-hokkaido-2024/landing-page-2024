@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import AccessInfo from "@/components/AccessInfo";
 import EventOverView from "@/components/EventOverView";
 import EventSummary from "@/components/EventSummary";
@@ -10,8 +12,24 @@ export default function Home() {
         <EventOverView />
         <CommonButton
           background={"bg-gradient-to-r from-pink-500 to-blue-500 "}
-          lefticon={"Images/Icon/icon_crab.png"}
-          righticon={"Images/Icon/icon_crab.png"}
+          lefticon={
+            <Image
+              src={"Images/Icon/icon_crab.png"}
+              width={18}
+              height={18}
+              alt="button icon"
+              className="text-wite"
+            />
+          }
+          righticon={
+            <Image
+              src={"Images/Icon/icon_crab.png"}
+              width={18}
+              height={18}
+              alt="button icon"
+              className="text-wite"
+            />
+          }
         >
           チケット購入
         </CommonButton>

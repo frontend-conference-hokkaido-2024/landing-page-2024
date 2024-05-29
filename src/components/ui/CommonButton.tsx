@@ -1,22 +1,26 @@
-import type { ReactNode } from "react";
+import type { ComponentProps, ReactNode } from "react";
+
+import clsx from "clsx";
 
 type buttonProps = {
-  background?: string;
-  lefticon?: ReactNode;
-  righticon?: ReactNode;
-  children?: string;
-};
+  background: ReactNode;
+  lefticon: ReactNode;
+  righticon: ReactNode;
+  children: ReactNode;
+} & ComponentProps<"button">;
 
 const CommonButton: React.FC<buttonProps> = ({
-  background,
+  background = "bg-black",
   lefticon,
   righticon,
   children,
 }) => {
-
   return (
     <button
-      className={`w-full ${background} text-white rounded-full px-4 py-2.5 flex items-center justify-center`}
+      className={clsx(
+        "w-full text-white rounded-full px-4 py-2.5 flex items-center justify-center hover:bg-opacity-80 transition duration-200 focus:outline-none",
+        background
+      )}
     >
       {lefticon}
       <span className="text-sm px-2.5 font-bold">{children}</span>

@@ -21,15 +21,7 @@ export default function Home() {
               className="text-wite"
             />
           }
-          righticon={
-            <Image
-              src={"Images/Icon/icon_crab.png"}
-              width={18}
-              height={18}
-              alt="button icon"
-              className="text-wite"
-            />
-          }
+          righticon={""}
         >
           チケット購入
         </CommonButton>

@@ -21,7 +21,6 @@ export default function Home() {
               className="text-wite"
             />
           }
-          righticon={""}
         >
           チケット購入
         </CommonButton>

@@ -3,9 +3,9 @@ import type { ComponentProps, ReactNode } from "react";
 import clsx from "clsx";
 
 type buttonProps = {
-  background: ReactNode;
-  lefticon: ReactNode;
-  righticon: ReactNode;
+  background?: ReactNode;
+  lefticon?: ReactNode;
+  righticon?: ReactNode;
   children: ReactNode;
 } & ComponentProps<"button">;
 

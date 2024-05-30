@@ -29,20 +29,20 @@ export default function MenuList({ color = "white" }: MenuListProps) {
   };
 
   return (
-    <div className="flex flex-col items-start">
+    <div className="flex flex-col items-start w-fit">
       <MenuButton onClick={() => scrollToSection("event-over-view")}>開催概要</MenuButton>
       <MenuButton onClick={() => scrollToSection("access")}>会場アクセス</MenuButton>
       <MenuButton onClick={() => scrollToSection("online-streaming")}>オンライン配信</MenuButton>
       <MenuButton onClick={() => scrollToSection("sponsor")}>スポンサー</MenuButton>
       <MenuButton onClick={() => scrollToSection("core-staff")}>スタッフ</MenuButton>
-
-      <hr className={clsx("border w-full my-2", borderColor)} />
-
       <MenuButton asChild>
         <Link href={{pathname: "job-board"}}>
           ジョブボード
         </Link>
       </MenuButton>
+
+      <hr className={clsx("border w-full my-2", borderColor)} />
+
       <MenuButton asChild>
         <Link href="https://fortee.jp/frontend-conf-hokkaido-2024/timetable" target="_blank" rel="noopener noreferrer">
           タイムテーブル

@@ -3,6 +3,9 @@ import { Inter, Noto_Sans_JP } from "next/font/google";
 
 import type { Metadata } from "next";
 
+import Base from "@/components/Base";
+import Footer from "@/components/Footer";
+
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -28,14 +31,24 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  avatarList,
 }: Readonly<{
   children: React.ReactNode;
+  avatarList: React.ReactNode;
 }>) {
   return (
     <html lang="ja">
       <body className={clsx("relative")} style={{fontFamily: `${inter.style.fontFamily}, ${NotoSansJP.style.fontFamily}`}}>
         <div></div>{/*背景に何か要素をつけたいのであれば...*/}
-        {children}
+        <Base>
+          <div className="w-full flex flex-col gap-24">
+            <main className="flex flex-col gap-24 lg:px-12">
+              {children}
+              {avatarList}
+            </main>
+            <Footer />
+          </div>
+        </Base>
       </body>
     </html>
   );

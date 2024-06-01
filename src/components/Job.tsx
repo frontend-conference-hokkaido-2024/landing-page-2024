@@ -25,14 +25,12 @@ type Job = {
     alt?: string;
 }
 
-export default function Job({comment, imageUrl, href, alt=""}: Job) {
+export default function Job({ comment, imageUrl, href, alt = "" }: Job) {
     const trimedJobComment = trimJobComment(comment);
 
-    return(
+    return (
         <div className="w-72 flex flex-col gap-3 p-6 bg-ivory border rounded-md border-black">
-            <div className="w-full h-44 bg-white flex items-center justify-center">
-                <Image src={imageUrl} alt={alt} width={176} height={176}/>
-            </div>
+            <Image className="w-full h-44 bg-red-300 object-contain" src={imageUrl} alt={alt} width={176} height={176} />
             <Paragraph className="break-all">{trimedJobComment}</Paragraph>
             <Link className="w-full" href={href} target="_blank" rel="noopener noreferrer">
                 <CommonButton className="drop-shadow-md">

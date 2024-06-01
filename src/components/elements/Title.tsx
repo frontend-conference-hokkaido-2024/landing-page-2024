@@ -9,7 +9,7 @@ type TitleProps = {
 
 export default function Title({children, icon}: TitleProps) {
   return(
-    <div className="flex items-center justify-center gap-2 font-bold text-3xl">
+    <div className="flex items-center justify-center gap-2 font-bold text-3xl tracking-wider">
       {icon}{children}
     </div>
   );

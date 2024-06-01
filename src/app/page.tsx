@@ -18,7 +18,7 @@ export default function Home() {
               width={18}
               height={18}
               alt="button icon"
-              className="text-wite"
+              className="text-white"
             />
           }
         >

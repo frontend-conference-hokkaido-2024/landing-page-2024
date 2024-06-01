@@ -3,22 +3,18 @@ import Image from "next/image";
 
 type SponsorAvatarProps = {
   icon: string;
-  imgWidth: number;
-  imgHeight: number;
 };
 
 export default function SponsorAvatar({
   icon,
-  imgWidth,
-  imgHeight,
 }: SponsorAvatarProps) {
   return (
     <Image
-      className="bg-white w-full aspect-[2/1] rounded-md mx-auto"
+      className="bg-white object-contain w-full aspect-[2/1] rounded-2xl mx-auto"
       alt="Icon"
       src={icon}
-      width={imgWidth} // 適切な幅を指定
-      height={imgHeight} // 適切な高さを指定
+      width={65} // 幅を指定
+      height={65} // 高さを指定
     />
   );
 }

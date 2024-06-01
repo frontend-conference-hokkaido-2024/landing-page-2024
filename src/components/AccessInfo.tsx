@@ -20,7 +20,7 @@ export default function AccessInfo() {
           loading="lazy"
           className="w-full rounded-xl"
         ></iframe>
-        <div className="p-5 bg-cornsilk rounded-xl">
+        <div className="w-full p-5 bg-cornsilk rounded-xl">
           <table className="mx-auto text-left">
             <tbody>
               <tr>
@@ -36,9 +36,9 @@ export default function AccessInfo() {
                   <Paragraph className="text-slateGray" indent={false}>所在地</Paragraph>
                 </td>
                 <td>
-                  <Paragraph className="font-bold break-keep mb-2" indent={false}>
+                  <Paragraph className="font-bold mb-2" indent={false}>
                     札幌市中央区北5条西5丁目1-5
-                    <wbr />
+                    <br />
                     JR55SAPPORO 8階
                   </Paragraph>
                 </td>

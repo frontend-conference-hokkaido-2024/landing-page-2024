@@ -5,12 +5,13 @@ import type { ComponentProps, ReactNode } from "react";
 import { clsx } from "clsx";
 
 type ParagraphProps = {
-  children: ReactNode
+  children: ReactNode;
+  indent?: boolean;
 } & ComponentProps<"p">
 
-export default function Paragraph({ children, className, ...props }: ParagraphProps) {
+export default function Paragraph({ children, className, indent=true, ...props }: ParagraphProps) {
   return (
-    <p className={clsx("text-left indent-3 text-sm tracking-wider leading-extraRelaxed", className)} {...props}>
+    <p className={clsx("text-left text-sm tracking-wider leading-extraRelaxed",indent? "indent-3" : null , className)} {...props}>
       {children}
     </p>
   );

@@ -3,10 +3,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { Button } from "./ui/button";
+import Paragraph from "./elements/Paragraph";
+import CommonButton from "./ui/CommonButton";
 
 import type { UrlObject } from "url";
-import Paragraph from "./elements/Paragraph";
 
 const MAX_JOB_COMMENT_LENGTH = 50;
 
@@ -29,12 +29,16 @@ export default function Job({comment, imageUrl, href, alt=""}: Job) {
     const trimedJobComment = trimJobComment(comment);
 
     return(
-        <div className="w-72 flex flex-col justify-center items-center p-6 bg-ivory border rounded-md border-black">
-            <Image src={imageUrl} alt={alt} width={250} height={250} className="w-full h-44"/>
-            <Paragraph>{trimedJobComment}</Paragraph>
-            <Button className="w-full font-bold text-sm" asChild>
-                <Link href={href}>詳細はこちら</Link>
-            </Button>
+        <div className="w-72 flex flex-col gap-3 p-6 bg-ivory border rounded-md border-black">
+            <div className="w-full h-44 bg-white flex items-center justify-center">
+                <Image src={imageUrl} alt={alt} width={176} height={176}/>
+            </div>
+            <Paragraph className="break-all">{trimedJobComment}</Paragraph>
+            <Link className="w-full" href={href} target="_blank" rel="noopener noreferrer">
+                <CommonButton className="drop-shadow-md">
+                    詳細はこちら
+                </CommonButton>
+            </Link>
         </div>
     );
 }

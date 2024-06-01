@@ -1,55 +1,58 @@
 import { Building, Youtube } from "lucide-react";
+import Paragraph from "./elements/Paragraph";
+import Title from "./elements/Title";
+import MapPin from "./images/icon/MapPin";
 
 export default function AccessInfo() {
   return (
-    <div className="text-center mx-5">
-      <h1 className="text-3xl font-extrabold">アクセス</h1>
+    <div className="text-center px-5">
+      <Title icon={
+        <MapPin />
+      }>
+        アクセス
+      </Title>
 
-      <div className="mt-8 flex flex-col items-center">
-        <div className="flex items-center justify-center gap-2">
-          <Building />
-          <h3 className="font-semibold text-2xl">会場</h3>
-        </div>
-        <div className="mt-4 mx-auto w-full">
-          {/* Google Map埋め込み */}
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11659.075183547682!2d141.34755!3d43.06733!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b297554bfffff%3A0x1d7fa677cc47a00b!2zSlI1NSBTQVBQT1JP44OT44Or!5e0!3m2!1sja!2sus!4v1712545562167!5m2!1sja!2sus"
-            height="250"
-            loading="lazy"
-            className="w-full"
-          ></iframe>
-          <table className="lg:mx-auto mt-4 text-left">
+      <div className="mt-8 flex flex-col items-center gap-6 mx-auto w-full">
+        {/* Google Map埋め込み */}
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11659.075183547682!2d141.34755!3d43.06733!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b297554bfffff%3A0x1d7fa677cc47a00b!2zSlI1NSBTQVBQT1JP44OT44Or!5e0!3m2!1sja!2sus!4v1712545562167!5m2!1sja!2sus"
+          height="250"
+          loading="lazy"
+          className="w-full rounded-xl"
+        ></iframe>
+        <div className="p-5 bg-cornsilk rounded-xl">
+          <table className="mx-auto text-left">
             <tbody>
               <tr>
-                <td className="w-1/5">
-                  <p className="font-semibold w-16">会場</p>
+                <td className="w-1/5 align-top">
+                  <Paragraph className="text-slateGray" indent={false}>会場</Paragraph>
                 </td>
                 <td className="w-4/5">
-                  <p>Deep Tech CORE</p>
+                  <Paragraph className="font-bold mb-2" indent={false}>Deep Tech CORE SAPPORO</Paragraph>
                 </td>
               </tr>
               <tr>
-                <td>
-                  <p className="font-semibold w-16">所在地</p>
+                <td className="align-top">
+                  <Paragraph className="text-slateGray" indent={false}>所在地</Paragraph>
                 </td>
                 <td>
-                  <p className="break-keep">
+                  <Paragraph className="font-bold break-keep mb-2" indent={false}>
                     札幌市中央区北5条西5丁目1-5
                     <wbr />
-                    JR 55SAPPORO 8階
-                  </p>
+                    JR55SAPPORO 8階
+                  </Paragraph>
                 </td>
               </tr>
               <tr>
-                <td>
-                  <p className="font-semibold w-16">最寄駅</p>
+                <td className="align-top">
+                  <Paragraph className="text-slateGray" indent={false}>最寄駅</Paragraph>
                 </td>
                 <td>
-                  <p className="break-keep">
-                    JR 札幌駅 札幌市営地下鉄
-                    <wbr />
-                    さっぽろ駅
-                  </p>
+                  <Paragraph className="font-bold" indent={false}>
+                    札幌市営地下鉄さっぽろ駅
+                    <br />
+                    JR 札幌駅
+                  </Paragraph>
                 </td>
               </tr>
             </tbody>

@@ -32,9 +32,11 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
   avatarList,
+  staffBlog,
 }: Readonly<{
   children: React.ReactNode;
   avatarList: React.ReactNode;
+  staffBlog: React.ReactNode;
 }>) {
   return (
     <html lang="ja">
@@ -44,6 +46,7 @@ export default function RootLayout({
           <div className="w-full flex flex-col gap-24">
             <main className="flex flex-col gap-24 lg:px-12">
               {children}
+              {staffBlog}
               {avatarList}
             </main>
             <Footer />

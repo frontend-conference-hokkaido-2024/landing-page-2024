@@ -23,7 +23,6 @@ const config = {
       },
       colors: {
         ivory: "#fffef5",
-        apricot: "#fff8e7",
         cornsilk: "#fff8e7",
         black: "#0d172f",
         darkRed: "var(--darkRed)",

@@ -31,7 +31,7 @@ export default function Page() {
           {"スポンサー"}
         </Title>
       </h1>
-      <div className=" bg-apricot rounded-xl pt-4 pb-16 space-y-20">
+      <div className=" bg-cornsilk rounded-xl pt-4 pb-16 space-y-20">
         <SponsorList sponsor={platinumSponsors} />
         <SponsorList sponsor={localGoldSponsors} />
         <SponsorList sponsor={goldSponsors} />

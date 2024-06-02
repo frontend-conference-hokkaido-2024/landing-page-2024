@@ -1,6 +1,9 @@
+import Image from "next/image";
+
 import type { Person, StaffData } from "fortee";
 
 import Avatar from "@/components/Avatar";
+import Title from "@/components/elements/Title";
 
 export default async function Page() {
   if (process.env.FORTEE_API_HOST === undefined) {
@@ -40,7 +43,21 @@ export default async function Page() {
 
   return (
     <section className="mx-5 mb-12 text-center">
-      <h1 className="text-3xl font-extrabold mb-8">{"コアスタッフ"}</h1>
+      <h1 className="font-extrabold mb-8">
+        <Title
+          icon={
+            <Image
+              src="/images/Icon/icon_lavender.png"
+              alt="Icon"
+              className="object-contain"
+              width={65} // 適切な幅を指定
+              height={65} // 適切な高さを指定
+            />
+          }
+        >
+          {"コアスタッフ"}
+        </Title>
+      </h1>
       <div className="grid grid-cols-2 lg:grid-cols-3">
         {people.length === 0 ? (
           <div>データがありません</div>

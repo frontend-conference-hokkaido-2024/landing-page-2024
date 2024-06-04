@@ -10,16 +10,35 @@ import { Separator } from "../ui/separator";
 
 import type { ButtonProps } from "../ui/button";
 
+type colorDataProps = {
+  [key: string]: {
+    text: string;
+    border: string;
+  };
+}
+
+const colorData: colorDataProps = {
+  white: {
+    text: "text-white",
+    border: "border-white"
+  },
+  black: {
+    text: "text-black",
+    border: "border-black"
+  }
+};
+
 type MenuListProps = {
-  color?: string;
+  color?: "white" | "black";
 }
 
 export default function MenuList({ color = "white" }: MenuListProps) {
-  const textColor = `text-${color}`;
-  const borderColor = `border-${color}`;
+  const currentColor = colorData[color];
 
   const MenuButton = ({ children, className, ...props }: ButtonProps) => {
-    return <Button variant="link" className={clsx("text-bold text-base px-0", textColor, className)} {...props}>{children}</Button>;
+    return <Button variant="link" className={clsx("text-bold text-base px-0", currentColor.text, className)} {...props}>
+      {children}
+    </Button>;
   };
 
   return (
@@ -55,7 +74,7 @@ export default function MenuList({ color = "white" }: MenuListProps) {
         </Link>
       </MenuButton>
 
-      <Separator className={clsx("border w-full my-2", borderColor)} />
+      <Separator className={clsx("border w-full my-2", currentColor.border)} />
 
       <MenuButton asChild>
         <Link href="https://fortee.jp/frontend-conf-hokkaido-2024/timetable" target="_blank" rel="noopener noreferrer">
@@ -68,7 +87,7 @@ export default function MenuList({ color = "white" }: MenuListProps) {
         </Link>
       </MenuButton>
 
-      <Separator className={clsx("border w-full my-2", borderColor)} />
+      <Separator className={clsx("border w-full my-2", currentColor.border)} />
 
       <MenuButton asChild>
         <Link href="https://aback-jasmine-06b.notion.site/1f09ab38bf594ab689b244fec8f1ac46" target="_blank" rel="noopener noreferrer">

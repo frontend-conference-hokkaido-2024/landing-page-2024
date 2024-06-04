@@ -37,7 +37,7 @@ export default function RootLayout({
   avatarList: React.ReactNode;
 }>) {
   return (
-    <html lang="ja">
+    <html lang="ja" className="scroll-smooth">
       <body className={clsx("relative")} style={{fontFamily: `${inter.style.fontFamily}, ${NotoSansJP.style.fontFamily}`}}>
         <div></div>{/*背景に何か要素をつけたいのであれば...*/}
         <Base>

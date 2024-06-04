@@ -6,6 +6,7 @@ import clsx from "clsx";
 import Link from "next/link";
 
 import { Button } from "../ui/button";
+import { Separator } from "../ui/separator";
 
 import type { ButtonProps } from "../ui/button";
 
@@ -41,7 +42,7 @@ export default function MenuList({ color = "white" }: MenuListProps) {
         </Link>
       </MenuButton>
 
-      <hr className={clsx("border w-full my-2", borderColor)} />
+      <Separator className={clsx("border w-full my-2", borderColor)} />
 
       <MenuButton asChild>
         <Link href="https://fortee.jp/frontend-conf-hokkaido-2024/timetable" target="_blank" rel="noopener noreferrer">
@@ -53,7 +54,7 @@ export default function MenuList({ color = "white" }: MenuListProps) {
           スタッフブログ</Link>
       </MenuButton>
 
-      <hr className={clsx("border w-full my-2", borderColor)} />
+      <Separator className={clsx("border w-full my-2", borderColor)} />
 
       <MenuButton asChild>
         <Link href="https://aback-jasmine-06b.notion.site/1f09ab38bf594ab689b244fec8f1ac46" target="_blank" rel="noopener noreferrer">

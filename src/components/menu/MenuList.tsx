@@ -31,7 +31,7 @@ const colorSchemeData: ColorSchemeProps = {
 };
 
 type MenuListProps = {
-  color?: "white" | "black";
+  color?: ColorScheme;
 }
 
 export default function MenuList({ color = "white" }: MenuListProps) {

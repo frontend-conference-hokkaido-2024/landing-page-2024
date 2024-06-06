@@ -10,14 +10,16 @@ import { Separator } from "../ui/separator";
 
 import type { ButtonProps } from "../ui/button";
 
-type colorDataProps = {
-  [key: string]: {
+type ColorScheme = "white" | "black";
+
+type ColorSchemeProps = {
+  [key in ColorScheme]: {
     text: string;
     border: string;
   };
-}
+};
 
-const colorData: colorDataProps = {
+const colorSchemeData: ColorSchemeProps = {
   white: {
     text: "text-white",
     border: "border-white"
@@ -33,7 +35,7 @@ type MenuListProps = {
 }
 
 export default function MenuList({ color = "white" }: MenuListProps) {
-  const currentColor = colorData[color];
+  const currentColor = colorSchemeData[color];
 
   const MenuButton = ({ children, className, ...props }: ButtonProps) => {
     return <Button variant="link" className={clsx("text-bold text-base px-0", currentColor.text, className)} {...props}>
@@ -44,7 +46,7 @@ export default function MenuList({ color = "white" }: MenuListProps) {
   return (
     <div className="flex flex-col items-start w-fit">
       <MenuButton>
-        <a href="#event-over-view">
+        <a href="#overview">
           開催概要
         </a>
       </MenuButton>
@@ -54,7 +56,7 @@ export default function MenuList({ color = "white" }: MenuListProps) {
         </a>
       </MenuButton>
       <MenuButton>
-        <a href="#online-streaming">
+        <a href="#streaming">
           オンライン配信
         </a>
       </MenuButton>

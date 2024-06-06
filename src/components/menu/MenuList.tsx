@@ -66,7 +66,7 @@ export default function MenuList({ color = "white" }: MenuListProps) {
         </a>
       </MenuButton>
       <MenuButton>
-        <a href="#core-staff">
+        <a href="#staff">
           スタッフ
         </a>
       </MenuButton>

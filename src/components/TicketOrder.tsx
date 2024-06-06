@@ -1,6 +1,7 @@
 import React from "react";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import CommonButton from "./ui/CommonButton";
 
@@ -9,7 +10,7 @@ import Title from "@/components/elements/Title";
 
 const TicketOrder = () => {
   return (
-    <div>
+    <div className="w-full">
       <Title
         icon={
           <Image
@@ -25,11 +26,10 @@ const TicketOrder = () => {
       </Title>
       <div className="py-6">
         <Paragraph className="font-bold">
-          {"　"}
           会場での参加/オンライン視聴どちらを希望される場合でもチケットの購入が必要です.
         </Paragraph>
         <Paragraph>
-          {"　"}チケット販売には, 外部サービス「fortee」を利用しています.
+          チケット販売には, 外部サービス「fortee」を利用しています.
           以下よりアクセスの上ご購入ください.
         </Paragraph>
       </div>
@@ -45,7 +45,13 @@ const TicketOrder = () => {
           />
         }
       >
-        forteeで購入
+        <Link
+          href={
+            "https://fortee.jp/frontend-conf-hokkaido-2024/ticket-shop/index"
+          }
+        >
+          forteeで購入
+        </Link>
       </CommonButton>
     </div>
   );

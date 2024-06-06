@@ -3,11 +3,11 @@ import type { Config } from "tailwindcss";
 const config = {
   darkMode: ["class"],
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
-  ],
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
+	],
   prefix: "",
   theme: {
     container: {
@@ -19,7 +19,7 @@ const config = {
     },
     extend: {
       lineHeight: {
-        extraRelaxed: "1.7",
+        extraRelaxed: "1.7"
       },
       colors: {
         ivory: "#fffef5",
@@ -61,7 +61,7 @@ const config = {
         },
         caution: {
           DEFAULT: "var(--darkRed)",
-        },
+        }
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -85,7 +85,7 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        fadeIn: "fadeIn 0.3s ease-in-out",
+        "fadeIn": "fadeIn 0.3s ease-in-out",
       },
     },
   },

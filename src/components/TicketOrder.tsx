@@ -10,7 +10,7 @@ import Title from "@/components/elements/Title";
 
 const TicketOrder = () => {
   return (
-    <div className="w-full">
+    <div className="w-full px-8">
       <Title
         icon={
           <Image
@@ -33,26 +33,21 @@ const TicketOrder = () => {
           以下よりアクセスの上ご購入ください.
         </Paragraph>
       </div>
-      <CommonButton
-        background={"bg-gradient-to-r from-pink-500 to-blue-500 "}
-        lefticon={
-          <Image
-            src={"Images/Icon/icon_fortee.png"}
-            width={18}
-            height={18}
-            alt="fortee icon"
-            className=""
-          />
-        }
-      >
-        <Link
-          href={
-            "https://fortee.jp/frontend-conf-hokkaido-2024/ticket-shop/index"
+      <Link href="#">
+        <CommonButton
+          background={"bg-gradient-to-r from-pink-500 to-blue-500"}
+          lefticon={
+            <Image
+              src={"Images/Icon/icon_fortee.png"}
+              width={18}
+              height={18}
+              alt="fortee icon"
+            />
           }
         >
           forteeで購入
-        </Link>
-      </CommonButton>
+        </CommonButton>
+      </Link>
     </div>
   );
 };

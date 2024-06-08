@@ -1,63 +1,34 @@
-import type { ComponentProps, ReactNode } from "react";
-import { cloneElement, forwardRef, isValidElement } from "react";
+import type { ComponentProps } from "react";
+import { forwardRef } from "react";
 
+import { Slot } from "@radix-ui/react-slot";
 import clsx from "clsx";
 
 type buttonProps = {
   background?: string;
-  lefticon?: ReactNode;
-  righticon?: ReactNode;
   asChild?: boolean;
 } & ComponentProps<"button">;
 
 const CommonButton = forwardRef<HTMLButtonElement, buttonProps>(({
   background = "bg-black",
-  lefticon,
-  righticon,
-  children,
   className,
   asChild = false,
   ...props
 }: buttonProps,
   ref
 ) => {
-  const combinedClassName = clsx(
-    "w-full text-white rounded-full px-4 py-2.5 flex items-center justify-center hover:bg-opacity-80 transition duration-200 focus:outline-none",
-    background,
-    className
-  );
-
-  if (asChild && isValidElement(children)) {
-    return cloneElement(children, {
-      className: combinedClassName,
-      ...props
-    },
-      <>
-        {lefticon}
-        <span className="text-sm px-2.5 font-bold">
-          {children.props.children}
-        </span>
-        {righticon}
-      </>
-    );
-  }
+  const Component = asChild ? Slot : "button";
 
   return (
-    <button
+    <Component
       className={clsx(
-        "w-full text-white rounded-full px-4 py-2.5 flex items-center justify-center hover:bg-opacity-80 transition duration-200 focus:outline-none",
+        "w-full text-white rounded-full px-4 py-2.5 flex items-center justify-center hover:bg-opacity-80 transition duration-200 focus:outline-none text-sm font-bold",
         background,
         className
       )}
       ref={ref}
       {...props}
-    >
-      {lefticon}
-      <span className="text-sm px-2.5 font-bold">
-        {children}
-      </span>
-      {righticon}
-    </button>
+    />
   );
 });
 CommonButton.displayName = "Button";

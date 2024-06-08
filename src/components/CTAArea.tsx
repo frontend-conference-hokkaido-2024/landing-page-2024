@@ -10,11 +10,11 @@ export default function CTAArea() {
     <div className="flex flex-col gap-1 items-center w-full">
       <CommonButton
         background="bg-gradient-to-r from-pink-500 to-blue-500"
-        lefticon={<Ticket />}
         asChild
       >
         <Link href="https://example.com" className="w-full" target="_blank" rel="noopener noreferrer">
-          チケット購入
+          <Ticket />
+          <span className="px-2.5">チケット購入</span>
         </Link>
       </CommonButton>
 

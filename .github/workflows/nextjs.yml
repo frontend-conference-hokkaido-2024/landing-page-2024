@@ -58,6 +58,11 @@ jobs:
         run: npm install -g pnpm@8.15.4
       - name: Install dependencies
         run: pnpm install
+      - name: make .env
+        run: |
+          touch .env.production
+          echo "FORTEE_API_HOST=$FORTEE_API_HOST" > .env.production
+          echo "PRODUCTION_URL=$PRODUCTION_URL" > .env.production
       - name: Build with Next.js
         env: 
           FORTEE_API_HOST: ${{ secrets.FORTEE_API_HOST }}

@@ -62,11 +62,14 @@ jobs:
         run: npm install -g pnpm@8.15.4
       - name: Install dependencies
         run: pnpm install
+        run: pnpm i sharp
       - name: make .env
         run: |
           touch .env.production
-          echo "FORTEE_API_HOST=$FORTEE_API_HOST" > .env.production
-          echo "PRODUCTION_URL=$PRODUCTION_URL" > .env.production
+          echo "FORTEE_API_HOST=$FORTEE_API_HOST" >> .env.production
+          echo "PRODUCTION_URL=$PRODUCTION_URL" >> .env.production
+      - name: steup tmate session
+        uses: mxschmitt/action-tmate@v3
       - name: Build with Next.js
         run: pnpm build
       - name: Upload artifact

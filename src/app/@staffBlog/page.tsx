@@ -31,7 +31,7 @@ export default async function Page() {
   const lastNoteData = data.data.contents[0];
 
   return (
-    <section className="flex flex-col gap-6 items-center">
+    <section className="flex flex-col gap-6 items-center lg:w-4/5 mx-auto">
       <Title icon={
         <Image
           src="images/Icon/icon_cantaloupe.png"
@@ -44,20 +44,23 @@ export default async function Page() {
       <p className="tracking-wider text-lg font-bold">
         最新の記事
       </p>
-      <Link className="flex flex-col gap-3 items-center w-[300px] leading-extraRelaxed" href={`https://note.com/fec_hokkaido/n/${lastNoteData.key}`} target="_blank" rel="noopener noreferrer">
+      <div className="flex flex-col items-center gap-3">
         <Image
-          className="rounded object-contain"
+          className="rounded object-contain lg:w-full"
           src={lastNoteData.eyecatch}
           width={300}
           height={157}
           alt="" />
-        <p className="text-sm font-bold">{lastNoteData.name}</p>
-      </Link>
-      <Link className="w-[300px]" href="https://note.com/fec_hokkaido">
-        <CommonButton lefticon={<NoteLogo />}>
-          スタッフブログ(note)
-        </CommonButton>
-      </Link>
+          <Link href={`https://note.com/fec_hokkaido/n/${lastNoteData.key}`} className="text-sm font-bold leading-extraRelaxed" target="_blank" rel="noopener noreferrer">
+            {lastNoteData.name}
+          </Link>
+      </div>
+      <CommonButton asChild>
+        <Link href="https://note.com/fec_hokkaido">
+          <NoteLogo />
+          <span className="px-2.5">スタッフブログ(note)</span>
+        </Link>
+      </CommonButton>
     </section>
   );
 }

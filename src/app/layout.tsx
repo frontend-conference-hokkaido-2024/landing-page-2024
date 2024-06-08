@@ -42,7 +42,7 @@ export default function RootLayout({
         <div></div>{/*背景に何か要素をつけたいのであれば...*/}
         <Base>
           <div className="w-full flex flex-col gap-24">
-            <main className="flex flex-col gap-24 lg:px-12">
+            <main className="flex flex-col gap-24 px-12">
               {children}
               {avatarList}
             </main>

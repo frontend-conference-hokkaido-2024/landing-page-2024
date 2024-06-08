@@ -24,6 +24,8 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
+environment: github-pages
+
 env:
   FORTEE_API_HOST: ${{ secrets.FORTEE_API_HOST }}
   PRODUCTION_URL: ${{ secrets.PRODUCTION_URL }}

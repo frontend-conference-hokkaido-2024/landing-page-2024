@@ -62,7 +62,7 @@ export default async function Page() {
         {people.length === 0 ? (
           <div>データがありません</div>
         ) : (
-          people.map((person) => <Avatar key={person.id} person={person} />)
+          people.map((person) => <Avatar key={person.id} image_url={person.avatar_url} name={person.name}/>)
         )}
       </div>
     </section>

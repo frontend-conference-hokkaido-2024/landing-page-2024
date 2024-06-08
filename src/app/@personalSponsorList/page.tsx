@@ -1,44 +1,20 @@
 import Image from "next/image";
 
-import type { Person, StaffData } from "fortee";
-
 import Avatar from "@/components/Avatar";
 import Title from "@/components/elements/Title";
 
-export default async function Page() {
-  if (process.env.FORTEE_API_HOST === undefined) {
-    throw new Error("環境変数FORTEE_API_HOSTが設定されていません");
-  }
+type PersonalSponsor = {
+  id: number;
+  name: string;
+  avatar_url: string;
+};
 
-  const response = await fetch(`${process.env.FORTEE_API_HOST}/staff`, {
-    // Next.jsのcache戦略によりfetch結果がキャッシュされるので無効化（ビルド間でのキャッシュ共有を避けるため）
-    cache: "no-cache",
-  });
+export default function Page() {
+  const sponsors: PersonalSponsor[] = [
+    { id: 1, name: "Sponsor", avatar_url: "/images/Icon/sampleAvatar.png" },
+    { id: 2, name: "Sponsor", avatar_url: "/images/Icon/sampleAvatar.png" },
+  ];
 
-  if (!response.ok) {
-    throw new Error(
-      `データ取得に失敗しました.\n  HTTPステータス: ${response.status}`
-    );
-  }
-
-  const data = (await response.json()) as {
-    staff: {
-      " core_staff": Person[];
-    };
-  };
-
-  if (data.staff === undefined) {
-    throw new Error("データ取得に失敗しました.\n");
-  }
-
-  // ObjectのKeyから空白を取り除く
-  const cleanedData = {
-    staff: Object.fromEntries(
-      Object.entries(data.staff).map(([key, value]) => [key.trim(), value])
-    ),
-  } as StaffData; // typedMapを使い型をつける方が良いが, 今回はas句で強制キャスト
-
-  const people: Person[] = cleanedData.staff.core_staff;
   // peopleがnullまたは空の配列の場合は何も表示しない
 
   return (
@@ -58,11 +34,25 @@ export default async function Page() {
           {"個人スポンサー"}
         </Title>
       </h1>
-      <div className="grid grid-cols-2 lg:grid-cols-3">
-        {people.length === 0 ? (
+      <div
+        className={`grid ${
+          sponsors.length === 1
+            ? "grid-cols-1"
+            : sponsors.length === 2
+            ? "grid-cols-2"
+            : "grid-cols-2 lg:grid-cols-3"
+        }`}
+      >
+        {sponsors.length === 0 ? (
           <div>データがありません</div>
         ) : (
-          people.map((person) => <Avatar key={person.id} person={person} />)
+          sponsors.map((sponsor) => (
+            <Avatar
+              key={sponsor.id}
+              image_url={sponsor.avatar_url}
+              name={sponsor.name}
+            />
+          ))
         )}
       </div>
     </section>

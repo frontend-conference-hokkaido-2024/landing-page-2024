@@ -24,10 +24,6 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-env:
-  FORTEE_API_HOST: ${{ secrets.FORTEE_API_HOST }}
-  PRODUCTION_URL: ${{ secrets.PRODUCTION_URL }}
-
 jobs:
   # Build job
   build:
@@ -67,8 +63,8 @@ jobs:
       - name: make .env
         run: |
           touch .env.production
-          echo "FORTEE_API_HOST=$FORTEE_API_HOST" >> .env.production
-          echo "PRODUCTION_URL=$PRODUCTION_URL" >> .env.production
+          echo "FORTEE_API_HOST=${{ secrets.FORTEE_API_HOST }}" >> .env.production
+          echo "PRODUCTION_URL=${{ secrets.PRODUCTION_URL }}" >> .env.production
       - name: Build with Next.js
         run: pnpm build
       - name: Upload artifact

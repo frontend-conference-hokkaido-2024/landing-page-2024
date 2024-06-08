@@ -10,7 +10,7 @@ import Title from "@/components/elements/Title";
 
 const TicketOrder = () => {
   return (
-    <div className="w-full px-8">
+    <div className="w-full">
       <Title
         icon={
           <Image

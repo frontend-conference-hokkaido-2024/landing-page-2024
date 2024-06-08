@@ -33,7 +33,7 @@ const TicketOrder = () => {
           以下よりアクセスの上ご購入ください.
         </Paragraph>
       </div>
-      <Link href="#">
+      <Link href="https://frontend-conf-2024-hokkaido.peatix.com/">
         <CommonButton
           background={"bg-gradient-to-r from-pink-500 to-blue-500"}
           lefticon={

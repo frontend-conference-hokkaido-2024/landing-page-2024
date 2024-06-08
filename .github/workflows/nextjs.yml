@@ -24,6 +24,8 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
+environment: github-pages
+
 jobs:
   # Build job
   build:

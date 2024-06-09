@@ -5,6 +5,7 @@ import Link from "next/link";
 
 import CommonButton from "./ui/CommonButton";
 
+import TikcketIcon from "@/asset/Vector/icon_ticket.svg";
 import Paragraph from "@/components/elements/Paragraph";
 import Title from "@/components/elements/Title";
 
@@ -12,9 +13,10 @@ const TicketOrder = () => {
   return (
     <div className="w-full">
       <Title
+        // icon={<TikcketIcon />}
         icon={
           <Image
-            src={"Images/Icon/icon_ticket.png"}
+            src={"@/asset/Vector/icon_ticket.svg"}
             width={18}
             height={18}
             alt="title icon"

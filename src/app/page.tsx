@@ -2,6 +2,7 @@
 import AccessInfo from "@/components/AccessInfo";
 import EventOverView from "@/components/EventOverView";
 import EventSummary from "@/components/EventSummary";
+import TicketOrder from "@/components/TicketOrder";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <EventOverView />
       <EventSummary />
       <AccessInfo />
+      <TicketOrder/>
     </div>
   );
 }

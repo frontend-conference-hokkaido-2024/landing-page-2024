@@ -21,6 +21,9 @@ const config = {
       lineHeight: {
         extraRelaxed: "1.7"
       },
+      textIndent: {
+        4.5: "1.125rem",
+      },
       colors: {
         ivory: "#fffef5",
         cornsilk: "#fff8e7",

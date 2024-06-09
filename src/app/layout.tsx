@@ -32,18 +32,21 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
   avatarList,
+  staffBlog,
 }: Readonly<{
   children: React.ReactNode;
   avatarList: React.ReactNode;
+  staffBlog: React.ReactNode;
 }>) {
   return (
-    <html lang="ja">
+    <html lang="ja" className="scroll-smooth">
       <body className={clsx("relative")} style={{fontFamily: `${inter.style.fontFamily}, ${NotoSansJP.style.fontFamily}`}}>
         <div></div>{/*背景に何か要素をつけたいのであれば...*/}
         <Base>
           <div className="w-full flex flex-col gap-24">
             <main className="flex flex-col gap-24 lg:px-12 px-8">
               {children}
+              {staffBlog}
               {avatarList}
             </main>
             <Footer />

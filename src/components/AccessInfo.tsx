@@ -20,11 +20,11 @@ export default function AccessInfo() {
           className="w-full lg:w-3/4 rounded-xl"
         ></iframe>
         <div className="w-full lg:w-3/4 py-5 px-6 bg-cornsilk rounded-xl">
-          <table className="text-left w-fit mx-auto">
+          <table className="text-left mx-auto">
             <tbody>
               <tr>
                 <td className="align-top">
-                  <p className="text-slateGray text-sm">会場</p>
+                  <p className="text-slateGray text-sm mr-5">会場</p>
                 </td>
                 <td>
                   <p className="font-bold mb-2 text-sm">Deep Tech CORE SAPPORO</p>
@@ -32,7 +32,7 @@ export default function AccessInfo() {
               </tr>
               <tr>
                 <td className="align-top">
-                  <p className="text-slateGray text-sm">所在地</p>
+                  <p className="text-slateGray text-sm mr-5">所在地</p>
                 </td>
                 <td>
                   <p className="font-bold mb-2 text-sm w-fit">
@@ -44,7 +44,7 @@ export default function AccessInfo() {
               </tr>
               <tr>
                 <td className="align-top">
-                  <p className="text-slateGray text-sm">最寄駅</p>
+                  <p className="text-slateGray text-sm mr-5">最寄駅</p>
                 </td>
                 <td>
                   <p className="font-bold text-sm">

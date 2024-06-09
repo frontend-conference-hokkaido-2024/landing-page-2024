@@ -28,6 +28,7 @@ const config = {
         ivory: "#fffef5",
         cornsilk: "#fff8e7",
         black: "#0d172f",
+        slateGray: "#64748b",
         darkRed: "var(--darkRed)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

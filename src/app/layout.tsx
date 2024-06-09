@@ -14,11 +14,12 @@ const NotoSansJP = Noto_Sans_JP({ subsets: ["latin"] });
 const title: string = "フロントエンドカンファレンス北海道2024";
 const description: string =
   "フロントエンド領域のエンジニア・デザイナー向けの技術カンファレンス「フロントエンドカンファレンス北海道2024」を2024年8月24日(土)に札幌で開催";
-
+const metadataBaseURL = process.env.PRODUCTION_URL;
+if (!metadataBaseURL) {
+  throw new Error("FORTEE_API_HOST environment variable is not defined");
+}
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    "https://frontend-conference-hokkaido-2024.github.io/landing-page-2024/"
-  ), // 本番では直す
+  metadataBase:new URL(metadataBaseURL), // 本番では直す
   title,
   description,
   openGraph: {

@@ -39,7 +39,7 @@ export default function MenuList({ color = "white", className }: MenuListProps) 
   const currentColor = colorSchemeData[color];
 
   const MenuButton = ({ children, className, ...props }: ButtonProps) => {
-    return <Button variant="link" className={clsx("text-bold text-base px-0", currentColor.text, className)} {...props}>
+    return <Button variant="link" className={clsx("font-bold text-base px-0", currentColor.text, className)} {...props}>
       {children}
     </Button>;
   };

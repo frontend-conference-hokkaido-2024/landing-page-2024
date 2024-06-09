@@ -1,11 +1,10 @@
 import { Building, Youtube } from "lucide-react";
-import Paragraph from "./elements/Paragraph";
 import Title from "./elements/Title";
 import MapPin from "./images/icon/MapPin";
 
 export default function AccessInfo() {
   return (
-    <div className="text-center px-5">
+    <div className="text-center">
       <Title icon={
         <MapPin />
       }>
@@ -18,41 +17,41 @@ export default function AccessInfo() {
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11659.075183547682!2d141.34755!3d43.06733!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b297554bfffff%3A0x1d7fa677cc47a00b!2zSlI1NSBTQVBQT1JP44OT44Or!5e0!3m2!1sja!2sus!4v1712545562167!5m2!1sja!2sus"
           height="250"
           loading="lazy"
-          className="w-full rounded-xl"
+          className="w-full lg:w-3/4 rounded-xl"
         ></iframe>
-        <div className="w-full p-5 bg-cornsilk rounded-xl">
-          <table className="mx-auto text-left">
+        <div className="w-full lg:w-3/4 py-5 px-6 bg-cornsilk rounded-xl">
+          <table className="text-left w-fit mx-auto">
             <tbody>
               <tr>
-                <td className="w-1/5 align-top">
-                  <Paragraph className="text-slateGray" indent={false}>会場</Paragraph>
+                <td className="align-top">
+                  <p className="text-slateGray text-sm">会場</p>
                 </td>
-                <td className="w-4/5">
-                  <Paragraph className="font-bold mb-2" indent={false}>Deep Tech CORE SAPPORO</Paragraph>
+                <td>
+                  <p className="font-bold mb-2 text-sm">Deep Tech CORE SAPPORO</p>
                 </td>
               </tr>
               <tr>
                 <td className="align-top">
-                  <Paragraph className="text-slateGray" indent={false}>所在地</Paragraph>
+                  <p className="text-slateGray text-sm">所在地</p>
                 </td>
                 <td>
-                  <Paragraph className="font-bold mb-2" indent={false}>
+                  <p className="font-bold mb-2 text-sm w-fit">
                     札幌市中央区北5条西5丁目1-5
                     <br />
                     JR55SAPPORO 8階
-                  </Paragraph>
+                  </p>
                 </td>
               </tr>
               <tr>
                 <td className="align-top">
-                  <Paragraph className="text-slateGray" indent={false}>最寄駅</Paragraph>
+                  <p className="text-slateGray text-sm">最寄駅</p>
                 </td>
                 <td>
-                  <Paragraph className="font-bold" indent={false}>
+                  <p className="font-bold text-sm">
                     札幌市営地下鉄さっぽろ駅
                     <br />
                     JR 札幌駅
-                  </Paragraph>
+                  </p>
                 </td>
               </tr>
             </tbody>

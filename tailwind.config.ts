@@ -21,10 +21,14 @@ const config = {
       lineHeight: {
         extraRelaxed: "1.7"
       },
+      textIndent: {
+        4.5: "1.125rem",
+      },
       colors: {
         ivory: "#fffef5",
         cornsilk: "#fff8e7",
         black: "#0d172f",
+        slateGray: "#64748b",
         darkRed: "var(--darkRed)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

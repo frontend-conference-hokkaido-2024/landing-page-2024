@@ -4,7 +4,7 @@ import MapPin from "./images/icon/MapPin";
 
 export default function AccessInfo() {
   return (
-    <div className="text-center">
+    <section className="text-center">
       <Title icon={
         <MapPin />
       }>
@@ -70,6 +70,6 @@ export default function AccessInfo() {
           {/* <iframe className="mx-auto" src="https://www.youtube.com/embed/6vib77CUxNM?si=3E1JhDeCHo-gsQEm" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

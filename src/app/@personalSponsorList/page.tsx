@@ -43,17 +43,13 @@ export default function Page() {
             : "grid-cols-2 lg:grid-cols-3"
         }`}
       >
-        {sponsors.length === 0 ? (
-          <div>データがありません</div>
-        ) : (
-          sponsors.map((sponsor) => (
-            <Avatar
-              key={sponsor.id}
-              image_url={sponsor.avatar_url}
-              name={sponsor.name}
-            />
-          ))
-        )}
+        {sponsors.map((sponsor) => (
+          <Avatar
+            key={sponsor.id}
+            image_url={sponsor.avatar_url}
+            name={sponsor.name}
+          />
+        ))}
       </div>
     </section>
   );

@@ -32,9 +32,10 @@ const colorSchemeData: ColorSchemeProps = {
 
 type MenuListProps = {
   color?: ColorScheme;
+  className?: string;
 }
 
-export default function MenuList({ color = "white" }: MenuListProps) {
+export default function MenuList({ color = "white", className }: MenuListProps) {
   const currentColor = colorSchemeData[color];
 
   const MenuButton = ({ children, className, ...props }: ButtonProps) => {
@@ -44,7 +45,7 @@ export default function MenuList({ color = "white" }: MenuListProps) {
   };
 
   return (
-    <div className="flex flex-col items-start w-fit">
+    <div className={clsx("flex flex-col items-start w-fit", className)}>
       <MenuButton>
         <a href="#overview">
           開催概要

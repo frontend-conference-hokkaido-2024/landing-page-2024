@@ -4,7 +4,7 @@ import { Inter, Noto_Sans_JP } from "next/font/google";
 import type { Metadata } from "next";
 
 import Base from "@/components/Base";
-import Footer from "@/components/Footer";
+import Footer from "@/components/menu/Footer";
 
 import "./globals.css";
 

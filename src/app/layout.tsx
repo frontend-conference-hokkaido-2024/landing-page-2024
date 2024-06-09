@@ -14,7 +14,7 @@ const NotoSansJP = Noto_Sans_JP({ subsets: ["latin"] });
 const title: string = "フロントエンドカンファレンス北海道2024";
 const description: string =
   "フロントエンド領域のエンジニア・デザイナー向けの技術カンファレンス「フロントエンドカンファレンス北海道2024」を2024年8月24日(土)に札幌で開催";
-const metadataBaseURL = process.env.PRODUCTION_URL;
+const metadataBaseURL = process.env.FORTEE_API_HOST;
 if (!metadataBaseURL) {
   throw new Error("FORTEE_API_HOST environment variable is not defined");
 }
@@ -35,12 +35,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  personalSponsorList,
-  coreStaffList,
+  personalSponsorSection,
+  coreStaffSection,
 }: Readonly<{
   children: React.ReactNode;
-  personalSponsorList: React.ReactNode;
-  coreStaffList: React.ReactNode;
+  personalSponsorSection: React.ReactNode;
+  coreStaffSection: React.ReactNode;
 }>) {
   return (
     <html lang="ja">
@@ -56,8 +56,8 @@ export default function RootLayout({
           <div className="w-full flex flex-col gap-24">
             <main className="flex flex-col gap-24 lg:px-12">
               {children}
-              {personalSponsorList}
-              {coreStaffList}
+              {personalSponsorSection}
+              {coreStaffSection}
             </main>
             <Footer />
           </div>

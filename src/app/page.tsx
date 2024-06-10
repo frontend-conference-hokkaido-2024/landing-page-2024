@@ -1,9 +1,6 @@
-import Image from "next/image";
-
 import AccessInfo from "@/components/AccessInfo";
 import EventOverView from "@/components/EventOverView";
 import EventSummary from "@/components/EventSummary";
-import CommonButton from "@/components/ui/CommonButton";
 
 export default function Home() {
   return (

@@ -16,8 +16,8 @@ export default function SpMenu() {
   };
 
   return (
-    <div>
-      <div className="flex justify-end">
+    <>
+      <div className="flex justify-end lg:hidden md:hidden">
         {isOpen ? (
           <CircleX
             width={56}
@@ -35,6 +35,6 @@ export default function SpMenu() {
         )}
       </div>
       <SpMenuView className={isOpen ? "animate-fadeIn" : "hidden"} />
-    </div>
+    </>
   );
 }

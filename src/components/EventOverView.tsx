@@ -1,16 +1,17 @@
+import CTAArea from "./CTAArea";
 import TopVisual from "./TopVisual";
 import LogoText from "./images/icon/LogoText";
 
 const EventOverView = () => {
   return (
     <div className="mx-5 mt-12">
-      <div className="w-full p-4">
+      <div className="w-full">
         <TopVisual />
       </div>
       <div className="py-8">
         <LogoText />
       </div>
-      <div className="text-black mx-auto flex flex-col mt-4">
+      <div className="text-black mx-auto flex flex-col pb-6">
         <table className="text-lef text-sm">
           <tbody>
             <tr>
@@ -36,6 +37,7 @@ const EventOverView = () => {
           </tbody>
         </table>
       </div>
+      <CTAArea />
     </div>
   );
 };

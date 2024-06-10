@@ -12,7 +12,7 @@ export default function CTAArea() {
         background="bg-gradient-to-r from-pink-500 to-blue-500"
         asChild
       >
-        <Link href="https://example.com" className="w-full" target="_blank" rel="noopener noreferrer">
+        <Link href="https://frontend-conf-2024-hokkaido.peatix.com/" className="w-full" target="_blank" rel="noopener noreferrer">
           <Ticket />
           <span className="px-2.5">チケット購入</span>
         </Link>

@@ -32,19 +32,20 @@ const colorSchemeData: ColorSchemeProps = {
 
 type MenuListProps = {
   color?: ColorScheme;
+  className?: string;
 }
 
-export default function MenuList({ color = "white" }: MenuListProps) {
+export default function MenuList({ color = "white", className }: MenuListProps) {
   const currentColor = colorSchemeData[color];
 
   const MenuButton = ({ children, className, ...props }: ButtonProps) => {
-    return <Button variant="link" className={clsx("text-bold text-base px-0", currentColor.text, className)} {...props}>
+    return <Button variant="link" className={clsx("font-bold text-base px-0", currentColor.text, className)} {...props}>
       {children}
     </Button>;
   };
 
   return (
-    <div className="flex flex-col items-start w-fit">
+    <div className={clsx("flex flex-col items-start w-fit", className)}>
       <MenuButton>
         <a href="#overview">
           開催概要

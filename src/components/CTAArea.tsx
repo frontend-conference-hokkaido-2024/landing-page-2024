@@ -18,6 +18,7 @@ export default function CTAArea() {
           target="_blank"
           rel="noopener noreferrer"
         >
+          
           <Ticket />
           <span className="px-2.5">チケット購入</span>
         </Link>

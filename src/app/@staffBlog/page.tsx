@@ -8,9 +8,7 @@ import NoteLogo from "@/components/images/icon/NoteLogo";
 import CommonButton from "@/components/ui/CommonButton";
 
 export default async function Page() {
-  const response = await fetch("https://note.com/api/v2/creators/fec_hokkaido/contents?kind=note&page=1", {
-    cache: "no-cache",
-  });
+  const response = await fetch("https://note.com/api/v2/creators/fec_hokkaido/contents?kind=note&page=1");
 
   if (!response.ok) {
     throw new Error(

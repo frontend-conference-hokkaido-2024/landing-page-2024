@@ -16,9 +16,9 @@ export default function TopVisual() {
           y2="548.67"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.065" stop-color="#2B8AF8" />
-          <stop offset="0.725" stop-color="#C340E4" />
-          <stop offset="1" stop-color="#E81694" />
+          <stop offset="0.065" stopColor="#2B8AF8" />
+          <stop offset="0.725" stopColor="#C340E4" />
+          <stop offset="1" stopColor="#E81694" />
         </linearGradient>
       </defs>
     </svg>

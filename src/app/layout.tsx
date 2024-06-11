@@ -7,6 +7,7 @@ import Base from "@/components/Base";
 import Footer from "@/components/Footer";
 
 import "./globals.css";
+import SpMenu from "@/components/menu/sp/SpMenu";
 
 const inter = Inter({ subsets: ["latin"] });
 const NotoSansJP = Noto_Sans_JP({ subsets: ["latin"] });
@@ -32,18 +33,22 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
   avatarList,
+  staffBlog,
 }: Readonly<{
   children: React.ReactNode;
   avatarList: React.ReactNode;
+  staffBlog: React.ReactNode;
 }>) {
   return (
-    <html lang="ja">
+    <html lang="ja" className="scroll-smooth">
       <body className={clsx("relative")} style={{fontFamily: `${inter.style.fontFamily}, ${NotoSansJP.style.fontFamily}`}}>
         <div></div>{/*背景に何か要素をつけたいのであれば...*/}
         <Base>
+          <SpMenu />
           <div className="w-full flex flex-col gap-24">
             <main className="flex flex-col gap-24 lg:px-12 px-8">
               {children}
+              {staffBlog}
               {avatarList}
             </main>
             <Footer />

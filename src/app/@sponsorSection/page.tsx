@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import SponsorList from "./sponsor/sponsorList";
+import SponsorList from "./sponsor/sponsorSection";
 
 import type { Sponsor } from "./sponsor/sponsorType";
 

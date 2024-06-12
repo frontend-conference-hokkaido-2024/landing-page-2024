@@ -13,7 +13,7 @@ export default async function Page() {
   if (!response.ok) {
     const errorBody = await response.text();
     throw new Error(
-      `データ取得に失敗しました.\n  HTTPステータス: ${response.status} body: ${errorBody}`
+      `データ取得に失敗しました.\n  HTTPステータス: ${response.status}\n body: ${errorBody}`
     );
   }
 

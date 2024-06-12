@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import SponsorList from "./sponsor/sponsorSection";
+import SponsorSection from "./sponsor/sponsorSection";
 
 import type { Sponsor } from "./sponsor/sponsorType";
 
@@ -32,13 +32,13 @@ export default function Page() {
           {"スポンサー"}
         </Title>
       <div className="bg-cornsilk rounded-xl pt-4 pb-16 space-y-20">
-        <SponsorList sponsor={platinumSponsors} />
-        <SponsorList sponsor={localGoldSponsors} />
-        <SponsorList sponsor={goldSponsors} />
-        <SponsorList sponsor={localSponsors} />
-        <SponsorList sponsor={designSponsors} />
-        <SponsorList sponsor={specialSponsors} />
-        <SponsorList sponsor={silverSponsors} />
+        <SponsorSection sponsor={platinumSponsors} />
+        <SponsorSection sponsor={localGoldSponsors} />
+        <SponsorSection sponsor={goldSponsors} />
+        <SponsorSection sponsor={localSponsors} />
+        <SponsorSection sponsor={designSponsors} />
+        <SponsorSection sponsor={specialSponsors} />
+        <SponsorSection sponsor={silverSponsors} />
       </div>
     </section>
   );

@@ -71,6 +71,10 @@ export type Sponsor = {
   type: SponsorType;
 };
 
+// スポンサータイプ名を返す
+export function getTypeName(sponsor: Sponsor): string {
+  return Sponsor[sponsor.type].typeName;
+}
 // スポンサータイプに応じてロゴ画像の配列を返す
 export function getLogoList(sponsor: Sponsor): string[] {
   return Sponsor[sponsor.type].logos;

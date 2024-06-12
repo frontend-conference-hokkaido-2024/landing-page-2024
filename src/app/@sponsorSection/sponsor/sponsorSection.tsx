@@ -2,15 +2,17 @@
 import clsx from "clsx";
 
 import SponsorAvatar from "./sponsorAvatar";
-import { getLogoList, getSponsorGridWidth, getSponsorLayout } from "./sponsorType";
+import { getTypeName, getLogoList, getSponsorGridWidth, getSponsorLayout } from "./sponsorType";
 
 import type { Sponsor } from "./sponsorType";
 
-type SponsorListProps = {
+type SponsorSectionProps = {
   sponsor: Sponsor;
 };
 
-const sponsorSection = ({ sponsor }: SponsorListProps) => {
+const sponsorSection = ({ sponsor }: SponsorSectionProps) => {
+  // スポンサータイプ名を取得
+  const typeName = getTypeName(sponsor);
   // スポンサータイプに応じてロゴ画像の配列を取得
   const logoList = getLogoList(sponsor);
   // スポンサータイプに応じてグリッドが表示される領域の横幅を取得
@@ -21,7 +23,7 @@ const sponsorSection = ({ sponsor }: SponsorListProps) => {
   return (
     <div className={clsx(sizeClass)}>
       <h3 className="font-semibold text-2xl my-8 tracking-wider">
-        {sponsor.type}
+        {typeName}
       </h3>
       {/* スポンサーアイコンの表示 */}
       {/* グリッドのレイアウトを決定 */}

@@ -5,7 +5,6 @@ import type { Metadata } from "next";
 
 import Base from "@/components/Base";
 import Footer from "@/components/Footer";
-
 import "./globals.css";
 import SpMenu from "@/components/menu/sp/SpMenu";
 

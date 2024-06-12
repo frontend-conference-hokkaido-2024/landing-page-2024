@@ -79,3 +79,42 @@
 1. sponsorType.tsxファイルを開く
 2. 変更したいスポンサータイプを特定する。例えば、プラチナスポンサーのレイアウトを変更する場合、PLATINUMタイプを探す
 3. sponsorGridWidthフィールドのクラスを新しいレイアウトクラスに置き換える
+
+## ジョブボード
+ジョブボードページは`/job-board`に存在する。
+
+### 実装概要
+スポンサーの求人に関わる部分は`@jobBoardSection`で実装している。
+スポンサーの求人に直接関係ない説明文などは、直接`job-board/page.tsx`にて実装している。
+
+### `@jobBoardSection`について
+`@jobBoardSection`以下のファイルなどについての説明。
+#### `/components`
+- `Job.tsx`
+  - スポンサー1社あたりの求人に関わるカードのようなコンポーネントである。
+  - ジョブの見た目や挙動を編集したい場合はこれを編集する。
+
+#### `/data`
+- `types.ts`
+  - ジョブボードセクションにおいて使用する型を定義したファイル。
+  - `Job.tsx`と`constants.ts`で使用される。
+
+- `constants.ts`
+  - スポンサーの求人を表示するために必要な情報を保持する。
+    - `comment`: 求人についてのコメント
+    - `imageUrl`: 求人に表示するスポンサーのロゴ
+    - `href`: スポンサーの求人ページへのリンク
+
+#### `/page.tsx`
+ここでスポンサーの求人をまとめて表示させる処理を記述している。
+以下がコア部分
+```tsx
+<div className="grid grid-cols-1 gap-16 place-items-center">
+  {JOB_BOARD_SECTION_DATA.map((jobData, index) => <Job {...jobData} key={index} />)}
+</div>
+```
+グリッドレイアウトで表示しており、現状縦1列で表示されるようになっている。
+`JOB_BOARD_SECTION_DATA: JobProps[]`を`mapメソッド`を使って、各要素を`Jobコンポーネント`に渡している。
+
+### 単純に求人を追加したい
+`landing-page-2024\src\app\job-board\@jobBoardSection\data\constants.ts`の`JOB_BOARD_SECTION_DATA`配列に新しい`Job`オブジェクトを追記すればよい。上から順番に表示される。

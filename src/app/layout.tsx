@@ -5,7 +5,6 @@ import type { Metadata } from "next";
 
 import Base from "@/components/Base";
 import Footer from "@/components/Footer";
-
 import "./globals.css";
 import SpMenu from "@/components/menu/sp/SpMenu";
 
@@ -34,10 +33,12 @@ export default function RootLayout({
   children,
   avatarList,
   staffBlog,
+  sponsorSection,
 }: Readonly<{
   children: React.ReactNode;
   avatarList: React.ReactNode;
   staffBlog: React.ReactNode;
+  sponsorSection: React.ReactNode;
 }>) {
   return (
     <html lang="ja" className="scroll-smooth">
@@ -49,6 +50,7 @@ export default function RootLayout({
             <main className="flex flex-col gap-24 lg:px-12 px-8">
               {children}
               {staffBlog}
+              {sponsorSection}
               {avatarList}
             </main>
             <Footer />

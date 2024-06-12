@@ -11,8 +11,9 @@ export default async function Page() {
   const response = await fetch("https://note.com/api/v2/creators/fec_hokkaido/contents?kind=note&page=1");
 
   if (!response.ok) {
+    const errorBody = await response.text();
     throw new Error(
-      `データ取得に失敗しました.\n  HTTPステータス: ${response.status}`
+      `データ取得に失敗しました.\n  HTTPステータス: ${response.status}\n body: ${errorBody}`
     );
   }
 

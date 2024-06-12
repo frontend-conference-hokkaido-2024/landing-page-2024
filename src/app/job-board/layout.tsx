@@ -11,8 +11,10 @@ const NotoSansJP = Noto_Sans_JP({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
+  jobBoardSection,
 }: Readonly<{
   children: React.ReactNode;
+  jobBoardSection: React.ReactNode;
 }>) {
   return (
     <html lang="ja" className="scroll-smooth">
@@ -20,8 +22,9 @@ export default function RootLayout({
         <div></div>{/*背景に何か要素をつけたいのであれば...*/}
         <Base>
           <div className="w-full flex flex-col gap-24">
-            <main className="flex flex-col gap-24 lg:px-12 px-8">
+            <main className="flex flex-col gap-16 lg:px-12 px-8">
               {children}
+              {jobBoardSection}
             </main>
             <Footer />
           </div>

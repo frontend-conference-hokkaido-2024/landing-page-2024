@@ -10,8 +10,9 @@ export default async function Page() {
   const response = await fetch(`${process.env.FORTEE_API_HOST}/staff`);
 
   if (!response.ok) {
+    const errorBody = await response.text();
     throw new Error(
-      `データ取得に失敗しました.\n  HTTPステータス: ${response.status}`
+      `データ取得に失敗しました.\n  HTTPステータス: ${response.status}\n body: ${errorBody}`
     );
   }
 

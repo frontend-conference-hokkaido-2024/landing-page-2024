@@ -14,12 +14,12 @@ const NotoSansJP = Noto_Sans_JP({ subsets: ["latin"] });
 const title: string = "フロントエンドカンファレンス北海道2024";
 const description: string =
   "フロントエンド領域のエンジニア・デザイナー向けの技術カンファレンス「フロントエンドカンファレンス北海道2024」を2024年8月24日(土)に札幌で開催";
-const metadataBaseURL = process.env.FORTEE_API_HOST;
-if (!metadataBaseURL) {
-  throw new Error("FORTEE_API_HOST environment variable is not defined");
+const targetURL = process.env.PRODUCTION_URL;
+if (!targetURL) {
+  throw new Error("PRODUCTION_URL environment variable is not defined");
 }
 export const metadata: Metadata = {
-  metadataBase:new URL(metadataBaseURL), // 本番では直す
+  metadataBase: new URL(targetURL), // 本番では直す
   title,
   description,
   openGraph: {
@@ -48,8 +48,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" className="scroll-smooth">
-      <body className={clsx("relative")} style={{fontFamily: `${inter.style.fontFamily}, ${NotoSansJP.style.fontFamily}`}}>
-        <div></div>{/*背景に何か要素をつけたいのであれば...*/}
+      <body
+        className={clsx("relative")}
+        style={{
+          fontFamily: `${inter.style.fontFamily}, ${NotoSansJP.style.fontFamily}`,
+        }}
+      >
+        <div></div>
+        {/*背景に何か要素をつけたいのであれば...*/}
         <Base>
           <SpMenu />
           <div className="w-full flex flex-col gap-24">

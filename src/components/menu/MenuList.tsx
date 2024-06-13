@@ -47,27 +47,27 @@ export default function MenuList({ color = "white", className }: MenuListProps) 
   return (
     <div className={clsx("flex flex-col items-start w-fit", className)}>
       <MenuButton>
-        <a href="#overview">
+        <a href="/#overview">
           開催概要
         </a>
       </MenuButton>
       <MenuButton>
-        <a href="#access">
+        <a href="/#access">
           会場アクセス
         </a>
       </MenuButton>
       <MenuButton>
-        <a href="#streaming">
+        <a href="/#streaming">
           オンライン配信
         </a>
       </MenuButton>
       <MenuButton>
-        <a href="#sponsor">
+        <a href="/#sponsor">
           スポンサー
         </a>
       </MenuButton>
       <MenuButton>
-        <a href="#staff">
+        <a href="/#staff">
           スタッフ
         </a>
       </MenuButton>

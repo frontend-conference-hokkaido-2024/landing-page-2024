@@ -42,7 +42,7 @@ export default async function Page() {
   // peopleがnullまたは空の配列の場合は何も表示しない
 
   return (
-    <section className="mx-5 mb-12 text-center">
+    <section className="mx-5 mb-12 text-center" id="coreStaff">
       <h1 className="font-extrabold mb-8">
         <Title
           icon={

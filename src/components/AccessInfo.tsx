@@ -1,4 +1,3 @@
-import { Building, Youtube } from "lucide-react";
 import Title from "./elements/Title";
 import MapPin from "./images/icon/MapPin";
 
@@ -56,18 +55,6 @@ export default function AccessInfo() {
               </tr>
             </tbody>
           </table>
-        </div>
-      </div>
-
-      <div className="mt-8">
-        <div className="flex items-center justify-center gap-x-2">
-          <Youtube />
-          <h3 className="font-semibold text-2xl">オンライン</h3>
-        </div>
-        <div className="mt-4">
-          <h4 className="font-semibold text-lg">Coming soon...</h4>
-          {/* YouTube埋め込み */}
-          {/* <iframe className="mx-auto" src="https://www.youtube.com/embed/6vib77CUxNM?si=3E1JhDeCHo-gsQEm" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
         </div>
       </div>
     </section>

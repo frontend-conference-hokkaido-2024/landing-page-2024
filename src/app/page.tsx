@@ -1,9 +1,7 @@
-import Image from "next/image";
-
 import AccessInfo from "@/components/AccessInfo";
 import EventOverView from "@/components/EventOverView";
 import EventSummary from "@/components/EventSummary";
-import CommonButton from "@/components/ui/CommonButton";
+import Online from "@/components/Online";
 
 export default function Home() {
   return (
@@ -11,6 +9,7 @@ export default function Home() {
       <EventOverView />
       <EventSummary />
       <AccessInfo />
+      <Online />
     </div>
   );
 }

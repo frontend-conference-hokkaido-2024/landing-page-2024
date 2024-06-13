@@ -1,22 +1,18 @@
+import CTAArea from "./CTAArea";
 import TopVisual from "./TopVisual";
-
-// import Link from "next/link";
-
-// import { Button } from "@/components/ui/button";
+import LogoText from "./images/icon/LogoText";
 
 const EventOverView = () => {
   return (
-    <div className="mx-5 mt-12">
-      <div className="w-full p-4">
+    <section className="mx-5 mt-12" id="overview">
+      <div className="w-full">
         <TopVisual />
       </div>
-      <h1 className="lg:text-3xl text-xl font-semibold text-slate-600 break-keep">
-        フロントエンドカンファレンス
-        <wbr />
-        北海道2024
-      </h1>
-      <div className="text-black mx-auto flex flex-col mt-4">
-        <table className="text-left">
+      <div className="py-8">
+        <LogoText />
+      </div>
+      <div className="text-black mx-auto flex flex-col pb-6">
+        <table className="text-lef text-sm">
           <tbody>
             <tr>
               <td className="w-1/4">
@@ -24,17 +20,7 @@ const EventOverView = () => {
               </td>
               <td className="w-3/4">
                 <p className="font-semibold col-span-3 lg:text-xl">
-                  2024.08.24(土) 10:00-18:30
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p className="text-slate-500 lg:text-xl">開催時間</p>
-              </td>
-              <td>
-                <p className="font-semibold col-span-3 lg:text-xl">
-                  10:00-18:30
+                  2024.08.24(Sat.) 10:00~18:00
                 </p>
               </td>
             </tr>
@@ -44,17 +30,15 @@ const EventOverView = () => {
               </td>
               <td>
                 <p className="font-semibold col-span-3 lg:text-xl">
-                  Deep Tech CORE
+                  Deep Tech CORE SAPPORO
                 </p>
               </td>
             </tr>
           </tbody>
         </table>
-        {/* <Button asChild className="mt-2 w-full text-sm font-bold">
-          <Link href="#">参加申し込み</Link>
-        </Button> */}
       </div>
-    </div>
+      <CTAArea />
+    </section>
   );
 };
 

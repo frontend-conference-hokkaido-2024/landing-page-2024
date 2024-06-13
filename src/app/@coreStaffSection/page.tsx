@@ -10,14 +10,12 @@ export default async function Page() {
     throw new Error("環境変数FORTEE_API_HOSTが設定されていません");
   }
 
-  const response = await fetch(`${process.env.FORTEE_API_HOST}/staff`, {
-    // Next.jsのcache戦略によりfetch結果がキャッシュされるので無効化（ビルド間でのキャッシュ共有を避けるため）
-    cache: "no-cache",
-  });
+  const response = await fetch(`${process.env.FORTEE_API_HOST}/staff`);
 
   if (!response.ok) {
+    const errorBody = await response.text();
     throw new Error(
-      `データ取得に失敗しました.\n  HTTPステータス: ${response.status}`
+      `データ取得に失敗しました.\n  HTTPステータス: ${response.status}\n body: ${errorBody}`
     );
   }
 

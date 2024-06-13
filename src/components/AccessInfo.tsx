@@ -3,7 +3,7 @@ import MapPin from "./images/icon/MapPin";
 
 export default function AccessInfo() {
   return (
-    <section className="text-center">
+    <section className="text-center" id="access">
       <Title icon={
         <MapPin />
       }>

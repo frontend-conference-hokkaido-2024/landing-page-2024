@@ -4,7 +4,7 @@ import LogoText from "./images/icon/LogoText";
 
 const EventOverView = () => {
   return (
-    <div className="mx-5 mt-12">
+    <section className="mx-5 mt-12" id="overview">
       <div className="w-full">
         <TopVisual />
       </div>
@@ -38,7 +38,7 @@ const EventOverView = () => {
         </table>
       </div>
       <CTAArea />
-    </div>
+    </section>
   );
 };
 

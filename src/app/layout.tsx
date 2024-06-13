@@ -19,7 +19,7 @@ if (!targetURL) {
   throw new Error("PRODUCTION_URL environment variable is not defined");
 }
 export const metadata: Metadata = {
-  metadataBase: new URL(targetURL), // 本番では直す
+  metadataBase: new URL(targetURL),
   title,
   description,
   openGraph: {

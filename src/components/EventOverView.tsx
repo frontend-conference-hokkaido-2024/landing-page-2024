@@ -4,19 +4,19 @@ import LogoText from "./images/LogoText";
 
 const EventOverView = () => {
   return (
-    <section className="mx-5 mt-12" id="overview">
+    <section className="mt-12" id="overview">
       <div className="w-full">
         <TopVisual />
       </div>
-      <div className="py-8">
+      <div className="my-8 flex justify-center">
         <LogoText />
       </div>
-      <div className="text-black mx-auto flex flex-col pb-6">
-        <table className="text-lef text-sm">
+      <div className="text-black mx-auto flex flex-col items-center w-fit">
+        <table className="text-lef text-sm mb-6">
           <tbody>
             <tr>
               <td className="w-1/4">
-                <p className="text-slate-500 lg:text-xl">開催日時</p>
+                <p className="text-slateGray lg:text-xl">開催日時</p>
               </td>
               <td className="w-3/4">
                 <p className="font-semibold col-span-3 lg:text-xl">
@@ -26,7 +26,7 @@ const EventOverView = () => {
             </tr>
             <tr>
               <td>
-                <p className="text-slate-500 lg:text-xl">会場</p>
+                <p className="text-slateGray lg:text-xl">会場</p>
               </td>
               <td>
                 <p className="font-semibold col-span-3 lg:text-xl">
@@ -36,8 +36,8 @@ const EventOverView = () => {
             </tr>
           </tbody>
         </table>
+        <CTAArea />
       </div>
-      <CTAArea />
     </section>
   );
 };

@@ -68,7 +68,7 @@ export default function MenuList({ color = "white", className, handleOpen }: Men
         </a>
       </MenuButton>
       <MenuButton>
-        <a href="/#staff" onClick={handleOpen}>
+        <a href="/#coreStaff" onClick={handleOpen}>
           スタッフ
         </a>
       </MenuButton>

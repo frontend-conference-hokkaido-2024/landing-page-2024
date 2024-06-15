@@ -7,8 +7,9 @@ export const Sponsor = {
     typeName: "プラチナ",
     // logosを変更することで、ロゴ画像の変更ができる
     logos: [
-      "/images/Icon/icon_longTailedTit.png",
-      "/images/Icon/icon_longTailedTit.png",
+      "/images/SponsorSection/platina/logo_CodeGrid.png",
+      "/images/SponsorSection/platina/logo_MESCIUS.png",
+      "/images/SponsorSection/platina/logo_teamLab.png",
     ] as string[],
     // グリッドが表示される領域の横幅を指定
     sponsorGridWidth: "w-11/12 mx-auto",
@@ -18,8 +19,9 @@ export const Sponsor = {
   LOCAL_GOLD: {
     typeName: "道内ゴールド",
     logos: [
-      "/images/Icon/icon_cantaloupe.png",
-      "/images/Icon/icon_cantaloupe.png",
+      "/images/SponsorSection/local-gold/logo_HAMWORKS.png",
+      "/images/SponsorSection/local-gold/logo_NILTO.png",
+      "/images/SponsorSection/local-gold/logo_sakura.png",
     ] as string[],
     sponsorGridWidth: "w-8/12 mx-auto",
     layout: "grid gap-8",
@@ -27,8 +29,9 @@ export const Sponsor = {
   GOLD: {
     typeName: "ゴールド",
     logos: [
-      "/images/Icon/icon_lavender.png",
-      "/images/Icon/icon_lavender.png",
+      "/images/SponsorSection/gold/logo_cybozu.png",
+      "/images/SponsorSection/gold/logo_kaonavi.png",
+      "/images/SponsorSection/gold/logo_LayerX.png",
     ] as string[],
     sponsorGridWidth: "w-8/12 mx-auto",
     layout: "grid gap-8",
@@ -36,29 +39,29 @@ export const Sponsor = {
   LOCAL: {
     typeName: "ローカル",
     logos: [
-      "/images/Icon/icon_lilyOfTheValley.png",
-      "/images/Icon/icon_lilyOfTheValley.png",
     ] as string[],
     sponsorGridWidth: "w-8/12 mx-auto",
     layout: "grid gap-8",
   },
   DESIGN: {
     typeName: "デザイン",
-    logos: ["/images/Icon/icon_owl.png"] as string[],
+    logos: [] as string[],
     sponsorGridWidth: "w-8/12 mx-auto",
     layout: "grid gap-8",
   },
   SPECIAL: {
     typeName: "スペシャル",
-    logos: ["/images/Icon/icon_redCrownedCrane.png"] as string[],
+    logos: [] as string[],
     sponsorGridWidth: "w-8/12 mx-auto",
     layout: "grid gap-8",
   },
   SILVER: {
     typeName: "シルバー",
     logos: [
-      "/images/Icon/icon_crab.png",
-      "/images/Icon/icon_crab.png",
+      "/images/SponsorSection/silver/logo_chot.png",
+      "/images/SponsorSection/silver/logo_MIERUNE.png",
+      "/images/SponsorSection/silver/logo_VueFesJapan.png",
+      "/images/SponsorSection/silver/logo_Blueish.png",
     ] as string[],
     sponsorGridWidth: "w-11/12 mx-auto",
     layout: "grid grid-cols-2 gap-8",

@@ -20,8 +20,8 @@ export const Sponsor = {
     typeName: "道内ゴールド",
     logos: [
       "/images/SponsorSection/local-gold/logo_HAMWORKS.png",
-      "/images/SponsorSection/local-gold/logo_NILTO.png",
       "/images/SponsorSection/local-gold/logo_sakura.png",
+      "/images/SponsorSection/local-gold/logo_NILTO.png",
     ] as string[],
     sponsorGridWidth: "w-8/12 mx-auto",
     layout: "grid gap-8",
@@ -29,17 +29,16 @@ export const Sponsor = {
   GOLD: {
     typeName: "ゴールド",
     logos: [
-      "/images/SponsorSection/gold/logo_cybozu.png",
       "/images/SponsorSection/gold/logo_kaonavi.png",
       "/images/SponsorSection/gold/logo_LayerX.png",
+      "/images/SponsorSection/gold/logo_cybozu.png",
     ] as string[],
     sponsorGridWidth: "w-8/12 mx-auto",
     layout: "grid gap-8",
   },
   LOCAL: {
     typeName: "ローカル",
-    logos: [
-    ] as string[],
+    logos: [] as string[],
     sponsorGridWidth: "w-8/12 mx-auto",
     layout: "grid gap-8",
   },
@@ -58,10 +57,10 @@ export const Sponsor = {
   SILVER: {
     typeName: "シルバー",
     logos: [
+      "/images/SponsorSection/silver/logo_Blueish.png",
+      "/images/SponsorSection/silver/logo_VueFesJapan.png",
       "/images/SponsorSection/silver/logo_chot.png",
       "/images/SponsorSection/silver/logo_MIERUNE.png",
-      "/images/SponsorSection/silver/logo_VueFesJapan.png",
-      "/images/SponsorSection/silver/logo_Blueish.png",
     ] as string[],
     sponsorGridWidth: "w-11/12 mx-auto",
     layout: "grid grid-cols-2 gap-8",

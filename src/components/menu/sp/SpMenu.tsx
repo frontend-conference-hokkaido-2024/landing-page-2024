@@ -34,7 +34,7 @@ export default function SpMenu() {
           />
         )}
       </div>
-      <SpMenuView className={isOpen ? "animate-fadeIn" : "hidden"} />
+      <SpMenuView className={isOpen ? "animate-fadeIn" : "hidden"} handleOpen={handleMenuOpen} />
     </>
   );
 }

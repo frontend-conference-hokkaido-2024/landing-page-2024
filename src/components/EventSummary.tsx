@@ -10,7 +10,7 @@ import Title from "@/components/elements/Title";
 
 export default function EventSummary() {
   return (
-    <div className="mx-5 text-center">
+    <div className="text-center">
       <Title
         icon={
           <Image
@@ -44,7 +44,7 @@ export default function EventSummary() {
         札幌を中心に、全国のプロダクト開発に関わるエンジニアとデザイナーが交わる場を作ることを目指し、HTML、CSS、JavaScript、UI、UX、デザイン、アクセシビリティ、SPA、PWAなど、Webに携わるすべてのフロントエンド領域に関心のある方を対象としています。
       </p>
 
-      <div className="flex flex-col justify-start mt-5 space-y-4">
+      <div className="flex flex-col justify-start mt-5 space-y-4 lg:w-3/4 lg:mx-auto">
         <CTAArea />
         <CommonButton asChild>
           <Link href="https://twitter.com/fec_hokkaido">

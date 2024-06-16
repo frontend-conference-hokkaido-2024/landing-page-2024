@@ -1,6 +1,6 @@
 import CTAArea from "./CTAArea";
-import TopVisual from "./TopVisual";
 import LogoText from "./images/LogoText";
+import TopVisual from "./images/TopVisual";
 
 const EventOverView = () => {
   return (

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
+
 import type { Note } from "note";
 
 import Title from "@/components/elements/Title";

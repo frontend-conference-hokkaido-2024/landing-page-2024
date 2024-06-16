@@ -44,7 +44,7 @@ export const Sponsor = {
   },
   DESIGN: {
     typeName: "デザイン",
-    logos: [] as string[],
+    logos: ["/images/SponsorSection/design/design_sponsor.jpg"] as string[],
     sponsorGridWidth: "w-8/12 mx-auto",
     layout: "grid gap-8",
   },

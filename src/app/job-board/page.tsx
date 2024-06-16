@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import frontend_conference_hokkaido_2024_logo from "@/asset/frontend_conference_hokkaido_2024_logo.png";
+import frontend_conference_hokkaido_2024_logo from "@/asset/frontend_conference_hokkaido_2024_logo_jobboard.png";
 import Paragraph from "@/components/elements/Paragraph";
 import LogoText from "@/components/images/LogoText";
 

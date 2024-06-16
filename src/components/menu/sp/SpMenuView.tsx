@@ -7,10 +7,11 @@ import CTAArea from "@/components/CTAArea";
 
 
 type SpMenuProps = {
-  className?: string
+  className?: string;
+  handleOpen?: () => void;
 };
 
-export default function SpMenuView({ className }: SpMenuProps) {
+export default function SpMenuView({ className, handleOpen }: SpMenuProps) {
   return (
     <div className={clsx("z-10 fixed flex items-center justify-center w-full h-full bg-ivory", className)}>
       <div className="w-3/4 flex flex-col items-center gap-5 mb-6 relative">
@@ -28,7 +29,7 @@ export default function SpMenuView({ className }: SpMenuProps) {
           height={72}
           className="object-contain absolute top-20 -right-5 rotate-[15deg]"
         />
-        <MenuList color="black" />
+        <MenuList color="black" handleOpen={handleOpen} />
         <CTAArea />
       </div>
     </div>

@@ -11,9 +11,10 @@ export default function Page() {
   const platinumSponsors: Sponsor = { type: "PLATINUM" };
   const localGoldSponsors: Sponsor = { type: "LOCAL_GOLD" };
   const goldSponsors: Sponsor = { type: "GOLD" };
-  const localSponsors: Sponsor = { type: "LOCAL" };
-  const designSponsors: Sponsor = { type: "DESIGN" };
-  const specialSponsors: Sponsor = { type: "SPECIAL" };
+  // ロゴをいただけていない or 未定のスポンサーはコメントアウト
+  // const localSponsors: Sponsor = { type: "LOCAL" };
+  // const designSponsors: Sponsor = { type: "DESIGN" };
+  // const specialSponsors: Sponsor = { type: "SPECIAL" };
   const silverSponsors: Sponsor = { type: "SILVER" };
 
   return (
@@ -35,9 +36,9 @@ export default function Page() {
         <SponsorSection sponsor={platinumSponsors} />
         <SponsorSection sponsor={localGoldSponsors} />
         <SponsorSection sponsor={goldSponsors} />
-        <SponsorSection sponsor={localSponsors} />
-        <SponsorSection sponsor={designSponsors} />
-        <SponsorSection sponsor={specialSponsors} />
+        {/* <SponsorSection sponsor={localSponsors} /> */}
+        {/* <SponsorSection sponsor={designSponsors} /> */}
+        {/* <SponsorSection sponsor={specialSponsors} /> */}
         <SponsorSection sponsor={silverSponsors} />
       </div>
     </section>

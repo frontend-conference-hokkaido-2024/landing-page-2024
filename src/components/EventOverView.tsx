@@ -15,7 +15,7 @@ const EventOverView = () => {
         <table className="text-lef text-sm mb-6">
           <tbody>
             <tr>
-              <td className="w-1/4">
+              <td className="w-1/4 align-top">
                 <p className="text-slateGray lg:text-xl">開催日時</p>
               </td>
               <td className="w-3/4">

@@ -9,12 +9,14 @@ type PersonalSponsor = {
   avatar_url: string;
 };
 
-export default function PersonalSponsorSection() {
+export default function Page() {
   const sponsors: PersonalSponsor[] = [
-    { id: 1, name: "Sponsor", avatar_url: "/images/Icon/sampleAvatar.png" },
-    { id: 2, name: "Sponsor", avatar_url: "/images/Icon/sampleAvatar.png" },
+    {
+      id: 1,
+      name: "yamanoku",
+      avatar_url: "/images/SponsorSection/personal/logo_yamanoku.png",
+    },
   ];
-
   // peopleがnullまたは空の配列の場合は何も表示しない
 
   return (

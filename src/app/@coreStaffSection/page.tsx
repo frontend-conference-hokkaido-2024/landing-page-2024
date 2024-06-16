@@ -1,20 +1,21 @@
+import Image from "next/image";
+
 import type { Person, StaffData } from "fortee";
 
 import Avatar from "@/components/Avatar";
+import Title from "@/components/elements/Title";
 
 export default async function Page() {
   if (process.env.FORTEE_API_HOST === undefined) {
     throw new Error("環境変数FORTEE_API_HOSTが設定されていません");
   }
 
-  const response = await fetch(`${process.env.FORTEE_API_HOST}/staff`, {
-    // Next.jsのcache戦略によりfetch結果がキャッシュされるので無効化（ビルド間でのキャッシュ共有を避けるため）
-    cache: "no-cache",
-  });
+  const response = await fetch(`${process.env.FORTEE_API_HOST}/staff`);
 
   if (!response.ok) {
+    const errorBody = await response.text();
     throw new Error(
-      `データ取得に失敗しました.\n  HTTPステータス: ${response.status}`
+      `データ取得に失敗しました.\n  HTTPステータス: ${response.status}\n body: ${errorBody}`
     );
   }
 
@@ -39,13 +40,27 @@ export default async function Page() {
   // peopleがnullまたは空の配列の場合は何も表示しない
 
   return (
-    <section className="mx-5 mb-12 text-center">
-      <h1 className="text-3xl font-extrabold mb-8">{"コアスタッフ"}</h1>
+    <section className="mx-5 mb-12 text-center" id="coreStaff">
+      <h1 className="font-extrabold mb-8">
+        <Title
+          icon={
+            <Image
+              src="/images/Icon/icon_lavender.png"
+              alt="Icon"
+              className="object-contain"
+              width={65} // 適切な幅を指定
+              height={65} // 適切な高さを指定
+            />
+          }
+        >
+          {"コアスタッフ"}
+        </Title>
+      </h1>
       <div className="grid grid-cols-2 lg:grid-cols-3">
         {people.length === 0 ? (
           <div>データがありません</div>
         ) : (
-          people.map((person) => <Avatar key={person.id} person={person} />)
+          people.map((person) => <Avatar key={person.id} image_url={person.avatar_url} name={person.name}/>)
         )}
       </div>
     </section>

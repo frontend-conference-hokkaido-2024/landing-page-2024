@@ -51,11 +51,11 @@ export const JOB_BOARD_SECTION_DATA: JobBoardSectionProps = [
   },
 
   // 株式会社LayerX
-  {
-    comment: "LayerXは、今後のプロダクト戦略で重要なテーマとして「AI-UX（AIを前提とした利用体験）」を掲げています。そして、最高のAI-UXを作り上げるにはAI以外のソフトウェア体験の磨き込み、改善基盤の構築も重要です。昨年策定したバクラクフロントエンドVisionでは「お客様に最高の体験を届けたい」「Webフロントエンドを楽しくしたい」という渾身の想いを込めました。ぜひ一度ご覧ください！",
-    imageUrl: "images/SponsorSection/gold/logo_LayerX.png",
-    href: "https://tech.layerx.co.jp/entry/2023/08/02/180000"
-  },
+  // {
+  //   comment: "LayerXは、今後のプロダクト戦略で重要なテーマとして「AI-UX（AIを前提とした利用体験）」を掲げています。そして、最高のAI-UXを作り上げるにはAI以外のソフトウェア体験の磨き込み、改善基盤の構築も重要です。昨年策定したバクラクフロントエンドVisionでは「お客様に最高の体験を届けたい」「Webフロントエンドを楽しくしたい」という渾身の想いを込めました。ぜひ一度ご覧ください！",
+  //   imageUrl: "images/SponsorSection/gold/logo_LayerX.png",
+  //   href: "https://tech.layerx.co.jp/entry/2023/08/02/180000"
+  // },
 
   // サイボウズ株式会社
   {

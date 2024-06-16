@@ -1,9 +1,11 @@
-import Image from "next/image";
-
 import AccessInfo from "@/components/AccessInfo";
 import EventOverView from "@/components/EventOverView";
 import EventSummary from "@/components/EventSummary";
-import CommonButton from "@/components/ui/CommonButton";
+import Online from "@/components/Online";
+import CoreStaffSection from "@/components/coreStaffSection/CoreStaffSection";
+import PersonalSponsorSection from "@/components/personalSponsorSection/PersonalSponsorSection";
+import SponsorSectionView from "@/components/sponsorSection/SponsorSectionView";
+import StaffBlog from "@/components/staffBlog/staffBlog";
 
 export default function Home() {
   return (
@@ -11,6 +13,11 @@ export default function Home() {
       <EventOverView />
       <EventSummary />
       <AccessInfo />
+      <Online />
+      <StaffBlog />
+      <SponsorSectionView />
+      <PersonalSponsorSection />
+      <CoreStaffSection />
     </div>
   );
 }

@@ -33,9 +33,10 @@ const colorSchemeData: ColorSchemeProps = {
 type MenuListProps = {
   color?: ColorScheme;
   className?: string;
+  handleOpen?: () => void; // SpMenu開閉用関数
 }
 
-export default function MenuList({ color = "white", className }: MenuListProps) {
+export default function MenuList({ color = "white", className, handleOpen }: MenuListProps) {
   const currentColor = colorSchemeData[color];
 
   const MenuButton = ({ children, className, ...props }: ButtonProps) => {
@@ -47,32 +48,32 @@ export default function MenuList({ color = "white", className }: MenuListProps) 
   return (
     <div className={clsx("flex flex-col items-start w-fit", className)}>
       <MenuButton>
-        <a href="#overview">
+        <a href="/#overview" onClick={handleOpen}>
           開催概要
         </a>
       </MenuButton>
       <MenuButton>
-        <a href="#access">
+        <a href="/#access" onClick={handleOpen}>
           会場アクセス
         </a>
       </MenuButton>
       <MenuButton>
-        <a href="#streaming">
+        <a href="/#streaming" onClick={handleOpen}>
           オンライン配信
         </a>
       </MenuButton>
       <MenuButton>
-        <a href="#sponsor">
+        <a href="/#sponsor" onClick={handleOpen}>
           スポンサー
         </a>
       </MenuButton>
       <MenuButton>
-        <a href="#staff">
+        <a href="/#coreStaff" onClick={handleOpen}>
           スタッフ
         </a>
       </MenuButton>
       <MenuButton asChild>
-        <Link href={{ pathname: "job-board" }}>
+        <Link href={{ pathname: "job-board" }} onClick={handleOpen}>
           ジョブボード
         </Link>
       </MenuButton>

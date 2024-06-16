@@ -2,6 +2,7 @@ import { Ticket } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
+import CTAArea from "./CTAArea";
 import CommonButton from "./ui/CommonButton";
 
 import frontend_conference_hokkaido_2024_logo from "@/asset/frontend_conference_hokkaido_2024_logo.png";
@@ -44,25 +45,7 @@ export default function EventSummary() {
       </p>
 
       <div className="flex flex-col justify-start mt-5 space-y-4">
-        <div className="space-y-1">
-          <CommonButton
-            background="bg-gradient-to-r from-pink-500 to-blue-500"
-            asChild
-          >
-            <Link
-              href="https://frontend-conf-2024-hokkaido.peatix.com/"
-              className="w-full"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Ticket />
-              <span className="px-2.5">チケット購入</span>
-            </Link>
-          </CommonButton>
-          <small className="text-caution text-xs font-bold">
-            ※オンライン視聴の場合もチケット購入が必要です
-          </small>
-        </div>
+        <CTAArea />
         <CommonButton asChild>
           <Link href="https://twitter.com/fec_hokkaido">
             <span className="px-2.5">@fec_hokkaido をフォロー！</span>

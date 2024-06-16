@@ -10,7 +10,7 @@ import Title from "@/components/elements/Title";
 
 export default function EventSummary() {
   return (
-    <div className="mx-5 text-center">
+    <div className="text-center">
       <Title
         icon={
           <Image

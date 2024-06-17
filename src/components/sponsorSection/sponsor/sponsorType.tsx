@@ -44,7 +44,9 @@ export const Sponsor = {
   },
   DESIGN: {
     typeName: "デザイン",
-    logos: ["/images/SponsorSection/design/design_sponsor.jpg"] as string[],
+    logos: [
+      "/images/SponsorSection/design/logo_douke.png"
+    ] as string[],
     sponsorGridWidth: "w-8/12 mx-auto",
     layout: "grid gap-8",
   },

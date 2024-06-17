@@ -18,7 +18,7 @@ export default function Page() {
   const silverSponsors: Sponsor = { type: "SILVER" };
 
   return (
-    <section className="mx-5 text-center" id="sponsor">
+    <section className="text-center" id="sponsor">
         <Title
           icon={
             <Image

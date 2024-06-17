@@ -20,9 +20,8 @@ export default function Page() {
   // peopleがnullまたは空の配列の場合は何も表示しない
 
   return (
-    <section className="mx-5 mb-12 text-center bg-cornsilk rounded-xl py-4">
-      <h1 className="font-extrabold mb-8">
-        <Title
+    <section className="text-center bg-cornsilk rounded-xl py-4">
+              <Title
           icon={
             <Image
               src="/images/Icon/icon_fox.png"
@@ -33,8 +32,9 @@ export default function Page() {
             />
           }
         >
-          {"個人スポンサー"}
+          個人スポンサー
         </Title>
+      <h1 className="font-extrabold mb-8">
       </h1>
       <div
         className={`grid ${

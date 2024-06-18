@@ -14,8 +14,8 @@ export default function Home() {
       <EventOverView />
       <EventSummary />
       <AccessInfo />
-      <TicketOrder />
       <Online />
+      <TicketOrder />
       <StaffBlog />
       <SponsorSectionView />
       <PersonalSponsorSection />

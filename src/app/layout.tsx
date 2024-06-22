@@ -35,21 +35,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  staffBlog,
-  sponsorSection,
-  personalSponsorSection,
-  coreStaffSection,
 }: Readonly<{
   children: React.ReactNode;
-  staffBlog: React.ReactNode;
-  sponsorSection: React.ReactNode;
-  personalSponsorSection: React.ReactNode;
-  coreStaffSection: React.ReactNode;
 }>) {
   return (
     <html lang="ja" className="scroll-smooth">
       <body
-        className={clsx("relative")}
+        className={clsx("relative bg-ivory text-black")}
         style={{
           fontFamily: `${inter.style.fontFamily}, ${NotoSansJP.style.fontFamily}`,
         }}
@@ -61,10 +53,6 @@ export default function RootLayout({
           <div className="w-full flex flex-col gap-24">
             <main className="flex flex-col gap-24 lg:px-12 px-8">
               {children}
-              {staffBlog}
-              {sponsorSection}
-              {personalSponsorSection}
-              {coreStaffSection}
             </main>
             <Footer />
           </div>

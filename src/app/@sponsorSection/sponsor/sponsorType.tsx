@@ -52,7 +52,10 @@ export const Sponsor = {
   },
   SPECIAL: {
     typeName: "スペシャル",
-    logos: [] as string[],
+    logos: [
+      "/images/SponsorSection/special/logo_LOCAL.png",
+      "/images/SponsorSection/special/logo_SapporoEngineerBase.png",
+    ] as string[],
     sponsorGridWidth: "w-8/12 mx-auto",
     layout: "grid gap-8",
   },

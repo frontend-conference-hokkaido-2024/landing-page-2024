@@ -2,6 +2,7 @@ import AccessInfo from "@/components/AccessInfo";
 import EventOverView from "@/components/EventOverView";
 import EventSummary from "@/components/EventSummary";
 import Online from "@/components/Online";
+import TicketOrder from "@/components/TicketOrder";
 import CoreStaffSection from "@/components/coreStaffSection/CoreStaffSection";
 import PersonalSponsorSection from "@/components/personalSponsorSection/PersonalSponsorSection";
 import SponsorSectionView from "@/components/sponsorSection/SponsorSectionView";
@@ -14,6 +15,7 @@ export default function Home() {
       <EventSummary />
       <AccessInfo />
       <Online />
+      <TicketOrder />
       <StaffBlog />
       <SponsorSectionView />
       <PersonalSponsorSection />

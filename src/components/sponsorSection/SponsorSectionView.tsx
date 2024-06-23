@@ -14,7 +14,7 @@ export default function Page() {
   // ロゴをいただけていない or 未定のスポンサーはコメントアウト
   // const localSponsors: Sponsor = { type: "LOCAL" };
   const designSponsors: Sponsor = { type: "DESIGN" };
-  // const specialSponsors: Sponsor = { type: "SPECIAL" };
+  const specialSponsors: Sponsor = { type: "SPECIAL" };
   const silverSponsors: Sponsor = { type: "SILVER" };
 
   return (
@@ -38,7 +38,7 @@ export default function Page() {
         <SponsorSection sponsor={goldSponsors} />
         {/* <SponsorSection sponsor={localSponsors} /> */}
         <SponsorSection sponsor={designSponsors} />
-        {/* <SponsorSection sponsor={specialSponsors} /> */}
+        <SponsorSection sponsor={specialSponsors} />
         <SponsorSection sponsor={silverSponsors} />
       </div>
     </section>

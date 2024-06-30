@@ -16,6 +16,7 @@ export default function Page() {
   const designSponsors: Sponsor = { type: "DESIGN" };
   const specialSponsors: Sponsor = { type: "SPECIAL" };
   const silverSponsors: Sponsor = { type: "SILVER" };
+  const receptionSponsors: Sponsor = { type: "RECEPTION" };
 
   return (
     <section className="text-center" id="sponsor">
@@ -40,6 +41,7 @@ export default function Page() {
         <SponsorSection sponsor={designSponsors} />
         <SponsorSection sponsor={specialSponsors} />
         <SponsorSection sponsor={silverSponsors} />
+        <SponsorSection sponsor={receptionSponsors} />
       </div>
     </section>
   );

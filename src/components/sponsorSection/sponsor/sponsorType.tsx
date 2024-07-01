@@ -44,15 +44,16 @@ export const Sponsor = {
   },
   DESIGN: {
     typeName: "デザイン",
-    logos: [
-      "/images/SponsorSection/design/logo_douke.png"
-    ] as string[],
+    logos: ["/images/SponsorSection/design/logo_douke.png"] as string[],
     sponsorGridWidth: "w-8/12 mx-auto",
     layout: "grid gap-8",
   },
   SPECIAL: {
     typeName: "スペシャル",
-    logos: [] as string[],
+    logos: [
+      "/images/SponsorSection/special/logo_SapporoEngineerBase.png",
+      "/images/SponsorSection/special/logo_LOCAL.png",
+    ] as string[],
     sponsorGridWidth: "w-8/12 mx-auto",
     layout: "grid gap-8",
   },
@@ -63,6 +64,19 @@ export const Sponsor = {
       "/images/SponsorSection/silver/logo_VueFesJapan.png",
       "/images/SponsorSection/silver/logo_chot.png",
       "/images/SponsorSection/silver/logo_MIERUNE.png",
+      "/images/SponsorSection/silver/logo_kakehashi.png",
+      "/images/SponsorSection/silver/logo_DMM.png",
+      "/images/SponsorSection/silver/logo_LINEYahoo.png",
+    ] as string[],
+    sponsorGridWidth: "w-11/12 mx-auto",
+    layout: "grid grid-cols-2 gap-8",
+  },
+  RECEPTION: {
+    typeName: "懇親会",
+    logos: [
+      "/images/SponsorSection/reception/logo_kakehashi.png",
+      "/images/SponsorSection/reception/logo_yumemi.png",
+      "/images/SponsorSection/reception/logo_CyberAgent.png",
     ] as string[],
     sponsorGridWidth: "w-11/12 mx-auto",
     layout: "grid grid-cols-2 gap-8",

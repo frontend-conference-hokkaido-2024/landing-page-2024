@@ -16,6 +16,11 @@ export default function Page() {
       name: "yamanoku",
       avatar_url: "/images/SponsorSection/personal/logo_yamanoku.png",
     },
+    {
+      id: 2,
+      name: "herablog",
+      avatar_url: "/images/SponsorSection/personal/logo_herablog.png",
+    },
   ];
   // peopleがnullまたは空の配列の場合は何も表示しない
 

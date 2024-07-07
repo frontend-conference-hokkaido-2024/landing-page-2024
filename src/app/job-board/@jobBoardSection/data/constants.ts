@@ -120,12 +120,12 @@ export const JOB_BOARD_SECTION_DATA: JobBoardSectionProps = [
   },
 
   // 株式会社ゆめみ
-  // {
-  //   comment:
-  //     "フロントエンドの最新技術に興味があり、",
-  //   imageUrl: "images/SponsorSection/reception/logo_yumemi.png",
-  //   href: "https://hrmos.co/pages/yumemi/jobs?jobType=FULL&category=1507899964010631168",
-  // },
+  {
+    comment:
+      "フロントエンド技術に情熱を持つエンジニア募集！アジャイル環境で挑戦し成長しませんか？",
+    imageUrl: "images/SponsorSection/reception/logo_yumemi.png",
+    href: "https://hrmos.co/pages/yumemi/jobs?jobType=FULL&category=1507899964010631168",
+  },
 
   // 株式会社サイバーエージェント
   {

@@ -7,7 +7,7 @@ import CommonButton from "./ui/CommonButton";
 
 const JobButton = () => {
   return (
-    <div className=" hidden lg:flex justify-center">
+    <div className="hidden lg:flex justify-center">
       <div className="w-3/4">
         <CommonButton
           background="bg-gradient-to-r from-pink-500 to-blue-500"

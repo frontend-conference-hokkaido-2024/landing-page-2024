@@ -1,7 +1,6 @@
 import AccessInfo from "@/components/AccessInfo";
 import EventOverView from "@/components/EventOverView";
 import EventSummary from "@/components/EventSummary";
-import JobButton from "@/components/JobButton";
 import Online from "@/components/Online";
 import TicketOrder from "@/components/TicketOrder";
 import CoreStaffSection from "@/components/coreStaffSection/CoreStaffSection";
@@ -19,7 +18,6 @@ export default function Home() {
       <TicketOrder />
       <StaffBlog />
       <SponsorSectionView />
-      <JobButton />
       <PersonalSponsorSection />
       <CoreStaffSection />
     </div>

@@ -1,3 +1,4 @@
+import { Handshake } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -46,17 +47,16 @@ export default function Page() {
         <SponsorSection sponsor={silverSponsors} />
         <SponsorSection sponsor={receptionSponsors} />
       </div>
-      <div className="mt-8">
-        <div className="hidden lg:flex justify-center w-3/4 mx-auto">
-          <CommonButton
-            background="bg-gradient-to-r from-pink-500 to-blue-500"
-            asChild
-          >
-            <Link href={{ pathname: "job-board" }} className="w-full">
-              <span className="pl-2.5">ジョブボードはこちら！</span>
-            </Link>
-          </CommonButton>
-        </div>
+      <div className="hidden lg:flex justify-center w-3/4 mx-auto mt-8">
+        <CommonButton
+          background="bg-gradient-to-r from-pink-500 to-blue-500"
+          asChild
+        >
+          <Link href={{ pathname: "job-board" }} className="w-full">
+            <Handshake />
+            <span className="pl-2.5">ジョブボードはこちら！</span>
+          </Link>
+        </CommonButton>
       </div>
     </section>
   );

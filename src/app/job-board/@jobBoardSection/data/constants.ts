@@ -71,14 +71,6 @@ export const JOB_BOARD_SECTION_DATA: JobBoardSectionProps = [
     href: "https://cybozu.co.jp/recruit/",
   },
 
-  // // 株式会社ブルーイッシュ
-  // {
-  //   comment:
-  //     "AIソリューション開発における全ての工程をオールインワンにまとめたAI・LLMアプリ開発プラットフォームのエンジニアを募集中！",
-  //   imageUrl: "images/SponsorSection/silver/logo_Blueish.png",
-  //   href: "https://www.wantedly.com/companies/company_2523491/projects",
-  // },
-
   // Vue Fes Japan
   {
     comment:

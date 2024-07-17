@@ -47,7 +47,7 @@ export default function Page() {
         <SponsorSection sponsor={silverSponsors} />
         <SponsorSection sponsor={receptionSponsors} />
       </div>
-      <div className="hidden lg:block w-3/4 mx-auto mt-8">
+      <div className="hidden md:block w-3/4 mx-auto mt-8">
         <CommonButton
           background="bg-gradient-to-r from-pink-500 to-blue-500"
           asChild

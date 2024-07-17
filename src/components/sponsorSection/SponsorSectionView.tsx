@@ -1,4 +1,8 @@
+import { Handshake } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
+
+import CommonButton from "../ui/CommonButton";
 
 import SponsorSection from "./sponsor/sponsorSection";
 
@@ -20,19 +24,19 @@ export default function Page() {
 
   return (
     <section className="text-center" id="sponsor">
-        <Title
-          icon={
-            <Image
-              src="/images/Icon/icon_longTailedTit.png"
-              alt="Icon"
-              className="object-contain"
-              width={65} // 適切な幅を指定
-              height={65} // 適切な高さを指定
-            />
-          }
-        >
-          {"スポンサー"}
-        </Title>
+      <Title
+        icon={
+          <Image
+            src="/images/Icon/icon_longTailedTit.png"
+            alt="Icon"
+            className="object-contain"
+            width={65} // 適切な幅を指定
+            height={65} // 適切な高さを指定
+          />
+        }
+      >
+        {"スポンサー"}
+      </Title>
       <div className="bg-cornsilk rounded-xl pt-4 pb-16 space-y-20">
         <SponsorSection sponsor={platinumSponsors} />
         <SponsorSection sponsor={localGoldSponsors} />
@@ -42,6 +46,17 @@ export default function Page() {
         <SponsorSection sponsor={specialSponsors} />
         <SponsorSection sponsor={silverSponsors} />
         <SponsorSection sponsor={receptionSponsors} />
+      </div>
+      <div className="hidden md:block w-3/4 mx-auto mt-8">
+        <CommonButton
+          background="bg-gradient-to-r from-pink-500 to-blue-500"
+          asChild
+        >
+          <Link href={{ pathname: "job-board" }} className="w-full">
+            <Handshake />
+            <span className="pl-2.5">ジョブボードはこちら！</span>
+          </Link>
+        </CommonButton>
       </div>
     </section>
   );

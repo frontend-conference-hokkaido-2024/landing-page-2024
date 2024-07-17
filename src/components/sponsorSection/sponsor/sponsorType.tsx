@@ -60,7 +60,6 @@ export const Sponsor = {
   SILVER: {
     typeName: "シルバー",
     logos: [
-      "/images/SponsorSection/silver/logo_Blueish.png",
       "/images/SponsorSection/silver/logo_VueFesJapan.png",
       "/images/SponsorSection/silver/logo_chot.png",
       "/images/SponsorSection/silver/logo_MIERUNE.png",

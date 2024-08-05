@@ -60,7 +60,7 @@ export default async function CoreStaffSection() {
         {people.length === 0 ? (
           <div>データがありません</div>
         ) : (
-          people.map((person) => <Avatar key={person.id} image_url={person.avatar_url} name={person.name}/>)
+          people.map((person) => <Avatar key={person.id} image_url={person.avatar_url} name={person.name} sns_url={person.url} />)
         )}
       </div>
     </section>

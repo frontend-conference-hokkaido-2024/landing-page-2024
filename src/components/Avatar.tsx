@@ -4,7 +4,7 @@ import Link from "next/link";
 type AvatarProps = {
   image_url: string;
   name: string;
-  sns_url: string;
+  sns_url?: string;
 };
 
 const Avatar = ({ image_url, name, sns_url }: AvatarProps) => {

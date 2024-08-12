@@ -10,7 +10,7 @@ declare module "fortee" {
   type Person = {
     id: string;
     name: string;
-    url: string;
+    url?: string;
     avatar_url: string;
   };
 }

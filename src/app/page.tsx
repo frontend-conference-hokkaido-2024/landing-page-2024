@@ -2,6 +2,7 @@ import AccessInfo from "@/components/AccessInfo";
 import EventOverView from "@/components/EventOverView";
 import EventSummary from "@/components/EventSummary";
 import Online from "@/components/Online";
+import Photos from "@/components/Photos";
 import TicketOrder from "@/components/TicketOrder";
 import CoreStaffSection from "@/components/coreStaffSection/CoreStaffSection";
 import PersonalSponsorSection from "@/components/personalSponsorSection/PersonalSponsorSection";
@@ -14,6 +15,7 @@ export default function Home() {
       <EventOverView />
       <EventSummary />
       <AccessInfo />
+      <Photos />
       <Online />
       <TicketOrder />
       <StaffBlog />

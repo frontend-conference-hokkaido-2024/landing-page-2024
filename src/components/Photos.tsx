@@ -12,7 +12,7 @@ export default function Photos() {
     <section className="flex flex-col">
       <Title icon={<Camera />}>当日の写真</Title>
       <Image
-        src="https://lh3.googleusercontent.com/pw/AP1GczPbgabQ8hLkk0ozFh5AitEs49O1TKnSleKwXwmlbmn-BInX_bVTWJvPK0Frzk_JLWSN5xb8V2WtIzfJv3lPRHKhv9aEaqhPnE-7sty_F_2TbL0qxii8EsJdxQlzD0n_vKivjqrxeI4S0xt9vGgXUigD=w1430-h953-s-no-gm?authuser=0"
+        src="/images/20240824_101801_DSC01945_shiozawa.JPG"
         width={250}
         height={250}
         className="object-contain rounded lg:w-3/4 w-full mb-4 mx-auto"

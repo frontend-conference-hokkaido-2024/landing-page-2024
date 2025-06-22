@@ -3,9 +3,10 @@ import { Inter, Noto_Sans_JP } from "next/font/google";
 
 import type { Metadata } from "next";
 
-import Base from "@/components/Base";
-
+import Base from "@/components/2024/Base";
+import Footer from "@/components/2024/Footer";
 import "./globals.css";
+import SpMenu from "@/components/2024/menu/sp/SpMenu";
 
 const inter = Inter({ subsets: ["latin"] });
 const NotoSansJP = Noto_Sans_JP({ subsets: ["latin"] });
@@ -38,8 +39,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja" className="scroll-smooth">
-      {children}
-    </html>
+    <body
+      className={clsx("relative bg-ivory text-black")}
+      style={{
+        fontFamily: `${inter.style.fontFamily}, ${NotoSansJP.style.fontFamily}`,
+      }}
+    >
+      <div></div>
+      {/*背景に何か要素をつけたいのであれば...*/}
+      <Base>
+        <SpMenu />
+        <div className="w-full flex flex-col gap-24">
+          <main className="flex flex-col gap-24 lg:px-12 px-8">
+            {children}
+          </main>
+          <Footer />
+        </div>
+      </Base>
+    </body>
   );
 }

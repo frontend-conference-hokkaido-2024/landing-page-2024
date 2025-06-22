@@ -41,9 +41,6 @@ export default function RootLayout({
   return (
     <body
       className={clsx("relative bg-ivory text-black")}
-      style={{
-        fontFamily: `${inter.style.fontFamily}, ${NotoSansJP.style.fontFamily}`,
-      }}
     >
       <div></div>
       {/*背景に何か要素をつけたいのであれば...*/}

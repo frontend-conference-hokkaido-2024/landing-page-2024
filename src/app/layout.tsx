@@ -1,9 +1,6 @@
-import clsx from "clsx";
 import { Inter, Noto_Sans_JP } from "next/font/google";
 
 import type { Metadata } from "next";
-
-import Base from "@/components/Base";
 
 import "./globals.css";
 
@@ -38,7 +35,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja" className="scroll-smooth">
+    <html
+      lang="ja"
+      className="scroll-smooth"
+      style={{
+        fontFamily: `${inter.style.fontFamily}, ${NotoSansJP.style.fontFamily}`,
+      }}
+      >
       {children}
     </html>
   );

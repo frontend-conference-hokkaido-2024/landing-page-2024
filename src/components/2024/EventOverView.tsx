@@ -1,4 +1,3 @@
-import CTAArea from "./CTAArea";
 import LogoText from "./images/LogoText";
 import TopVisual from "./images/TopVisual";
 
@@ -36,7 +35,6 @@ const EventOverView = () => {
             </tr>
           </tbody>
         </table>
-        <CTAArea />
       </div>
     </section>
   );

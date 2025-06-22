@@ -3,7 +3,6 @@ import EventOverView from "@/components/2024/EventOverView";
 import EventSummary from "@/components/2024/EventSummary";
 import Online from "@/components/2024/Online";
 import Photos from "@/components/2024/Photos";
-import TicketOrder from "@/components/2024/TicketOrder";
 import CoreStaffSection from "@/components/2024/coreStaffSection/CoreStaffSection";
 import PersonalSponsorSection from "@/components/2024/personalSponsorSection/PersonalSponsorSection";
 import SponsorSectionView from "@/components/2024/sponsorSection/SponsorSectionView";
@@ -17,7 +16,6 @@ export default function Home() {
       <AccessInfo />
       <Photos />
       <Online />
-      <TicketOrder />
       <StaffBlog />
       <SponsorSectionView />
       <PersonalSponsorSection />

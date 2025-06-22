@@ -5,9 +5,6 @@ import Image from "next/image";
 
 import MenuList from "../MenuList";
 
-import CTAArea from "@/components/2024/CTAArea";
-
-
 type SpMenuProps = {
   className?: string;
   handleOpen?: () => void;
@@ -32,7 +29,6 @@ export default function SpMenuView({ className, handleOpen }: SpMenuProps) {
           className="object-contain absolute top-20 -right-5 rotate-[15deg]"
         />
         <MenuList color="black" handleOpen={handleOpen} />
-        <CTAArea />
       </div>
     </div>
   );

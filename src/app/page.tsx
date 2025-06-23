@@ -7,7 +7,7 @@ interface NoteArticle {
   link: string;
 }
 
-export const fetchNotes = async () => {
+const fetchNotes = async () => {
   const noteRssXML = await fetch(
     "https://note.com/fec_hokkaido/m/m88550dbf59dd/rss"
   )

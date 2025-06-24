@@ -25,8 +25,8 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  FORTEE_API_HOST: ${{ secrets.FORTEE_API_HOST }}
-  PRODUCTION_URL: ${{ secrets.PRODUCTION_URL }}
+  FORTEE_API_HOST_2024: ${{ secrets.FORTEE_API_HOST_2024 }}
+  PRODUCTION_URL_2024: ${{ secrets.PRODUCTION_URL_2024 }}
 
 jobs:
   # Build job
@@ -69,8 +69,8 @@ jobs:
       - name: make .env
         run: |
           touch .env.production
-          echo "FORTEE_API_HOST=$FORTEE_API_HOST" >> .env.production
-          echo "PRODUCTION_URL=$PRODUCTION_URL" >> .env.production
+          echo "FORTEE_API_HOST_2024=$FORTEE_API_HOST_2024" >> .env.production
+          echo "PRODUCTION_URL_2024=$PRODUCTION_URL_2024" >> .env.production
       - name: Build with Next.js
         run: pnpm build
       - name: Upload artifact

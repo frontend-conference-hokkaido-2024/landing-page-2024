@@ -1,0 +1,27 @@
+name: Development
+description: 実装と直接関係ない開発環境の整備などのタスク
+title: "[Development]: "
+labels: ["development"]
+projects: ["frontend-conference-hokkaido-2024/4"]
+body:
+  - type: textarea
+    id: overview
+    attributes:
+      label: タスクの概要
+      description: |
+        タスクの概要を記述してください。
+        必要に応じてスクリーンショットを添付してください。
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 優先度
+      description: issue起票後にラベルを付与してください。
+      options: ["high", "medium", "low", "-" ]
+    validations:
+      required: true
+  - type: textarea
+    id: sidenote
+    attributes:
+      label: 補足

@@ -8,11 +8,17 @@ const inter = Inter({ subsets: ["latin"] });
 const NotoSansJP = Noto_Sans_JP({ subsets: ["latin"] });
 
 const title: string = "フロントエンドカンファレンス北海道2025";
-const description: string = "フロントエンド領域のエンジニア・デザイナー向けの技術カンファレンス「フロントエンドカンファレンス北海道2025」を2024年9月6日(土)に札幌で開催";
+const description: string =
+  "フロントエンド領域のエンジニア・デザイナー向けの技術カンファレンス「フロントエンドカンファレンス北海道2025」を2025年9月6日(土)に札幌で開催";
+const targetURL = process.env.PRODUCTION_URL_2025;
+if (!targetURL) {
+  throw new Error("PRODUCTION_URL_2025 environment variable is not defined");
+}
 
 export const metadata: Metadata = {
   title,
   description,
+  metadataBase: new URL(targetURL),
   openGraph: {
     title,
     description,
@@ -36,7 +42,7 @@ export default function RootLayout({
       style={{
         fontFamily: `${inter.style.fontFamily}, ${NotoSansJP.style.fontFamily}`,
       }}
-      >
+    >
       {children}
     </html>
   );

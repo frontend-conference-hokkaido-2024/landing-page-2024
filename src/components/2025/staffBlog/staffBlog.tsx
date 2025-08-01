@@ -11,7 +11,7 @@ export default function StaffBlog() {
       <Title
         icon={
           <Image
-            src="images/2024/Icon/icon_cantaloupe.png"
+            src="images/2025/Icon/icon_salmonRoe.png"
             height={30}
             width={40}
             alt=""

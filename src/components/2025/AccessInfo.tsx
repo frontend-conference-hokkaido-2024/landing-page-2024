@@ -14,7 +14,7 @@ export default function AccessInfo() {
           loading="lazy"
           className="w-full lg:w-3/4 rounded-xl"
         ></iframe>
-        <div className="w-full lg:w-3/4 py-5 px-6 bg-cornsilk rounded-xl">
+        <div className="w-full lg:w-3/4 py-5 px-6 bg-ContentBackground rounded-xl">
           <table className="text-left mx-auto">
             <tbody>
               <tr>

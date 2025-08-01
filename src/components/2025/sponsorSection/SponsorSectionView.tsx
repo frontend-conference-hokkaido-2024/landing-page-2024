@@ -27,7 +27,7 @@ export default function Page() {
       <Title
         icon={
           <Image
-            src="/images/2024/Icon/icon_longTailedTit.png"
+            src="/images/2025/Icon/icon_lilyOfTheValley.png"
             alt="Icon"
             className="object-contain"
             width={65} // 適切な幅を指定
@@ -37,16 +37,16 @@ export default function Page() {
       >
         {"スポンサー"}
       </Title>
-      <div className="bg-cornsilk rounded-xl pt-4 pb-16 space-y-20">
+      <div className="bg-ContentBackground rounded-xl pt-4 pb-16 space-y-20">
         <SponsorSection sponsor={platinumSponsors} />
         <SponsorSection sponsor={goldSponsors} />
         <SponsorSection sponsor={localGoldSponsors} />
         <SponsorSection sponsor={designSponsors} />
         <SponsorSection sponsor={silverSponsors} />
       </div>
-      <div className="hidden md:block w-3/4 mx-auto mt-8">
+      <div className="md:block w-3/4 mx-auto mt-8">
         <CommonButton
-          background="bg-gradient-to-r from-pink-500 to-blue-500"
+          background="bg-gradient-to-r from-ButtonBlue via-ButtonPurple to-ButtonVibrantPurple"
           asChild
         >
           <Link href={{ pathname: "/job-board" }} className="w-full">

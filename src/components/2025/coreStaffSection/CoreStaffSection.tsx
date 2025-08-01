@@ -2,8 +2,8 @@ import Image from "next/image";
 
 import type { Person, StaffData } from "fortee";
 
-import Avatar from "@/components/2024/Avatar";
-import Title from "@/components/2024/elements/Title";
+import Avatar from "@/components/2025/Avatar";
+import Title from "@/components/2025/elements/Title";
 
 export default async function CoreStaffSection() {
   if (process.env.FORTEE_API_HOST_2025 === undefined) {
@@ -45,7 +45,7 @@ export default async function CoreStaffSection() {
         <Title
           icon={
             <Image
-              src="/images/2024/Icon/icon_lavender.png"
+              src="/images/2025/Icon/icon_salmon.png"
               alt="Icon"
               className="object-contain"
               width={65} // 適切な幅を指定

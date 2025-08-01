@@ -5,8 +5,8 @@ import React from "react";
 // import CommonButton from "./elements/CommonButton";
 import TicketLogo from "./images/icon/TicketLogo";
 
-// import Paragraph from "@/components/2024/elements/Paragraph";
-import Title from "@/components/2024/elements/Title";
+// import Paragraph from "@/components/2025/elements/Paragraph";
+import Title from "@/components/2025/elements/Title";
 
 const TicketOrder = () => {
   return (

@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import Avatar from "@/components/2024/Avatar";
-import Title from "@/components/2024/elements/Title";
+import Avatar from "@/components/2025/Avatar";
+import Title from "@/components/2025/elements/Title";
 
 type PersonalSponsor = {
   id: number;

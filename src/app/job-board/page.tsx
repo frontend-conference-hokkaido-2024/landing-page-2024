@@ -12,7 +12,7 @@ export default function Home() {
         <LogoText />
         <div className="flex gap-3 border-b-2 pb-1 border-black">
           <Image
-            src="/images/2024/Icon/icon_crab.png"
+            src="/images/2025/Icon/icon_Genghiskhan.png"
             alt=""
             width={32}
             height={32}

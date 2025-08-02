@@ -14,7 +14,7 @@ export default function SpMenuView({ className, handleOpen }: SpMenuProps) {
   return (
     <div
       className={clsx(
-        "z-10 fixed flex items-center justify-center w-full h-full bg-ivory",
+        "z-10 fixed flex items-center justify-center w-full h-full bg-BackgroundPurple",
         className
       )}
     >

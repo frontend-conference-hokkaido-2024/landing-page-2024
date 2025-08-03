@@ -48,8 +48,8 @@ export default function Page() {
             src="/images/2025/Icon/icon_scallops.png"
             alt="Icon"
             className="object-contain"
-            width={65} // 適切な幅を指定
-            height={65} // 適切な高さを指定
+            width={45} // 適切な幅を指定
+            height={45} // 適切な高さを指定
           />
         }
       >

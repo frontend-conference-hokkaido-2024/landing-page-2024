@@ -89,7 +89,7 @@ export default async function StaffBlog() {
                 alt="記事アイコン"
                 className="w-auto border-1"
               />
-              <p className="text-sm font-bold text-gray-900 line-clamp-2 leading-tight">
+              <p className="text-sm font-bold text-gray-900 line-clamp-2 leading-tight text-center pt-3">
                 {latestArticle.title}
               </p>
             </Link>

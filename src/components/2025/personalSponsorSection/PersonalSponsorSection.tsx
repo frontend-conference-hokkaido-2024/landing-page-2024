@@ -13,13 +13,28 @@ export default function Page() {
   const sponsors: PersonalSponsor[] = [
     {
       id: 1,
-      name: "2025",
-      avatar_url: "/images/2025/note-image-in-contents.png",
+      name: "湯村 翼",
+      avatar_url: "/images/2025/SponsorSection/personal/湯村 翼.png",
     },
     {
       id: 2,
-      name: "2025",
-      avatar_url: "/images/2025/note-image-in-contents.png",
+      name: "tacck",
+      avatar_url: "/images/2025/SponsorSection/personal/tacck.png",
+    },
+        {
+      id: 3,
+      name: "kou",
+      avatar_url: "/images/2025/SponsorSection/personal/kou.png",
+    },
+        {
+      id: 4,
+      name: "potato4d(Takuma HANATANI)",
+      avatar_url: "/images/2025/SponsorSection/personal/potato4d(Takuma HANATANI).jpeg",
+    },
+        {
+      id: 5,
+      name: "やまのく",
+      avatar_url: "/images/2025/SponsorSection/personal/やまのく.png",
     },
   ];
   // peopleがnullまたは空の配列の場合は何も表示しない

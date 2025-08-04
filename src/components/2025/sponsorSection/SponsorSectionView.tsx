@@ -39,13 +39,10 @@ export default function Page() {
       </Title>
       <div className="bg-cornsilk rounded-xl pt-4 pb-16 space-y-20">
         <SponsorSection sponsor={platinumSponsors} />
-        <SponsorSection sponsor={localGoldSponsors} />
         <SponsorSection sponsor={goldSponsors} />
-        {/* <SponsorSection sponsor={localSponsors} /> */}
+        <SponsorSection sponsor={localGoldSponsors} />
         <SponsorSection sponsor={designSponsors} />
-        <SponsorSection sponsor={specialSponsors} />
         <SponsorSection sponsor={silverSponsors} />
-        <SponsorSection sponsor={receptionSponsors} />
       </div>
       <div className="hidden md:block w-3/4 mx-auto mt-8">
         <CommonButton

@@ -7,9 +7,8 @@ export const Sponsor = {
     typeName: "プラチナ",
     // logosを変更することで、ロゴ画像の変更ができる
     logos: [
-      "/images/2025/note-image-in-contents.png",
-      "/images/2025/note-image-in-contents.png",
-      "/images/2025/note-image-in-contents.png",
+      "/images/2025/SponsorSection/platina/chot Inc..png",
+      "/images/2025/SponsorSection/platina/株式会社Gaudiy.png",
     ] as string[],
     // グリッドが表示される領域の横幅を指定
     sponsorGridWidth: "w-11/12 mx-auto",
@@ -17,11 +16,10 @@ export const Sponsor = {
     layout: "grid gap-8",
   },
   LOCAL_GOLD: {
-    typeName: "道内ゴールド",
+    typeName: "ローカルゴールド",
     logos: [
-      "/images/2025/note-image-in-contents.png",
-      "/images/2025/note-image-in-contents.png",
-      "/images/2025/note-image-in-contents.png",
+      "/images/2025/SponsorSection/local-gold/株式会社MIERUNE.png",
+      "/images/2025/SponsorSection/local-gold/Sapporo Engineer Base.png",
     ] as string[],
     sponsorGridWidth: "w-8/12 mx-auto",
     layout: "grid gap-8",
@@ -29,9 +27,9 @@ export const Sponsor = {
   GOLD: {
     typeName: "ゴールド",
     logos: [
-      "/images/2025/note-image-in-contents.png",
-      "/images/2025/note-image-in-contents.png",
-      "/images/2025/note-image-in-contents.png",
+      "/images/2025/SponsorSection/gold/テックタッチ株式会社.png",
+      "/images/2025/SponsorSection/gold/株式会社HAMWORKS.png",
+      "/images/2025/SponsorSection/gold/さくらインターネット株式会社.png",
     ] as string[],
     sponsorGridWidth: "w-8/12 mx-auto",
     layout: "grid gap-8",
@@ -44,7 +42,7 @@ export const Sponsor = {
   },
   DESIGN: {
     typeName: "デザイン",
-    logos: ["/images/2025/note-image-in-contents.png"] as string[],
+    logos: ["/images/2025/SponsorSection/design/design_sponsor.jpg"] as string[],
     sponsorGridWidth: "w-8/12 mx-auto",
     layout: "grid gap-8",
   },
@@ -60,12 +58,12 @@ export const Sponsor = {
   SILVER: {
     typeName: "シルバー",
     logos: [
-      "/images/2025/note-image-in-contents.png",
-      "/images/2025/note-image-in-contents.png",
-      "/images/2025/note-image-in-contents.png",
-      "/images/2025/note-image-in-contents.png",
-      "/images/2025/note-image-in-contents.png",
-      "/images/2025/note-image-in-contents.png",
+      "/images/2025/SponsorSection/silver/株式会社PR TIMES.png",
+      "/images/2025/SponsorSection/silver/株式会社えにしテック.png",
+      "/images/2025/SponsorSection/silver/CodeRabbit.png",
+      "/images/2025/SponsorSection/silver/株式会社ノベルティ.png",
+      "/images/2025/SponsorSection/silver/メシウス株式会社.png",
+      "/images/2025/SponsorSection/silver/株式会社カオナビ.png",
     ] as string[],
     sponsorGridWidth: "w-11/12 mx-auto",
     layout: "grid grid-cols-2 gap-8",
@@ -73,9 +71,6 @@ export const Sponsor = {
   RECEPTION: {
     typeName: "懇親会",
     logos: [
-      "/images/2025/note-image-in-contents.png",
-      "/images/2025/note-image-in-contents.png",
-      "/images/2025/note-image-in-contents.png",
     ] as string[],
     sponsorGridWidth: "w-11/12 mx-auto",
     layout: "grid grid-cols-2 gap-8",

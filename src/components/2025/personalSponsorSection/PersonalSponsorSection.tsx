@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import Avatar from "@/components/2024/Avatar";
-import Title from "@/components/2024/elements/Title";
+import Avatar from "@/components/2025/Avatar";
+import Title from "@/components/2025/elements/Title";
 
 type PersonalSponsor = {
   id: number;
@@ -21,17 +21,18 @@ export default function Page() {
       name: "tacck",
       avatar_url: "/images/2025/SponsorSection/personal/tacck.png",
     },
-        {
+    {
       id: 3,
       name: "kou",
       avatar_url: "/images/2025/SponsorSection/personal/kou.png",
     },
-        {
+    {
       id: 4,
       name: "potato4d(Takuma HANATANI)",
-      avatar_url: "/images/2025/SponsorSection/personal/potato4d(Takuma HANATANI).jpeg",
+      avatar_url:
+        "/images/2025/SponsorSection/personal/potato4d(Takuma HANATANI).jpeg",
     },
-        {
+    {
       id: 5,
       name: "やまのく",
       avatar_url: "/images/2025/SponsorSection/personal/やまのく.png",
@@ -40,15 +41,15 @@ export default function Page() {
   // peopleがnullまたは空の配列の場合は何も表示しない
 
   return (
-    <section className="text-center bg-cornsilk rounded-xl py-4">
+    <section className="text-center bg-ContentBackground rounded-xl py-4">
       <Title
         icon={
           <Image
-            src="/images/2024/Icon/icon_fox.png"
+            src="/images/2025/Icon/icon_scallops.png"
             alt="Icon"
             className="object-contain"
-            width={65} // 適切な幅を指定
-            height={65} // 適切な高さを指定
+            width={45} // 適切な幅を指定
+            height={45} // 適切な高さを指定
           />
         }
       >

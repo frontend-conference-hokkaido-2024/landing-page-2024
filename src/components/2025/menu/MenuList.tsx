@@ -137,6 +137,14 @@ export default function MenuList({
           プライバシーポリシー
         </Link>
       </MenuButton>
+
+      <Separator className={clsx("border w-full my-2", currentColor.border)} />
+
+      <MenuButton asChild>
+        <Link href={{ pathname: "/2024" }} onClick={handleOpen}>
+          2024
+        </Link>
+      </MenuButton>
     </div>
   );
 }

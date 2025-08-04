@@ -10,22 +10,23 @@ type AvatarProps = {
 const Avatar = ({ image_url, name, sns_url }: AvatarProps) => {
   return (
     <div className="mb-8">
-      <Image
-        src={image_url}
-        alt={"icon"}
-        width={145}
-        height={145}
-        className="mx-auto mb-2 rounded-full border-4 border-white"
-      />
+      <div className="w-[145px] h-[145px] mx-auto mb-2 rounded-full border-4 border-white overflow-hidden">
+        <Image
+          src={image_url}
+          alt={"icon"}
+          width={145}
+          height={145}
+          className="w-full h-full object-cover"
+        />
+      </div>
       <p className="text-center text-sm font-semibold text-black">
-        {
-          sns_url ?
-            <Link href={sns_url} target="_blank" rel="noopener noreferrer">
-              {name}
-            </Link>
-            :
-            name
-        }
+        {sns_url ? (
+          <Link href={sns_url} target="_blank" rel="noopener noreferrer">
+            {name}
+          </Link>
+        ) : (
+          name
+        )}
       </p>
     </div>
   );

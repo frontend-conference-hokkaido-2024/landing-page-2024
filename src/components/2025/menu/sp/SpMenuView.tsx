@@ -12,17 +12,22 @@ type SpMenuProps = {
 
 export default function SpMenuView({ className, handleOpen }: SpMenuProps) {
   return (
-    <div className={clsx("z-10 fixed flex items-center justify-center w-full h-full bg-ivory", className)}>
+    <div
+      className={clsx(
+        "z-10 fixed flex items-center justify-center w-full h-full bg-BackgroundPurple",
+        className
+      )}
+    >
       <div className="w-3/4 flex flex-col items-center gap-5 mb-6 relative">
         <Image
-          src="images/2024/Icon/icon_owl.png"
+          src="images/2025/Icon/icon_redCrownedCrane.png"
           alt=""
           width={72}
           height={72}
           className="object-contain absolute top-0 -left-8 -rotate-[16deg]"
         />
         <Image
-          src="images/2024/Icon/icon_fox.png"
+          src="images/2025/Icon/icon_butter.png"
           alt=""
           width={72}
           height={72}

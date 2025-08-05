@@ -31,6 +31,9 @@ export const metadata: Metadata = {
     description,
     site: "@fec_hokkaido",
   },
+  icons: {
+    icon: "images/2024/favicon.ico",
+  },
 };
 
 export default function RootLayout({

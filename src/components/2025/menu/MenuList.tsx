@@ -119,15 +119,15 @@ export default function MenuList({
           行動規範
         </Link>
       </MenuButton>
-      {/* <MenuButton asChild>
+      <MenuButton asChild>
         <Link
-          href="https://www.local.or.jp/about/tokushohou"
+          href="https://mikan-foundation.org/tokushouhou-fec-hokkaido-2025/"
           target="_blank"
           rel="noopener noreferrer"
         >
           特定商取引法に基づく表記
         </Link>
-      </MenuButton> */}
+      </MenuButton>
       <MenuButton asChild>
         <Link
           href="https://esa-pages.io/p/sharing/22435/posts/16/fa9327797c275684e463.html"

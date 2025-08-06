@@ -36,11 +36,11 @@ export default function EventSummary() {
         </h3>
       </div>
 
-      <p className="tracking-wider break-words text-left mt-8 mb-8 indent-5">
-        2025年9月6日（土）に北海道札幌市で開催する、フロントエンド領域に関心のある参加者を対象とした技術イベントです。
+      <p className="tracking-wider break-words text-left mt-8 indent-5">
+        2025年9月6日（土）に北海道札幌市で開催する、Webフロントエンド領域に関心のある参加者を対象とした技術イベントです。
       </p>
       <p className="tracking-wider break-words text-left mb-8 indent-5">
-        札幌を中心に、全国のプロダクト開発に関わるエンジニアとデザイナーが交わる場を作ることを目指し、HTML、CSS、JavaScript、UI、UX、デザイン、アクセシビリティ、SPA、PWAなど、Webに携わるすべてのフロントエンド領域に関心のある方を対象としています。
+        全国のプロダクト開発に関わるエンジニアとデザイナーが交わる場を作ることを目指し、Webに携わるすべてのフロントエンド領域に関心のある方を対象としています。
       </p>
 
       <div className="flex flex-col justify-start mt-5 space-y-4 lg:w-3/4 lg:mx-auto">

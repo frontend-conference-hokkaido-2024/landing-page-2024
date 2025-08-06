@@ -40,23 +40,6 @@ const EventOverView = () => {
           </tbody>
         </table>
       </div>
-      <div>
-        <CommonButton
-          background={
-            "bg-gradient-to-r from-ButtonBlue via-ButtonPurple to-ButtonVibrantPurple"
-          }
-          className="w-2/3 lg:w-3/4 m-auto"
-          asChild
-        >
-          <Link href="/">
-            <WhiteTicketLogo />
-            <span className="px-2.5 font-bold">チケット購入</span>
-          </Link>
-        </CommonButton>
-        <p className="text-xs text-red-800 text-center p-2 font-bold">
-          ※オンライン視聴の場合もチケット購入が必要です
-        </p>
-      </div>
     </section>
   );
 };

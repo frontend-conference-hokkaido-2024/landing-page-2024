@@ -4,7 +4,7 @@ import Link from "next/link";
 import CommonButton from "./elements/CommonButton";
 import WhiteTicketLogo from "./images/icon/WhiteTicketLogo";
 
-import frontend_conference_hokkaido_2024_logo from "@/asset/frontend_conference_hokkaido_2024_logo.png";
+import frontend_conference_hokkaido_2025_logo from "@/asset/frontend_conference_hokkaido_2025_logo.png";
 import Title from "@/components/2025/elements/Title";
 
 export default function EventSummary() {
@@ -24,7 +24,7 @@ export default function EventSummary() {
         {"イベント概要"}
       </Title>
       <Image
-        src={frontend_conference_hokkaido_2024_logo}
+        src={frontend_conference_hokkaido_2025_logo}
         alt=""
         className=" rounded-md"
       />

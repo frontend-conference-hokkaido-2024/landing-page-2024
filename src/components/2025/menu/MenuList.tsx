@@ -130,7 +130,7 @@ export default function MenuList({
       </MenuButton> */}
       <MenuButton asChild>
         <Link
-          href="https://aback-jasmine-06b.notion.site/cf184497a6414a97aea49c1f1b2f5b5f"
+          href="https://esa-pages.io/p/sharing/22435/posts/16/fa9327797c275684e463.html"
           target="_blank"
           rel="noopener noreferrer"
         >

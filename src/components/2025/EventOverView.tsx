@@ -23,7 +23,7 @@ const EventOverView = () => {
               </td>
               <td className="w-3/4">
                 <p className="font-semibold col-span-3 lg:text-xl">
-                  2025.09.06(Sat.) 00:00~00:00
+                  2025.09.06(Sat.) 10:00~20:30
                 </p>
               </td>
             </tr>

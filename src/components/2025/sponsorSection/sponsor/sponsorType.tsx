@@ -42,9 +42,9 @@ export const Sponsor = {
   },
   DESIGN: {
     typeName: "デザイン",
-    logos: ["/images/2025/SponsorSection/design/design_sponsor.jpg"] as string[],
-    sponsorGridWidth: "w-8/12 mx-auto",
-    layout: "grid gap-8",
+    logos: ["/images/2025/SponsorSection/design/logo_douke.png"] as string[],
+    sponsorGridWidth: "w-5/12 mx-auto", // SILVERと同じ幅
+    layout: "grid grid-cols-1 gap-8", // 一列表示
   },
   SPECIAL: {
     typeName: "スペシャル",

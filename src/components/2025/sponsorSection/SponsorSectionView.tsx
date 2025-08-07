@@ -41,8 +41,8 @@ export default function Page() {
         <SponsorSection sponsor={platinumSponsors} />
         <SponsorSection sponsor={goldSponsors} />
         <SponsorSection sponsor={localGoldSponsors} />
-        <SponsorSection sponsor={designSponsors} />
         <SponsorSection sponsor={silverSponsors} />
+        <SponsorSection sponsor={designSponsors} />
       </div>
       <div className="md:block w-3/4 mx-auto mt-8">
         <CommonButton

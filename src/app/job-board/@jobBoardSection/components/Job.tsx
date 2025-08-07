@@ -17,7 +17,7 @@ export type JobProps = {
 
 export default function Job({ comment, imageUrl, href, alt = "" }: JobProps) {
   return (
-    <div className="w-72 h-96 flex flex-col gap-3 p-6 bg-BackgroundPurple border rounded-md border-black">
+    <div className="w-72 h-[458px] flex flex-col gap-3 p-6 bg-BackgroundPurple border rounded-md border-black">
       {/* paddingつける */}
       <Image
         className="w-full h-44 bg-white object-contain rounded"

@@ -24,7 +24,7 @@ export default function Page() {
     {
       id: 3,
       name: "kou",
-      avatar_url: "/images/2025/SponsorSection/personal/kou.png",
+      avatar_url: "/images/2025/SponsorSection/personal/Kou.png",
     },
     {
       id: 4,
@@ -68,7 +68,7 @@ export default function Page() {
         {sponsors.map((sponsor) => (
           <Avatar
             key={sponsor.id}
-            image_url={sponsor.avatar_url}
+            image_url={sponsor?.avatar_url}
             name={sponsor.name}
           />
         ))}

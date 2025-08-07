@@ -45,7 +45,11 @@ export default function EventSummary() {
 
       <div className="flex flex-col justify-start mt-5 space-y-4 lg:w-3/4 lg:mx-auto">
         <CommonButton asChild>
-          <Link href="https://twitter.com/fec_hokkaido">
+          <Link
+            href="https://twitter.com/fec_hokkaido"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
             <span className="px-2.5">@fec_hokkaido をフォロー！</span>
           </Link>
         </CommonButton>

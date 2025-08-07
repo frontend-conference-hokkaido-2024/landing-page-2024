@@ -98,7 +98,11 @@ export default async function StaffBlog() {
       )}
 
       <CommonButton asChild>
-        <Link href="https://note.com/fec_hokkaido">
+        <Link
+          href="https://note.com/fec_hokkaido"
+          target="_blank"
+          rel="noreferrer"
+        >
           <NoteLogo />
           <span className="px-2.5">スタッフブログ(note)</span>
         </Link>

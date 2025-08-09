@@ -27,6 +27,8 @@ concurrency:
 env:
   FORTEE_API_HOST_2024: ${{ secrets.FORTEE_API_HOST_2024 }}
   PRODUCTION_URL_2024: ${{ secrets.PRODUCTION_URL_2024 }}
+  FORTEE_API_HOST_2025: ${{ secrets.FORTEE_API_HOST_2025 }}
+  PRODUCTION_URL_2025: ${{ secrets.PRODUCTION_URL_2025 }}
 
 jobs:
   # Build job

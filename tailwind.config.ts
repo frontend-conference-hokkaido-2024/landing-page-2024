@@ -3,11 +3,11 @@ import type { Config } from "tailwindcss";
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -19,7 +19,7 @@ const config = {
     },
     extend: {
       lineHeight: {
-        extraRelaxed: "1.7"
+        extraRelaxed: "1.7",
       },
       textIndent: {
         4.5: "1.125rem",
@@ -30,6 +30,12 @@ const config = {
         black: "#0d172f",
         slateGray: "#64748b",
         darkRed: "var(--darkRed)",
+        // ボタンカラー
+        ButtonBlue: "#3F7AE7",
+        ButtonPurple: "#783DFA",
+        ButtonVibrantPurple: "#8614F2",
+        BackgroundPurple: "#F7F5FF",
+        ContentBackground: "#EFE7FF",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -65,7 +71,7 @@ const config = {
         },
         caution: {
           DEFAULT: "var(--darkRed)",
-        }
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -89,7 +95,7 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "fadeIn": "fadeIn 0.3s ease-in-out",
+        fadeIn: "fadeIn 0.3s ease-in-out",
       },
     },
   },

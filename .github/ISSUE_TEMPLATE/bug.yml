@@ -1,0 +1,44 @@
+name: Bug
+description: バグ報告
+title: "[Bug]: "
+labels: ["bug"]
+projects: ["frontend-conference-hokkaido-2024/4"]
+body:
+  - type: textarea
+    id: overview
+    attributes:
+      label: バグ概要
+      description: |
+        バグの概要を記述してください。
+        必要に応じてスクリーンショットを添付してください。
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 優先度
+      description: issue起票後にラベルを付与してください。
+      options: ["high", "medium", "low", "-" ]
+    validations:
+      required: true
+  - type: textarea
+    id: process
+    attributes:
+      label: 再現手順
+      description: 再現手順を記述してください。
+      value: |
+        1. 
+        2. 
+        3. 
+        ...
+    validations:
+      required: true
+  - type: textarea
+    id: cause
+    attributes:
+      label: 原因
+      description: 原因がわかっている場合は記述してください。
+  - type: textarea
+    id: sidenote
+    attributes:
+      label: 補足

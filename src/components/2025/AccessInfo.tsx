@@ -19,7 +19,7 @@ export default function AccessInfo() {
             <tbody>
               <tr>
                 <td className="align-top">
-                  <p className="text-slateGray text-sm mr-5">会場</p>
+                  <p className="text-slateGray text-sm mr-3 min-w-12">会場</p>
                 </td>
                 <td>
                   <p className="font-bold mb-2 text-sm">エア・ウォーターの森</p>
@@ -27,7 +27,7 @@ export default function AccessInfo() {
               </tr>
               <tr>
                 <td className="align-top">
-                  <p className="text-slateGray text-sm mr-5">所在地</p>
+                  <p className="text-slateGray text-sm mr-3 min-w-12">所在地</p>
                 </td>
                 <td>
                   <p className="font-bold mb-2 text-sm w-fit">
@@ -37,7 +37,7 @@ export default function AccessInfo() {
               </tr>
               <tr>
                 <td className="align-top">
-                  <p className="text-slateGray text-sm mr-5">最寄駅</p>
+                  <p className="text-slateGray text-sm mr-3 min-w-12">最寄駅</p>
                 </td>
                 <td>
                   <p className="font-bold text-sm">

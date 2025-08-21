@@ -1,9 +1,6 @@
-import Link from "next/link";
-
-import CommonButton from "./elements/CommonButton";
+import CTAArea from "./CTAArea";
 import LogoText from "./images/LogoText";
 import TopVisual from "./images/TopVisual";
-import WhiteTicketLogo from "./images/icon/WhiteTicketLogo";
 
 const EventOverView = () => {
   return (
@@ -39,6 +36,8 @@ const EventOverView = () => {
             </tr>
           </tbody>
         </table>
+
+        <CTAArea />
       </div>
     </section>
   );

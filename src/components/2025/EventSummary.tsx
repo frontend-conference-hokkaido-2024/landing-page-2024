@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import CTAArea from "./CTAArea";
 import CommonButton from "./elements/CommonButton";
-import WhiteTicketLogo from "./images/icon/WhiteTicketLogo";
 
 import frontend_conference_hokkaido_2025_logo from "@/asset/frontend_conference_hokkaido_2025_logo.png";
 import Title from "@/components/2025/elements/Title";
@@ -44,6 +44,7 @@ export default function EventSummary() {
       </p>
 
       <div className="flex flex-col justify-start mt-5 space-y-4 lg:w-3/4 lg:mx-auto">
+        <CTAArea />
         <CommonButton asChild>
           <Link
             href="https://twitter.com/fec_hokkaido"

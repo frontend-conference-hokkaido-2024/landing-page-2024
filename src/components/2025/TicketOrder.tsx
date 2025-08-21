@@ -22,7 +22,7 @@ const TicketOrder = () => {
           </Paragraph>
         </div>
         <CommonButton
-          background={"bg-gradient-to-r from-pink-500 to-blue-500"}
+          background={"bg-gradient-to-r from-ButtonBlue via-ButtonPurple to-ButtonVibrantPurple"}
           asChild
         >
           <Link href="https://www.eventbrite.com/e/2025-tickets-1427822378169?aff=oddtdtcreator" rel="noopener noreferrer" target="_blank">

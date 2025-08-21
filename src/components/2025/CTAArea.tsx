@@ -9,7 +9,7 @@ export default function CTAArea() {
   return (
     <div className="flex flex-col gap-1 items-center w-full">
       <CommonButton
-        background="bg-gradient-to-r from-pink-500 to-blue-500"
+        background="bg-gradient-to-r from-ButtonBlue via-ButtonPurple to-ButtonVibrantPurple"
         asChild
       >
         <Link

@@ -9,6 +9,7 @@ import Online from "@/components/2025/Online";
 import TicketOrder from "@/components/2025/TicketOrder";
 import TimeTable from "@/components/2025/TimeTable";
 import CoreStaffSection from "@/components/2025/coreStaffSection/CoreStaffSection";
+import DayStaffSection from "@/components/2025/dayStaffSection/DayStaffSection";
 import SpMenu from "@/components/2025/menu/sp/SpMenu";
 import PersonalSponsorSection from "@/components/2025/personalSponsorSection/PersonalSponsorSection";
 import SponsorSectionView from "@/components/2025/sponsorSection/SponsorSectionView";
@@ -32,6 +33,7 @@ export default function Home() {
               <SponsorSectionView />
               <PersonalSponsorSection />
               <CoreStaffSection />
+              <DayStaffSection />
             </div>
           </main>
           <Footer />

@@ -34,8 +34,6 @@ export default async function DayStaffSection() {
   const people = data.staff.filter((person) => person.type === "当日スタッフ");
   // peopleがnullまたは空の配列の場合は何も表示しない
 
-  console.log(people.length === 0);
-
   return (
     <section className="text-center" id="coreStaff">
       <h1 className="font-extrabold mb-8">

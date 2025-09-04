@@ -53,12 +53,12 @@ export default async function DayStaffSection() {
       </h1>
       <div className="grid grid-cols-2 lg:grid-cols-3">
         {people.length === 0 ? (
-          <div>データがありません</div>
+          <div>データがありません<Image src={"/images/2025/Icon/icon_bear.png"} height={150} width={150}></Image></div>
         ) : (
           people.map((person, index) => (
             <Avatar
               key={index}
-              image_url={person.avatar_url}
+              image_url={person.avatar_url || "/images/2025/Icon/icon_bear.png"}
               name={person.name}
               sns_url={person.link_url}
             />
